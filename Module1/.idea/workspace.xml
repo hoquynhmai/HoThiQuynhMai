@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="" />
+    <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/4_git_html/bai_tap/Bai2TaoDanhSach.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_git_html/bai_tap/Bai3TaoTrangCVCaNhan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_git_html/thuc_hanh/Bai3SuDungHTMLCoBan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -18,8 +30,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/4_git_html/thuc_hanh" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\CODE GYM\C0620G1-HoThiQuynhMai\Module1\4_git_html\thuc_hanh" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -32,6 +51,12 @@
       <option name="presentableId" value="Default" />
       <updated>1593146839566</updated>
       <workItem from="1593146841918" duration="121000" />
+      <workItem from="1593512035305" duration="228000" />
+      <workItem from="1593524325063" duration="253000" />
+      <workItem from="1593538112701" duration="245000" />
+      <workItem from="1593538375480" duration="3000" />
+      <workItem from="1593540124770" duration="1379000" />
+      <workItem from="1593566372334" duration="1560000" />
     </task>
     <servers />
   </component>
@@ -39,9 +64,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1593146957473">
+    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1593524564751">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593146957473" />
+    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1593524564751" />
   </component>
 </project>

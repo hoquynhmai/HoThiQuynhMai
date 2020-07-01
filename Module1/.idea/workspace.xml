@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/4_git_html/bai_tap/bai_tap_them/Bai1HTMLHeading.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_git_html/bai_tap/bai_tap_them/Bai2HTMLParagraph.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_git_html/bai_tap/bai_tap_them/Bai3HTMLImageLinks.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/4_git_html/bai_tap/Bai3TaoTrangCVCaNhan.html" beforeDir="false" afterPath="$PROJECT_DIR$/4_git_html/bai_tap/Bai3TaoTrangCVCaNhan.html" afterDir="false" />
     </list>
@@ -62,6 +65,8 @@
       <workItem from="1593540124770" duration="1379000" />
       <workItem from="1593566372334" duration="2672000" />
       <workItem from="1593569095807" duration="2518000" />
+      <workItem from="1593571842740" duration="56000" />
+      <workItem from="1593586493636" duration="2498000" />
     </task>
     <servers />
   </component>

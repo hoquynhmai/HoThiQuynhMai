@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1HienThiDauRa</title>
+</head>
+<body>
+<h>Bài tập 1</h>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+    function showMessage(){
+        alert('Xin chào!');
+    }
+</script><br> <br>
+<!--Hiện ra bảng thông báo Xin Chào-->
+<h>Bài Tập 2</h>
+<div id="messageDiv"></div>
+<button type="button" onclick="showMessage();">Click You!</button>
+<script>
+    function showMessage(){
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+    }
+</script> <br> <br>
+<!--Hiện ra chữ Xin Chào trên chữ Click-->
+<h>Bài Tập 3</h><br>
+<button type="button" onclick="showMessage();">Click Her!</button>
+<script>
+    function showMessage(){
+        document.write('Xin chào!');
+    }
+</script><br><br>
+<!-- Hiện ra chữ Xin chào-->
+<h>Bài Tập 4</h><br>
+<button type="button" onclick="showMessage();">Click Him!</button>
+<script>
+    function showMessage(){
+        console.log('Xin chào!');
+    }
+</script>
+<!-- Không hiện ra gì hết-->
+<!-- Viết 4 cái 1 lần ko hiện ra cái gì hết-->
+</body>
+</html>

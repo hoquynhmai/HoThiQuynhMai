@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai4TaoBangDonGian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5_html_form_ table/thuc_hanh/Bai4TaoBangNangCao+CSS.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/5_html_form_ table/thuc_hanh/Bai4TaoBangNangCao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai5TaoBangNangCao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_tong_quan_javascript/thuc_hanh/Bai1HienThiDauRa.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_tong_quan_javascript/thuc_hanh/Bai2NhungJavascript.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6_tong_quan_javascript/thuc_hanh/xin-chao.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai2TaoFormLaySurveyKhachHang.html" beforeDir="false" afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai2TaoFormLaySurveyKhachHang.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_html_form_ table/thuc_hanh/Bai2TaoFormTimKiemGoogle.html" beforeDir="false" afterPath="$PROJECT_DIR$/5_html_form_ table/thuc_hanh/Bai2TaoFormTimKiemGoogle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/5_html_form_ table/thuc_hanh/Bai3TaoBangCoBan.html" beforeDir="false" afterPath="$PROJECT_DIR$/5_html_form_ table/thuc_hanh/Bai3TaoBangCoBan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai4TaoBangDonGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai4TaoBangDonGian.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,9 @@
       <workItem from="1593571842740" duration="56000" />
       <workItem from="1593586493636" duration="8745000" />
       <workItem from="1593607847158" duration="9738000" />
-      <workItem from="1593652432849" duration="12787000" />
+      <workItem from="1593652432849" duration="13867000" />
+      <workItem from="1593681584256" duration="1400000" />
+      <workItem from="1593694272859" duration="3571000" />
     </task>
     <servers />
   </component>

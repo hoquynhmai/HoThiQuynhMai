@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai5TaoBangNangCao.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6_tong_quan_javascript/thuc_hanh/Bai1HienThiDauRa.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6_tong_quan_javascript/thuc_hanh/Bai2NhungJavascript.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/6_tong_quan_javascript/thuc_hanh/xin-chao.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai5TaoBangNangCaoLich.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/bai_tap_them/BaiThem4HTMLForm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/bai_tap_them/BaiThem5HTMLTale.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1aKhaiBaoVaSuDungBien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1bKhaiBaoVaSuDungBienArea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1cKhaiBaoVaSuDungBienPromt.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai4TaoBangDonGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai4TaoBangDonGian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai5TaoBangNangCao.html" beforeDir="false" afterPath="$PROJECT_DIR$/5_html_form_ table/bai_tap/Bai5TaoBangNangCao.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5_html_form_ table/thuc_hanh/Bai4TaoBangNangCao.html" beforeDir="false" afterPath="$PROJECT_DIR$/5_html_form_ table/thuc_hanh/Bai4TaoBangNangCao.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +76,8 @@
       <workItem from="1593652432849" duration="13867000" />
       <workItem from="1593681584256" duration="1400000" />
       <workItem from="1593694272859" duration="3571000" />
+      <workItem from="1593738943577" duration="19395000" />
+      <workItem from="1593937264333" duration="2024000" />
     </task>
     <servers />
   </component>

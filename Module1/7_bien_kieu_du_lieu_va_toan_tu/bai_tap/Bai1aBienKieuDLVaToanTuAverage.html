@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai1aDiemTrungBinh</title>
+</head>
+<body>
+<script>
+    inputPhys = prompt("Enter the Physical");
+    inputChem = prompt("Enter the Chemistry");
+    inputBio = prompt("Enter the Biological");
+
+    var Phys = parseInt(inputPhys);
+    var Chem = parseInt(inputChem);
+    var Bio = parseInt(inputBio);
+    var Total = Phys + Chem + Bio ;
+    var Average = Total / 3;
+
+    document.write("Tổng:" + Total);
+    document.write("<br>");
+    document.write("Điểm Trung Bình: " + Average);
+</script>
+</body>
+</html>

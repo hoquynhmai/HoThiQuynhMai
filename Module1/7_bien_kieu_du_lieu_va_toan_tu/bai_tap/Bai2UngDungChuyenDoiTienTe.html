@@ -11,29 +11,47 @@
     </style>
 </head>
 <body>
-
 <div>
     <label><strong>Ammount</strong></label><br>
-    <input type="number"; id="vnd";name="input";>
+    <input type="text"; id="tien";>
 </div>
-<div style=" margin-left: 30px">
+<div style=" margin-left: 30px" ;>
     <label><strong>From Currency</strong></label><br>
-    <select>
-        <option>VietNam</option>
-        <option>USD</option>
+    <select  id="tienGoc" ;>
+        <option value="VND" selected>VND</option>
+        <option value="USD">USD</option>
     </select>
 </div>
 <div style="margin-left: 30px">
     <label><strong>To Currency</strong></label><br>
-    <select>
-        <option>USD</option>
-        <option>VietNam</option>
+    <select  id="tienDoi"; >
+        <option value="USD" selected>USD</option>
+        <option value="VND">VND</option>
     </select>
 </div>
 <div><br>
-    <input type="submit" name="Convert" value="Convert" ; style="margin-left: 20px">
+    <input type="button" value="Convert" onclick="toChangeMoney();">
 </div>
+<br><br>
+<p id="result"> </p>
 </form>
+<script>
+    function toChangeMoney() {
+        let tien = parseInt(document.getElementById("tien").value);
+        let tienGoc = document.getElementById("tienGoc").value;
+        let tienDoi = document.getElementById("tienDoi").value;
+        let ketQua=0;
+        if (tienGoc == "VND" && tienDoi=="USD"){
+            ketQua = 23000 * tien;
+        } else if (tienGoc=="USD" && tienDoi=="VND"){
+            ketQua = tien/23000;
+        } else {
+            ketQua = "Nhập lại";
+        }
 
+        document.getElementById("result").innerHTML= "Result = " + ketQua;
+    }
+
+</script>
 </body>
 </html>

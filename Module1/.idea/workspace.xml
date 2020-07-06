@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/yc1CaseStudy.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/thuc_hanh/Bai1SuKienChuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/thuc_hanh/Bai1SuKienChuot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +76,7 @@
       <workItem from="1593937264333" duration="13931000" />
       <workItem from="1593998465434" duration="5892000" />
       <workItem from="1594011314963" duration="9927000" />
-      <workItem from="1594034207351" duration="4813000" />
+      <workItem from="1594034207351" duration="8122000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,52 @@
     <title>Yêu Cầu 2</title>
 </head>
 <body>
+<script>
+    let fullName = prompt("Nhập Họ và Tên: ");
+    let cmnd = prompt("Nhập số CMND: ");
+    let birthDay = prompt("Nhập Ngày Tháng Năm Sinh: ");
+    let email = prompt("Nhập Email: ");
+    let address = prompt("Nhập Địa chỉ: ");
+    let customer = prompt("Loại khách hàng: ");
+    let discount = prompt("Giảm giá: ");
+    let amountPeople = prompt("Số lượng người đi kèm: ");
+    let rentDay = prompt("Số ngày thuê: ");
+    let service = prompt("Loại dịch vụ: ");
+    let room = prompt("Loại phòng: ");
 
+    if (service == "Villa") {
+        money =  500 * rentDay * (1 - discount / 100);
+    }
+    else {
+        if (service == "House")
+            money =  300 * rentDay * (1-discount/100);
+        else money =  100 * rentDay * (1-discount/100);
+    }
+
+   document.write("Họ và tên: " + fullName);
+    document.write("<br>");
+    document.write("Số CMND: " + cmnd);
+    document.write("<br>");
+    document.write("Ngày Tháng Năm Sinh: " + birthDay);
+    document.write("<br>");
+    document.write("Email: " + email);
+    document.write("<br>");
+    document.write("Địa chỉ: " + address);
+    document.write("<br>");
+    document.write("Loại Khách Hàng: " + customer);
+    document.write("<br>");
+    document.write("Giảm giá: " + discount);
+    document.write("<br>");
+    document.write("Số lượng đi kèm: " + amountPeople);
+    document.write("<br>");
+    document.write("Số ngày thuê: " + rentDay);
+    document.write("<br>");
+    document.write("Loại dịch vụ: " + service);
+    document.write("<br>");
+    document.write("Loại phòng: " + room);
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Tổng số tiền cần thanh toán: " + money);
+</script>
 </body>
 </html>

@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai3UDMayTinhCaculator.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai3LuyenTapCauTrucIfElseIf.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai4LuyenTapCauTrucSwitchCase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai5LuyenTapVoiToanTuBaNgoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai2UngDungChuyenDoiTienTe.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai2UngDungChuyenDoiTienTe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai1cKiemTraNamNhuan.html" beforeDir="false" afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai1cKiemTraNamNhuan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/yc1CaseStudy.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +73,7 @@
       <workItem from="1593937264333" duration="13931000" />
       <workItem from="1593998465434" duration="5892000" />
       <workItem from="1594011314963" duration="9927000" />
+      <workItem from="1594034207351" duration="4813000" />
     </task>
     <servers />
   </component>

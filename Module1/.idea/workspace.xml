@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai5bLuyenTapVoiToanTuBaNgoiMessage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai1TinhChiSoCanNangCoThe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai2CauLenhSwitchCase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai3MayTinhDonGian.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai4GamePuzzle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai5DoYouLoveMe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/thuc_hanh/Bai2SuKienBanPhim.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudy1/cuoi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai1cBienKieuDLVaToanTuHinhTron.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai1cBienKieuDLVaToanTuHinhTron.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai3UDMayTinhCaculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai3UDMayTinhCaculator.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1aKhaiBaoVaSuDungBien.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1aKhaiBaoVaSuDungBien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1bKhaiBaoVaSuDungBienArea.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1bKhaiBaoVaSuDungBienArea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1cKhaiBaoVaSuDungBienPromt.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1cKhaiBaoVaSuDungBienPromt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai4LuyenTapCauTrucSwitchCase.html" beforeDir="false" afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai4LuyenTapCauTrucSwitchCase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai5LuyenTapVoiToanTuBaNgoi.html" beforeDir="false" afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai5LuyenTapVoiToanTuBaNgoi.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/thuc_hanh/Bai1SuKienChuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/thuc_hanh/Bai1SuKienChuot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" afterDir="false" />
     </list>
@@ -35,7 +48,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../caseStudy1" />
+    <property name="last_opened_file_path" value="E:/yeuCau2.html" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -47,6 +60,16 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\CODE GYM\C0620G1-HoThiQuynhMai\Module1\4_git_html\thuc_hanh" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Bai5DoYouLoveMe.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Module1/9_cau_truc_dieu_kien_2/bai_tap/Bai5DoYouLoveMe.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.Bai5DoYouLoveMe.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -77,6 +100,8 @@
       <workItem from="1593998465434" duration="5892000" />
       <workItem from="1594011314963" duration="9927000" />
       <workItem from="1594034207351" duration="8122000" />
+      <workItem from="1594084617664" duration="20993000" />
+      <workItem from="1594126795365" duration="2453000" />
     </task>
     <servers />
   </component>
@@ -88,13 +113,17 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="324" y="132" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593679760824" />
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1594029482249">
+    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1594128146995">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594029482249" />
+    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594128146995" />
     <state x="342" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594000951562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="342" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1594000951562" />
+    <state x="339" y="162" key="run.anything.popup" timestamp="1594089637846">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1594089637846" />
   </component>
 </project>

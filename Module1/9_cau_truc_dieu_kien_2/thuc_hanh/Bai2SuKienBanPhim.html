@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sự Kiện Bàn Phím</title>
+</head>
+<body onload="docReady()">
+<img id="dog" src="dog.jpg" height="300" width="400" style="position: absolute;left:0px;top:0px"/>
+<script>
+    function upPress() {
+       let element = document.getElementById("dog");
+        element.style.top = parseInt(element.style.top) + 10 + "px";
+    }
+
+    function downPress() {
+        let element = document.getElementById("dog");
+        element.style.top = parseInt(element.style.top) - 10 + "px";
+    }
+
+    function leftPress() {
+        let element = document.getElementById("dog");
+        element.style.left = parseInt(element.style.left) + 10 + "px";
+    }
+
+    function rightPress() {
+        let element = document.getElementById("dog");
+        element.style.left = parseInt(element.style.left) - 10 + "px";
+    }
+
+    function move(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftPress();
+                break;
+            case 38:
+                upPress();
+                break;
+            case 39:
+                rightPress();
+                break;
+            case 40:
+                downPress();
+                break;
+
+        }
+
+    }
+    function docReady() {
+        window.addEventListener('keydown', move);
+    }
+</script>
+</body>
+</html>

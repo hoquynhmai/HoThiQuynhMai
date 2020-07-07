@@ -6,19 +6,17 @@
 </head>
 <body>
 <script>
-    let value = prompt('Type a number'," ");
-    let check= value > 0;
-    switch (check) {
-        case true:
+    let value = prompt('Type a number', " ");
+    switch ((value > 0) ? 1 : (value < 0) ? -1 : 0) {
+        case 1:
             alert(1);
             break;
-        case false:
+        case -1:
             alert(-1);
             break;
-       default:
+        case 0:
             alert(0);
     }
-    <!-- Nhập 0 chạy kết quả sai-->
 </script>
 </body>
 </html>

@@ -11,16 +11,14 @@
     let num3 = parseInt(prompt("Nhập số thứ ba: "));
     let maxvalue = num1;
 
-   if (maxvalue < num2){
-       maxvalue = num2;
-            document.write("Số lớn nhất là " + num2);
-   }
-    if (maxvalue < num3){
-        maxvalue = num3;
-        document.write("Số lớn nhất là " + num3);}
-    else {
-        maxvalue = num1;
-        document.write("Số lớn nhất là " + num1);}
+    if (maxvalue > num2)
+        if (maxvalue > num3)
+            document.write("Số lớn nhất là: " + num1);
+        else document.write("Số lớn nhất là: " + num3);
+    else
+        if (num2 > num3)
+            document.write("Số lớn nhất là: " + num2);
+        else document.write("Số lớn nhất là: " + num3);
 </script>
 </body>
 </html>

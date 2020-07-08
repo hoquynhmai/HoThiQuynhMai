@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai5bLuyenTapVoiToanTuBaNgoiMessage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai1TinhChiSoCanNangCoThe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai2CauLenhSwitchCase.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai3MayTinhDonGian.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai4GamePuzzle.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai5DoYouLoveMe.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/thuc_hanh/Bai2SuKienBanPhim.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/caseStudy1/cuoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai6UngDungGoodFastCheap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai7aLTCauTrucDK1achiab.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai7bLTCauTrucDK1Age.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai7cLTCauTrucDK1NhapSoNguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai7dLTCauTrucDK1Max3SoNguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai7eLTCauTrucDK1Ave.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai7fLTCauTrucDK1HoaHong.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai1cBienKieuDLVaToanTuHinhTron.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai1cBienKieuDLVaToanTuHinhTron.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai3UDMayTinhCaculator.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/bai_tap/Bai3UDMayTinhCaculator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1aKhaiBaoVaSuDungBien.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1aKhaiBaoVaSuDungBien.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1bKhaiBaoVaSuDungBienArea.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1bKhaiBaoVaSuDungBienArea.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1cKhaiBaoVaSuDungBienPromt.html" beforeDir="false" afterPath="$PROJECT_DIR$/7_bien_kieu_du_lieu_va_toan_tu/thuc_hanh/Bai1cKhaiBaoVaSuDungBienPromt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai4LuyenTapCauTrucSwitchCase.html" beforeDir="false" afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai4LuyenTapCauTrucSwitchCase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai5LuyenTapVoiToanTuBaNgoi.html" beforeDir="false" afterPath="$PROJECT_DIR$/8_cau_truc_dieu_kien_1/thuc_hanh/Bai5LuyenTapVoiToanTuBaNgoi.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/thuc_hanh/Bai1SuKienChuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/thuc_hanh/Bai1SuKienChuot.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -101,7 +91,8 @@
       <workItem from="1594011314963" duration="9927000" />
       <workItem from="1594034207351" duration="8122000" />
       <workItem from="1594084617664" duration="20993000" />
-      <workItem from="1594126795365" duration="2453000" />
+      <workItem from="1594126795365" duration="2984000" />
+      <workItem from="1594171901850" duration="10391000" />
     </task>
     <servers />
   </component>

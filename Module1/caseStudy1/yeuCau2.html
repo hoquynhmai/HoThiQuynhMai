@@ -6,31 +6,31 @@
 </head>
 <body>
 <script>
-    let fullName="Hồ Thị Quỳnh Mai";
-    let cmnd="201675123";
-    let birthDay="15/05/1995";
-    let email="hoquynhmai@gmail.com";
-    let address="Đà Nẵng";
-    let customer="Platium";
-    let discount="30";
-    let amountPeople="3";
-    let rentDay="5";
-    let service="Villa";
-    let room="Vip";
+    let fullName = "Hồ Thị Quỳnh Mai";
+    let cmnd = "201675123";
+    let birthDay = "15/05/1995";
+    let email = "hoquynhmai@gmail.com";
+    let address = "Đà Nẵng";
+    let customer = "Platium";
+    let discount = "30";
+    let amountPeople = "3";
+    let rentDay = "5";
+    let service = "Villa";
+    let room = "Vip";
 
     if (service == "Villa") {
-        money =  500 * rentDay * (1 - discount / 100);
-    }
-    else {
+        money = 500 * rentDay * (1 - discount / 100);
+    } else {
         if (service == "House")
-            money =  300 * rentDay * (1-discount/100);
-        else money =  100 * rentDay * (1-discount/100);
+            money = 300 * rentDay * (1 - discount / 100);
+        else money = 100 * rentDay * (1 - discount / 100);
     }
 
     let totalDiscount;
     menu();
+
     function menu() {
-        let choose=prompt("Nhập thao tác muốn thực hiện: \n1.Show \n2.Edit");
+        let choose = prompt("Nhập thao tác muốn thực hiện: \n1.Show \n2.Edit");
         switch (choose) {
             case "1":
                 show();
@@ -39,10 +39,9 @@
                 edit();
                 break;
             default:
-                alert("Failed");
+                alert("Lựa chọn không nằm trong menu");
                 break;
         }
-        menu();
     }
 
     function show() {
@@ -50,8 +49,8 @@
         let birthday = new Date(birthDay).getFullYear();
         let ageCustomer = currentYear - birthday;
         let discountOfRentDay;
-        if (rentDay>=7)
-            discountOfRentDay=30;
+        if (rentDay >= 7)
+            discountOfRentDay = 30;
 
         alert("1. Họ và Tên " + fullName + "\n" +
             "2. CMND:  " + cmnd + "\n" +
@@ -63,24 +62,25 @@
             "8. Số lượng đi kèm: " + amountPeople + "\n" +
             "9. Số ngày thuê: " + rentDay + "\n" +
             "10. Loại dịch vụ: " + service + "\n" +
-            "11. Loại phòng: " + room + "\n" + "\n"+
-            "Tổng tiền phải thanh toán: " + money +" $");
+            "11. Loại phòng: " + room + "\n" + "\n" +
+            "Tổng tiền phải thanh toán: " + money + " $");
         menu();
     }
-    function edit() {
-        let choose=prompt("1.Tên khách hàng: "+ fullName+"" +
-            "\n" + "2.Số CMND: "+ cmnd +"" +
-            "\n" + "3.Ngày sinh: "+ birthDay +"" +
-            "\n" + "4.Email: "+ email + "" +
-            "\n" + "5.Địa chỉ: " +address +"" +
-            "\n" + "6.Loại Customer: "+ customer +"" +
-            "\n" + "7.Phần trăm giảm giá: "+discount+"%"+
-            "\n" + "8.Số lượng đi kèm: "+ amountPeople +"" +
-            "\n" + "9.Số ngày thuê: "+ rentDay +"" +
-            "\n" + "10.Loại dịch vụ: "+ service +"" +
-            "\n" + "11.Loại phòng: "+ room +"");
 
-        switch (choose){
+    function edit() {
+        let choose = prompt("1.Tên khách hàng: " + fullName + "" +
+            "\n" + "2.Số CMND: " + cmnd + "" +
+            "\n" + "3.Ngày sinh: " + birthDay + "" +
+            "\n" + "4.Email: " + email + "" +
+            "\n" + "5.Địa chỉ: " + address + "" +
+            "\n" + "6.Loại Customer: " + customer + "" +
+            "\n" + "7.Phần trăm giảm giá: " + discount + "%" +
+            "\n" + "8.Số lượng đi kèm: " + amountPeople + "" +
+            "\n" + "9.Số ngày thuê: " + rentDay + "" +
+            "\n" + "10.Loại dịch vụ: " + service + "" +
+            "\n" + "11.Loại phòng: " + room + "");
+
+        switch (choose) {
             case "1":
                 fullName = prompt("Nhập lại tên:");
                 break;
@@ -109,10 +109,10 @@
                 rentDay = prompt("Nhập lại số ngày thuê:");
                 break;
             case "10":
-               service = prompt("Nhập lại loại dịch vụ:\nVilla: 500$/1 ngày\nHouse: 300$/1 ngày\nRoom: 100$/1 ngày");
+                service = prompt("Nhập lại loại dịch vụ:\n Villa: 500$/1 ngày \n House: 300$/1 ngày \n Room: 100$/1 ngày");
                 break;
             case "11":
-                room = prompt("Nhập lại loại phòng:\nVip, Business,  Normal");
+                room = prompt("Nhập lại loại phòng:\n Vip, Business,  Normal");
                 break;
             default:
                 alert("Failed");

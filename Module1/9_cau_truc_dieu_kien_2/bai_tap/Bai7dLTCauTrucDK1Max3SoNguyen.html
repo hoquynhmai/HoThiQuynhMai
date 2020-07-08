@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Giá Trị LN 3 Số Nguyên</title>
+</head>
+<body>
+<script>
+    let num1 = parseInt(prompt("Nhập số thứ nhất:"));
+    let num2 = parseInt(prompt("Nhập số thứu hai: "));
+    let num3 = parseInt(prompt("Nhập số thứ ba: "));
+    let maxvalue = num1;
+
+   if (maxvalue < num2){
+       maxvalue = num2;
+            document.write("Số lớn nhất là " + num2);
+   }
+    if (maxvalue < num3){
+        maxvalue = num3;
+        document.write("Số lớn nhất là " + num3);}
+    else {
+        maxvalue = num1;
+        document.write("Số lớn nhất là " + num1);}
+</script>
+</body>
+</html>

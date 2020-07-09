@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển Thị 20 số Fibonacci</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Nhập số lượng cần hiển thị:"));
+    let count = 0;
+    let a = 1;
+    let b = 0;
+
+    while (count < num) {
+    b= a + b;
+    a = b - a;
+    count++;
+    document.write(a + " ");
+    }
+</script>
+</body>
+</html>

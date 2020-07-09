@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Thuế Thu Nhập Cá Nhân</title>
+</head>
+<body>
+<script>
+    let tongThuNhap = parseInt(prompt("Tổng Thu Nhập"));
+    let khoanMien = parseInt(prompt("Các khoản được miễn:"));
+    let khoanGiam = parseInt(prompt("Các khoản Giảm Trừ:"));
+    let thuNhapTinhThue = tongThuNhap - khoanMien - khoanGiam;
+
+    if (thuNhapTinhThue > 80000000) {tienNop = thuNhapTinhThue*35/100}
+    else if (thuNhapTinhThue > 52000000) {tienNop = thuNhapTinhThue*30/100}
+    else if (thuNhapTinhThue > 32000000) {tienNop = thuNhapTinhThue*25/100}
+    else if (thuNhapTinhThue > 18000000) {tienNop = thuNhapTinhThue*20/100}
+    else if (thuNhapTinhThue > 10000000) {tienNop = thuNhapTinhThue*15/100}
+    else if (thuNhapTinhThue > 5000000) {tienNop = thuNhapTinhThue*10/100}
+    else {tienNop = thuNhapTinhThue*5/100}
+
+    document.write("Tổng Thu Nhập:" + tongThuNhap);
+    document.write("<br>");
+    document.write("Các khoản Miễn:" + khoanMien);
+    document.write("<br>");
+    document.write("Các khoản giảm:" + khoanGiam);
+    document.write("<br>");
+    document.write("Tổng Thu Nhập Tính Thuế:" + thuNhapTinhThue);
+    document.write("<br>");
+    document.write("Tiền Thuế TNCN phải Nộp:" + tienNop);
+
+//    Khoản Miễn như : Tiền điện thoiak, Cơm trưa, tiền giữ xe
+//    Khoản Giảm như: Tiền cho bản thâ, tiền phụ cấp
+</script>
+</body>
+</html>

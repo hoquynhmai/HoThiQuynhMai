@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tổng 20 số đầu trong dãy số Fibonacci</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let a = 1;
+    let b = 0;
+
+
+    while (count < 20) {
+        b = a + b;
+        a = b - a;
+        count++;
+        a += a;
+        }
+    }
+    document.write("Tổng : " +a );
+</script>
+</body>
+</html>

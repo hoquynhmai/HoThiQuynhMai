@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải Phương Trình Bậc 2</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("Nhập giá trị a:"));
+    let b = parseInt(prompt("Nhập giá trị b:"));
+    let c = parseInt(prompt("Nhập giá trị c:"));
+    let delta = (b * b - 4 * a * c);
+    let cb2 = Math.sqrt(delta);
+
+    if (delta > 0) {
+        document.write("Phương trình có 2 nghiệm: " + (-b - cb2) / (2 * a) + " và " + (-b + cb2) / (2 * a));
+    } else if (delta === 0) {
+        document.write("Phương trình có 2 nghiệm kép: " + (-b) / (2 * a));
+    } else {
+        document.write("Phương trình vô nghiệm");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển Thị Số Nguyên Tố Đầu Tiên</title>
+</head>
+<body>
+<script>
+    let numbers = parseInt(prompt("Nhập số lượng số nguyên tố cần hiển thị :"));
+    let count = 0;
+
+    function kiemTraSoNguyenTo(n) {
+        if (n < 2) {
+            return false;
+        }
+        for (let i = 2; i < n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    let soCanKiemTra = 2;
+    while (count < numbers) {
+        if (kiemTraSoNguyenTo(soCanKiemTra)) {
+            document.write(soCanKiemTra + '\n');
+            count++;
+        }
+        soCanKiemTra++;
+    }
+
+
+    // for (let soCanKiemTra = 2; ; soCanKiemTra++) {
+    //     if (kiemTraSoNguyenTo(soCanKiemTra)) {
+    //         document.write(soCanKiemTra+'\n');
+    //         count++;
+    //     }
+    //     if (count == numbers) {
+    //         break;
+    //     }
+    // }
+</script>
+</body>
+</html>

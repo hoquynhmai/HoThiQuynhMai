@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Tiền Điện</title>
+</head>
+<body>
+<script>
+    let soCu = parseInt(prompt("Nhập số điện cũ:"));
+    let soMoi = parseInt(prompt("Nhập số điện mới:"));
+    let soDien = soMoi - soCu;
+
+    if (soDien > 200) {
+        document.write("Số điện Cũ: " + soCu);
+        document.write("<br>");
+        document.write("Số điện Mới: " + soMoi);
+        document.write("<br>");
+        document.write("Số tiền cần thanh toán: " + ((soDien - 200) * 2500 + 200 * 2000 + 150 * 1200 + 100 * 1000));
+    } else if (soDien > 150) {
+        document.write("Số điện Cũ: " + soCu);
+        document.write("<br>");
+        document.write("Số điện Mới: " + soMoi);
+        document.write("<br>");
+        document.write("Số tiền cần thanh toán: " + ((soDien - 150) * 2000 + 150 * 1200 + 100 * 1000));
+    } else if (soDien > 100) {
+        document.write("Số điện Cũ: " + soCu);
+        document.write("<br>");
+        document.write("Số điện Mới: " + soMoi);
+        document.write("<br>");
+        document.write("Số tiền cần thanh toán: " + ((soDien - 100) * 1200 + 100 * 1000));
+    } else {
+        document.write("Số điện Cũ: " + soCu);
+        document.write("<br>");
+        document.write("Số điện Mới: " + soMoi);
+        document.write("<br>");
+        document.write("Số tiền cần thanh toán: " + (soDien * 1000));
+    }
+</script>
+</body>
+</html>

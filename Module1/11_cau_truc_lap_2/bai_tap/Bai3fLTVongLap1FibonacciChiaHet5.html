@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số đầu tiên trong dãy số Fibonacci chia hết cho 5</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Nhập số lượng cần hiển thị:"));
+    let count = 0;
+    let a = 1;
+    let b = 0;
+
+    while (count < num) {
+        b= a + b;
+        a = b - a;
+        count++;
+        if (a % 5 === 0)
+            break;
+        document.write(a + " ");
+    }
+</script>
+</body>
+</html>

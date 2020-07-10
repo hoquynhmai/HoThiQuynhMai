@@ -2,35 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/10_cau_truc_lap_1/thuc_hanh/Bai1aSuDungVongLapForTheNumber.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10_cau_truc_lap_1/thuc_hanh/Bai1bSuDungVongLapForSoLonHon0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10_cau_truc_lap_1/thuc_hanh/Bai2SuDungVongLapWhileNhapSoKhac-1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10_cau_truc_lap_1/thuc_hanh/Bai2bSuDungVngLapWhileDoRongHr.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10_cau_truc_lap_1/thuc_hanh/Bai3SuDungVongLapDoWhile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10_cau_truc_lap_1/thuc_hanh/Bai4aSuDungVongLapLongNhauFor.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10_cau_truc_lap_1/thuc_hanh/Bai4bSuDungVongLapLongNhauWhile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai1BangCuuChuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai2HienThiSoNguyenToDauTien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3aLTVongLap1Lap100.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3bLTVongLap1ThayDoiNhietDo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3cLTVogLap1HienThi20SoFibonacci.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3eLTVongLap1FibonacciTong20So.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3fLTVongLap1FibonacciChiaHet5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3gLTVongLap1Tong30SoChiaHetCho7DauTien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3hLTVongLap1FizzBuzz.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8bLTCauTrucDK2mSangFeet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8cLTCauTrucDK2DienTichHV.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8dLTCauTrucDK2DienTichHCN.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8eLTCauTrucDK2DienTichTamGiacVuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8fLTCauTrucDK2PTBac1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8gLTCauTrucDK2GiaiPTBac2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8hLTcauTrucDK2NhapTuoi.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8iLTCauTrucDK2CanhTamGiac.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8jLTCauTrucDK2TinhTienDien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8kLTCauTrucDK2TinhThue.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3fLTVongLap1Tong30SoChiaHetCho7DauTien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3gLTVongLap1FizzBuzz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3hLTVongLap1GameDoanSo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai4aLTCauTrucVongLap2InDaySoFiBo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai4bLTCauTrucVL2TinhGiaiThua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai4cLTCauTrucVL2VeTamGiacVuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai4dLTCauTrucVL2InHCN.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai4eLTCauTrucVL2TinhLaiBank.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai4fLTCauTrucVL2InHinhTraiTim.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai8lLTCauTrucDK2TinhLai.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai4GamePuzzle.html" beforeDir="false" afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai4GamePuzzle.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai7fLTCauTrucDK1HoaHong.html" beforeDir="false" afterPath="$PROJECT_DIR$/9_cau_truc_dieu_kien_2/bai_tap/Bai7fLTCauTrucDK1HoaHong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai2HienThiSoNguyenToDauTien.html" beforeDir="false" afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai2HienThiSoNguyenToDauTien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3cLTVogLap1HienThi20SoFibonacci.html" beforeDir="false" afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3cLTVogLap1HienThi20SoFibonacci.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3eLTVongLap1FibonacciTong20So.html" beforeDir="false" afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3eLTVongLap1FibonacciTong20So.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3fLTVongLap1FibonacciChiaHet5.html" beforeDir="false" afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3dLTVongLap1FibonacciChiaHet5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3gLTVongLap1Tong30SoChiaHetCho7DauTien.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai3hLTVongLap1FizzBuzz.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +104,8 @@
       <workItem from="1594195750227" duration="5933000" />
       <workItem from="1594209245280" duration="11175000" />
       <workItem from="1594257808653" duration="19633000" />
+      <workItem from="1594294323915" duration="4605000" />
+      <workItem from="1594343890808" duration="20783000" />
     </task>
     <servers />
   </component>
@@ -123,6 +113,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594343914384">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594343914384" />
     <state x="324" y="132" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1593679760824">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -139,5 +133,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1594089637846" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1594344361836">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1594344361836" />
   </component>
 </project>

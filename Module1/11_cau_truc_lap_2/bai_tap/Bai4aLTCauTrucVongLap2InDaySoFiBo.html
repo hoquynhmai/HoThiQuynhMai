@@ -2,21 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tổng 20 số đầu trong dãy số Fibonacci</title>
+    <title>In dãy số Fibonaccis</title>
 </head>
 <body>
 <script>
     let count = 0;
-    let fiBo1 = 1;
-    let fiBo2 = 0;
+    let fiBo1 = 0;
+    let fiBo2 = 1;
 
-    while (count < 20) {
+    while (count < 1400) {
+        document.write(fiBo1 + "      ");
         fiBo2 = fiBo1 + fiBo2;
         fiBo1 = fiBo2 - fiBo1;
         count++;
-        fiBo1 += fiBo1;
     }
-    document.write("Tổng : " + fiBo1 );
 </script>
 </body>
 </html>

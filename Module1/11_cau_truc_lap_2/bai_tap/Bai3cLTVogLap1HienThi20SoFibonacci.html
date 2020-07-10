@@ -8,14 +8,14 @@
 <script>
     let num = parseInt(prompt("Nhập số lượng cần hiển thị:"));
     let count = 0;
-    let a = 1;
-    let b = 0;
+    let fiBo1 = 1;
+    let fiBo2 = 0;
 
     while (count < num) {
-    b= a + b;
-    a = b - a;
+    fiBo2 = fiBo1 + fiBo2;
+    fiBo1 = fiBo2 - fiBo1;
     count++;
-    document.write(a + " ");
+    document.write(fiBo1 + " " + " ");
     }
 </script>
 </body>

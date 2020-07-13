@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    <!-- Tam Giác Vuông 1 -->
+    <!-- Tam Giác  Vuông  1 -->
     for (let hang = 1; hang <= 5; hang++) {
         for (let cot = 1; cot <= hang; cot++) {
             document.write("*");
@@ -27,12 +27,13 @@
     document.write("<br>" + "<br>");
 
     <!-- Tam Giác Vuông 3 -->
-    for(hang=5;hang>=1;hang--){
-        for(cot=1;cot<=hang;cot++){
-            document.write("&nbsp;&nbsp;");
-        }
-        for(cot=5;cot>=hang;cot--){
-            document.write("*");
+    for (hang = 1; hang <= 5; hang++) {
+        for (cot = 1; cot <= 5; cot++) {
+            if (cot <= 5 - hang) {
+                document.write("&nbsp&nbsp&nbsp&nbsp");
+            } else {
+                document.write("*&nbsp&nbsp");
+            }
         }
         document.write("<br>");
     }
@@ -40,12 +41,13 @@
     document.write("<br>" + "<br>");
 
     <!-- Tam Giác Vuông 4 -->
-    for(hang=1;hang<=5;hang++){
-        for(cot=1;cot<=hang;cot++){
-            document.write("&nbsp;&nbsp;");
-        }
-        for(cot=5;cot>=hang;cot--){
-            document.write("*");
+    for (hang = 1; hang <= 5; hang++) {
+        for (cot = 1; cot <= 5; cot++) {
+            if (cot <= hang - 1) {
+                document.write("&nbsp&nbsp&nbsp&nbsp");
+            } else {
+                document.write("*&nbsp&nbsp");
+            }
         }
         document.write("<br>");
     }

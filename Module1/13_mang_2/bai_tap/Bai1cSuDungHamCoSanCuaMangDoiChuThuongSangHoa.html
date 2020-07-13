@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển chữ thường thành chữ hoa</title>
+</head>
+<body>
+<script>
+    let dayChu = prompt("Nhập chữ:");
+    let chuHoa = "ABCDEFGHIJKLMNOPQRSTWXYZ";
+    let chuThuong = "abcdefghijklmnopqrstwxyz";
+    let ketQua = [];
+    for(let x = 0; x < dayChu.length; x++)
+    {
+        if(chuHoa.indexOf(dayChu[x]) !== -1)
+        {
+            ketQua.push(dayChu[x].toLowerCase());
+        }
+        else if(chuThuong.indexOf(dayChu[x]) !== -1)
+        {
+            ketQua.push(dayChu[x].toUpperCase());
+        }
+        else
+        {
+            ketQua.push(dayChu[x]);
+        }
+    }
+    document.write(ketQua.join(""));
+</script>
+</body>
+</html>

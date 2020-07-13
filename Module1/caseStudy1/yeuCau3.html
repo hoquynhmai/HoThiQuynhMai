@@ -27,7 +27,7 @@
             "\n2.Edit" +
             "\n3.Show Total Amount" +
             "\n4.Exit" +
-        "");
+            "");
         switch (choose) {
             case "1":
                 show();
@@ -75,45 +75,67 @@
             "\n" + "10.Loại dịch vụ: " + serviceType + "" +
             "\n" + "11.Loại phòng: " + roomType + "");
 
-            switch (choose) {
-                case "1":
-                    fullName = prompt("Nhập lại tên:");
-                    break;
-                case "2":
+        switch (choose) {
+            case "1":
+                fullName = prompt("Nhập lại tên:");
+                break;
+            case "2":
+                let check1 = true;
+                do {
                     id = prompt("Nhập lại CMND:");
-                    break;
-                case "3":
-                    birthDay = prompt("Nhập lại ngày sinh:\nTheo định dạng : tháng/ngày/năm");
-                    break;
-                case "4":
+                    let testCMND = isNaN(id);
+                    let test1 = id.indexOf("+");
+                    let test2 = id.indexOf("-");
+                    let test3 = id.indexOf(".");
+                    if (testCMND || test1 >= 0 || test2 >= 0 || test3 >= 0 || id.length !== 9) {
+                        alert("Nhập lại CMND" + "\n" + "CMND phải đủ 9 số");
+                    }
+                    else check1 = false;
+                } while (check1);
+                break;
+            case "3":
+                birthDay = prompt("Nhập lại ngày sinh:\nTheo định dạng : tháng/ngày/năm");
+                break;
+            case "4":
+                let check2 = true;
+                do {
                     email = prompt("Nhập lại Email:");
-                    break;
-                case "5":
-                    address = prompt("Nhập lại địa chỉ:");
-                    break;
-                case "6":
-                    customerType = prompt("Nhập lại loại Customer:\nDiamond, Platinum, Gold, Silver, Member");
-                    break;
-                case "7":
-                    discount = parseInt(prompt("Nhập lại phần trăm giảm giá:\nGiá trị từ 1- 100"));
-                    break;
-                case "8":
-                    amountPeople = parseInt(prompt("Nhập lại số lượng đi kèm:"));
-                    break;
-                case "9":
-                    rentDay = parseInt(prompt("Nhập lại số ngày thuê:"));
-                    break;
-                case "10":
-                    serviceType = prompt("Nhập lại loại dịch vụ:\n Villa: 500$/1 ngày \n House: 300$/1 ngày \n Room: 100$/1 ngày");
-                    break;
-                case "11":
-                    roomType = prompt("Nhập lại loại phòng:\n Vip, Business,  Normal");
-                    break;
-                default:
-                    alert("Exit");
-                    break;
-            }
-            showAmount();
+                    let aCong = email.indexOf("@");
+                    let cham = email.lastIndexOf(".");
+                    if ((aCong < 3) || (cham < aCong + 6)) {
+                        alert("Email của bạn không hợp lệ");
+                        <!-- aCong < n thì trước @ là n kí tự -->
+                        <!-- dauCham < aCong + n thì trước dấu chấm là n-1 kí tự, @ là 1 kí tự -->
+                    }
+                    else check2 = false;
+                }while (check2);
+                break;
+            case "5":
+                address = prompt("Nhập lại địa chỉ:");
+                break;
+            case "6":
+                customerType = prompt("Nhập lại loại Customer:\nDiamond, Platinum, Gold, Silver, Member");
+                break;
+            case "7":
+                discount = parseInt(prompt("Nhập lại phần trăm giảm giá:\nGiá trị từ 1- 100"));
+                break;
+            case "8":
+                amountPeople = parseInt(prompt("Nhập lại số lượng đi kèm:"));
+                break;
+            case "9":
+                rentDay = parseInt(prompt("Nhập lại số ngày thuê:"));
+                break;
+            case "10":
+                serviceType = prompt("Nhập lại loại dịch vụ:\n Villa: 500$/1 ngày \n House: 300$/1 ngày \n Room: 100$/1 ngày");
+                break;
+            case "11":
+                roomType = prompt("Nhập lại loại phòng:\n Vip, Business,  Normal");
+                break;
+            default:
+                alert("Exit");
+                break;
+        }
+        showAmount();
     }
 
     function showAmount() {

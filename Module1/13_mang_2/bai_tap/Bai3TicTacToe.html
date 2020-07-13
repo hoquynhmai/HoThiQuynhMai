@@ -2,29 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tic Tac Toe</title>
-    <style>
-        table {border-collapse: collapse}
-    </style>
+    <title>Tạo Bàn Cờ Đơn Giản</title>
 </head>
-<h3>Tic Tac Toe</h3>
 <body>
-<table>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-</table>
+<h3>Tic Tac Toe</h3>
+<p id="tictactoe" />
+<input type="button" value="Change Value" onclick="changeValue()">
+<script>
+    let b = document.getElementById("tictactoe");
+
+    let board = [];
+    let data = "";
+    for (let i = 0; i < 3; i++) {
+        board[i] = [0,0,0];
+    }
+
+    for (let i = 0; i <3; i++) {
+        data += "<br/>";
+        for (let j = 0; j <3; j++) {
+            data += board[i][j] + "&nbsp;&nbsp;";
+        }
+    }
+
+    data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
+    b.innerHTML = data;
+    function changeValue() {
+        let positionX = prompt("X: ");
+        let positionY = prompt("Y: ");
+        data = "";
+        board[positionX][positionY] = "x";
+        for (let i = 0; i <3; i++) {
+            data += "<br/>";
+            for (let j = 0; j <3; j++) {
+                data += board[i][j] + "&nbsp;&nbsp;&nbsp;&nbsp;";
+            }
+        }
+        data += "<br/><br/><input type='button' value='Change Value' onclick='changeValue()'>"
+        b.innerHTML = "<hr/>" + data;
+    }
+</script>
 </body>
 </html>

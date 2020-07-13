@@ -6,7 +6,21 @@
 </head>
 <body>
 <script>
-    let tienVay = parseFloat(prompt("Nhập số tiền cần Vay:"));
+    let tienVay = parseFloat(prompt("Nhập số tiền Vay:"));
+    let thangVay= parseInt(prompt("Nhập số  tháng vay :"));
+    let laiSuat = parseFloat(prompt("Nhập lãi suất :"));
+    let tienLai = 0;
+    let i = 1;
+    let tongTien = tienVay * laiSuat / 100 + tienVay;
+    while (i < thangVay) {
+        tongTien = tongTien * laiSuat / 100 + tongTien;
+        i++;
+    }
+    tienLai = tongTien - tienVay;
+    alert( "Tiền Vay = " + tienVay + "\n" +
+            "Số Tháng vay = " + thangVay + "\n" +
+            "Tổng tiền phải trả =" + tongTien + "\n" +
+            "Tiền lãi = " + tienLai);
 </script>
 </body>
 </html>

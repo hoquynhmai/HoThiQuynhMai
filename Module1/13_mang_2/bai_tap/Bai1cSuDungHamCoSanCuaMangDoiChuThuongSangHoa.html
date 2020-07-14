@@ -10,19 +10,19 @@
     let chuHoa = "ABCDEFGHIJKLMNOPQRSTWXYZ";
     let chuThuong = "abcdefghijklmnopqrstwxyz";
     let ketQua = [];
-    for(let x = 0; x < dayChu.length; x++)
+    for(let i = 0; i < dayChu.length; i++)
     {
-        if(chuHoa.indexOf(dayChu[x]) !== -1)
+        if(chuHoa.indexOf(dayChu[i]) !== -1)
         {
-            ketQua.push(dayChu[x].toLowerCase());
+            ketQua.push(dayChu[i].toLowerCase());
         }
-        else if(chuThuong.indexOf(dayChu[x]) !== -1)
+        else if(chuThuong.indexOf(dayChu[i]) !== -1)
         {
-            ketQua.push(dayChu[x].toUpperCase());
+            ketQua.push(dayChu[i].toUpperCase());
         }
         else
         {
-            ketQua.push(dayChu[x]);
+            ketQua.push(dayChu[i]);
         }
     }
     document.write(ketQua.join(""));

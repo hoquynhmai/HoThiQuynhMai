@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hàm Kiểm Tra Số Nguyên</title>
+</head>
+<body>
+<script>
+    let check = true;
+    let count = 0;
+
+    function kiemTraSNT(n) {
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                check = false;
+            } else {check = true};
+        }
+
+    for (let i = 0; i < 10000; i++) {
+        if (check) {
+            count += 1;
+        } else {count = 0};
+    }
+    document.write(count);
+</script>
+</body>
+</html>

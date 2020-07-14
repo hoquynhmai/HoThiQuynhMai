@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Xem 2 Chuỗi Có Giống Nhau Không</title>
+</head>
+<body>
+<script>
+    let string1 = prompt("Nhập  Chuỗi 1:");
+    let string2 = prompt("Nhập Chuỗi 2:");
+    let check = true;
+
+    if (string1.length === string2.length ) {
+        for (let i = 0; i < string1.length; i++) {
+            if (string1[i] !== string2[i]) {
+                check = false;
+                break;
+            } else {
+                check = true;
+            }
+        }
+    } else {
+        check = false;
+    }
+
+    if (check) {
+        document.write("Hai Chuỗi Giống Nhau");
+    } else {
+        document.write("Hai Chuỗi Khác Nhau");
+    }
+
+    // if (string1 === string2) {
+    //     alert ("Giống Nhau");
+    // } else alert("Khác Nhau");
+</script>
+</body>
+</html>

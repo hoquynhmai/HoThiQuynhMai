@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp Xếp Mảng Giảm Dần</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập Số Lượng Phần Tử:"));
+    let array = new Array(number);
+
+    for (let i = 0; i < array.length ; i++) {
+        array[i] = parseInt(prompt("Nhập phần tử thứ " + i));
+    }
+    document.write("Dãy số Nguyên Đã Nhập: " + array +"<br>" + "<br>");
+    let arrange = array.sort(function (a,b) {
+        return b - a;
+    });
+    document.write("Dãy Số Đã Được Sắp Xếp: " + arrange);
+</script>
+</body>
+</html>

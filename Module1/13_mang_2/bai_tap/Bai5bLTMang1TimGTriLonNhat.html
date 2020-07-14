@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Giá Trị Lớn Nhất và Vị Trí Mảng</title>
+</head>
+<body>
+<script>
+    let daySo = [-10,0,11,22,33,44,55,66,77,99];
+    let Max = daySo[0];
+    let viTriMang = 0;
+    for (let i=0; i < daySo.length ; i++) {
+        if (Max < daySo[i]) {
+            Max = daySo[i];
+            viTriMang = i;
+        }
+    }
+    document.write("Giá trị lớn nhất trong dãy là:" + Max + "<br>" + "Vị Trí Mảng Lớn Nhất là: " + viTriMang);
+</script>
+</body>
+</html>

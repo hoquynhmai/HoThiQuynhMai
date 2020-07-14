@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng Vui Faking Textarea On Typing</title>
+</head>
+<body>
+<h3>Type Anything Slowly</h3>
+<textarea cols="20" rows="10" name="ketQua" onclick="run()"></textarea>
+<script>
+    let dayChu = ["CÓ BIẾT ĐANG LÀM GÌ KHÔNG"];
+    let tach = dayChu[i].split(' ');
+    let result = " ";
+
+    function run() {
+        if (dayChu.length > 0) {
+            for (let i = 0; i <= dayChu.length; i++) {
+                result += tach;
+                document.write(result);
+            }
+        }
+        if (dayChu.length === 25 ) {
+            result = " ";
+            document.write(result);
+        }
+    }
+
+</script>
+</body>
+</html>

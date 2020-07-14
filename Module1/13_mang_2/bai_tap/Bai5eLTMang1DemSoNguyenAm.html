@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm Số Nguyên Âm có trong dãy </title>
+</head>
+<body>
+<script>
+    let numbers = [-9, 0, 5, 15, -6, 27, -99, 100, -55, 25];
+    let count = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] < 0) {
+            document.write(numbers[i] + " " + "<br>");
+            count++;
+        }
+    }
+    document.write("Tổng số Âm có trong dãy là: " + count);
+</script>
+</body>
+</html>

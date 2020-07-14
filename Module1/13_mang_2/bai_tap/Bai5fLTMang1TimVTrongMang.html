@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm V Trong Mảng</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập số lượng Mảng:"));
+    let array = new Array(number);
+    let check = false;
+    let index;
+
+    for (let i=0; i < array.length; i++){
+        array[i] = parseInt(prompt("Nhập Phần Tử " + i));
+    }
+    document.write("Dãy Số Đã Nhập là: " + array + "<br>");
+
+    let value = parseInt(prompt("Giá Trị Cần Tìm: "));
+    for (let i = 0; i < array.length; i++) {
+        if (value === array[i]) {
+            check = true;
+            index = i;
+        }
+    }
+
+    if (check) {
+        document.write("Giá Trị Cần Tìm là: " + array[index] + "<br>" + "Vị Trí Mảng: " + index);
+    } else {
+        document.write ("Giá Trị Cần Tìm Không Có Trong Mảng");
+    }
+</script>
+</body>
+</html>

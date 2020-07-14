@@ -2,10 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai4UngDungVuiFakingTextareaOnTyping.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5aLTMang1DemSoNguyenLonHon10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5bLTMang1TimGTriLonNhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5cLTMang1TinhTrungBinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5dLTMang1NhapVaDaoNguoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5eLTMang1DemSoNguyenAm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5fLTMang1TimVTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5gLTMang1XoaVTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5hLTMang1SapXapGiamDan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5iLTMang1NoiMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai6aLTMang2KhoiTaoMang2Chieu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai6bLTMang2InDaoNguocVaChuThuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai6cLTMang2DemSoTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai6dLTMang2DemSoTuTRong1Chuoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai6eLTMang2SoSanh2Chuoi.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai6fLTMang2ThayTheKiTu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_1/thuc_hanh/Bai1TaoVaGoiHam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_1/thuc_hanh/Bai2ChuyenDoiNhietDo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_1/thuc_hanh/Bai3TimGiaTriNhoNhatCuaMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai1HamKiemTraSoNguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai2ChuyenDoiGiuaFeetVaMeter.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai4eLTCauTrucVL2TinhLaiBank.html" beforeDir="false" afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai4eLTCauTrucVL2TinhLaiBank.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/12_mang_1/thuc_hanh/Bai5TaoBanCoDonGian.html" beforeDir="false" afterPath="$PROJECT_DIR$/12_mang_1/thuc_hanh/Bai5TaoBanCoDonGian.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai1cSuDungHamCoSanCuaMangDoiChuThuongSangHoa.html" beforeDir="false" afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai1cSuDungHamCoSanCuaMangDoiChuThuongSangHoa.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai3TicTacToe.html" beforeDir="false" afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai3TicTacToe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/~$seStudy_FuramaResort_Module1_final.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +119,9 @@
       <workItem from="1594430486780" duration="11194000" />
       <workItem from="1594517022263" duration="14775000" />
       <workItem from="1594552224478" duration="2539000" />
-      <workItem from="1594603303445" duration="4867000" />
+      <workItem from="1594603303445" duration="21624000" />
+      <workItem from="1594649285366" duration="1904000" />
+      <workItem from="1594689007661" duration="22507000" />
     </task>
     <servers />
   </component>

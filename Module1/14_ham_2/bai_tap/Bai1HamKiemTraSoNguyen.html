@@ -6,22 +6,26 @@
 </head>
 <body>
 <script>
-    let check = true;
-    let count = 0;
-
-    function kiemTraSNT(n) {
+    function kiemTraSoNguyenTo(n) {
+        if (n < 2) {
+            return false;
+        }
         for (let i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
-                check = false;
-            } else {check = true};
+                return false;
+            }
         }
-
-    for (let i = 0; i < 10000; i++) {
-        if (check) {
-            count += 1;
-        } else {count = 0};
+        return true;
     }
-    document.write(count);
+
+    let soCanKiemTra = 2;
+    while (count < numbers) {
+        if (kiemTraSoNguyenTo(soCanKiemTra)) {
+            document.write(soCanKiemTra + '\n');
+            count++;
+        }
+        soCanKiemTra++;
+    }
 </script>
 </body>
 </html>

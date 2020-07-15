@@ -77,7 +77,20 @@
 
         switch (choose) {
             case "1":
+                let tempName = " ";
                 fullName = prompt("Nhập lại tên:");
+                fullName = fullName.trim().toLowerCase();
+                for (let i = 0; i < fullName.length; i++) {
+                    if (fullName.charAt(i) === " " && fullName.charAt(i+1) === " ") {
+                        continue;
+                    }
+                    if (i === 0 || fullName.charAt(i-1) === " ") {
+                        tempName += fullName.charAt(i).toUpperCase();
+                        continue;
+                    }
+                    tempName += fullName.charAt(i);
+                }
+                fullName = tempName;
                 break;
             case "2":
                 let check1 = true;
@@ -94,10 +107,32 @@
                 } while (check1);
                 break;
             case "3":
-                birthDay = prompt("Nhập lại ngày sinh:\nTheo định dạng : tháng/ngày/năm");
+                let check2 = false;
+                do {
+                    birthDay = prompt("Nhập lại ngày sinh:\nTheo định dạng : ngày/tháng/năm");
+                    if (birthDay.charAt(2) === "/" && birthDay.charAt(5) === "/") {
+                        let day = birthDay.substring(0,2);
+                        let month = birthDay.substring (3,5);
+                        let year = birthDay.substring(6,10);
+                        if (!isNaN(day) && !isNaN(month) && !isNaN(year)) {
+                            day = Number.parseFloat(day);
+                            month = Number.parseFloat(month);
+                            year = Number.parseFloat(year);
+                            if (Number.isInteger(day) && Number.isInteger(month) && Number.isInteger(year)) {
+                                if (day < 32 && month < 13 && year > 1950) {
+                                    check2 = true;
+                                }
+                            }
+                        }
+                    }
+                    if (!check2) {
+                        alert ("Sai Định Dạng");
+                    }
+                } while (!check2);
+                check2=false;
                 break;
             case "4":
-                let check2 = true;
+                let check3 = true;
                 do {
                     email = prompt("Nhập lại Email:");
                     let aCong = email.indexOf("@");
@@ -105,31 +140,105 @@
                     if ((aCong < 3) || (cham < aCong + 6)) {
                         alert("Email của bạn không hợp lệ");
                         <!-- aCong < n thì trước @ là n kí tự -->
-                        <!-- dauCham < aCong + n thì trước dấu chấm là n-1 kí tự, @ là 1 kí tự -->
+                        <!-- cham < aCong + n thì trước dấu chấm là n-1 kí tự, @ là 1 kí tự -->
                     }
-                    else check2 = false;
-                }while (check2);
+                    else check3 = false;
+                }while (check3);
                 break;
             case "5":
+                let tempAddress = " ";
                 address = prompt("Nhập lại địa chỉ:");
+                address =  address.trim().toLowerCase();
+                for (let i = 0; i <  address.length; i++) {
+                    if (address.charAt(i) === " " && address.charAt(i+1) === " ") {
+                        continue;
+                    }
+                    if (i === 0 || address.charAt(i-1) === " ") {
+                        tempAddress += address.charAt(i).toUpperCase();
+                        continue;
+                    }
+                    tempAddress += address.charAt(i);
+                }
+                address = tempAddress;
                 break;
             case "6":
+                let tempCustomerType = " ";
                 customerType = prompt("Nhập lại loại Customer:\nDiamond, Platinum, Gold, Silver, Member");
+                customerType =  customerType.trim().toLowerCase();
+                for (let i = 0; i <  customerType.length; i++) {
+                    if (customerType.charAt(i) === " " && customerType.charAt(i+1) === " ") {
+                        continue;
+                    }
+                    if (i === 0 || customerType.charAt(i-1) === " ") {
+                        tempCustomerType += customerType.charAt(i).toUpperCase();
+                        continue;
+                    }
+                    tempCustomerType += customerType.charAt(i);
+                }
+                customerType = tempCustomerType;
                 break;
             case "7":
                 discount = parseInt(prompt("Nhập lại phần trăm giảm giá:\nGiá trị từ 1- 100"));
                 break;
             case "8":
-                amountPeople = parseInt(prompt("Nhập lại số lượng đi kèm:"));
+                do { amountPeople = parseInt(prompt("Nhập lại số lượng đi kèm:"));
+                    if (!isNaN(amountPeople)) {
+                        amountPeople = Number.parseFloat(amountPeople);
+                        if (Number.isInteger(amountPeople && amountPeople > 0)) {
+                            check = true;
+                        }
+                    }
+                    if (!check) {
+                        alert("Kiểm tra lại số Người Đi Kèm");
+                    }
+                } while (!check);
+                check = false;
                 break;
             case "9":
-                rentDay = parseInt(prompt("Nhập lại số ngày thuê:"));
+                do {rentDay = parseInt(prompt("Nhập lại số ngày thuê:"));
+                if (!isNaN(rentDay)) {
+                    rentDay = Number.parseFloat(rentDay);
+                    if (Number.isInteger(rentDay && rentDay > 0)) {
+                        check = true;
+                    }
+                }
+                if (!check) {
+                    alert("Kiểm tra lại số ngày Thuê");
+                }
+                } while (!check);
+                check = false;
                 break;
             case "10":
+                let tempServiceType = " ";
                 serviceType = prompt("Nhập lại loại dịch vụ:\n Villa: 500$/1 ngày \n House: 300$/1 ngày \n Room: 100$/1 ngày");
+                serviceType =  serviceType.trim().toLowerCase();
+                for (let i = 0; i <  serviceType.length; i++) {
+                    if (serviceType.charAt(i) === " " && serviceType.charAt(i+1) === " ") {
+                        continue;
+                    }
+                    if (i === 0 || serviceType.charAt(i-1) === " ") {
+                        tempServiceType += serviceType.charAt(i).toUpperCase();
+                        continue;
+                    }
+                    tempServiceType += serviceType.charAt(i);
+                }
+                serviceType = tempServiceType;
                 break;
             case "11":
+                let tempRoomType = " ";
                 roomType = prompt("Nhập lại loại phòng:\n Vip, Business,  Normal");
+                roomType =  roomType.trim().toLowerCase();
+                for (let i = 0; i <  roomType.length; i++) {
+                    if (roomType.charAt(i) === " " && roomType.charAt(i+1) === " ") {
+                        continue;
+                    }
+                    if (i === 0 || roomType.charAt(i-1) === " ") {
+                        tempRoomType += roomType.charAt(i).toUpperCase();
+                        continue;
+                    }
+                    tempRoomType += roomType.charAt(i);
+                }
+                roomType = tempRoomType;
                 break;
             default:
                 alert("Exit");

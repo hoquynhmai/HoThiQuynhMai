@@ -6,11 +6,11 @@
 </head>
 <body>
 <h3>Type Anything Slowly</h3>
-<textarea cols="20" rows="10" name="ketQua" onclick="run()"></textarea>
+<textarea id="result" cols="20" rows="10" name="ketQua"  onkeypress="run()"></textarea>
 <script>
-    let dayChu = ["CÓ BIẾT ĐANG LÀM GÌ KHÔNG"];
-    let tach = dayChu[i].split(' ');
-    let result = " ";
+    let dayChu = "CÓ BIẾT ĐANG LÀM GÌ KHÔNG";
+    let tach = dayChu.split(' ');
+    let result = document.getElementById('result');
 
     function run() {
         if (dayChu.length > 0) {
@@ -24,7 +24,7 @@
             document.write(result);
         }
     }
-
+<!-- Chưa được -->
 </script>
 </body>
 </html>

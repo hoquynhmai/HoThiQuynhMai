@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo Ngược Mảng Số Nguyên</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập Số Lượng Mảng:"));
+    let array = new Array(number);
+
+    for (let i = 0; i < array.length; i++) {
+        array[i] = parseInt(prompt("Nhập Phần Tử Thứ " + i));
+    }
+    document.write("Mảng Cũ: " + array + "<br>");
+
+    function daoNguoc() {
+        return array.reverse(array);
+    }
+    let result = daoNguoc(array);
+    document.write("Mảng Mới:" + result);
+</script>
+</body>
+</html>

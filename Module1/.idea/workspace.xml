@@ -2,14 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai3LuyenTapTaoVaSuDungHam1/Bai1TaoHamAlertMessage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai3LuyenTapTaoVaSuDungHam1/Bai2TaoHamNhanDoiSoDangSo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai3LuyenTapTaoVaSuDungHam1/Bai3NhanVao2ThamSoVaHienThiThongBao.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai3LuyenTapTaoVaSuDungHam1/Bai4ThemHamAlertDeHienThiKetQua.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai3LuyenTapTaoVaSuDungHam1/Bai5TimGiaTriTuongUng.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai1GoiHamTinhBinhPhuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai2TinhDienTichVaChuViHinhTron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai3TinhGiaiThuaCua1SoNguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai4KiemTraKyTuNhapVaoLaSoKhong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai5TimGiaTriNhoNhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai6KiemTraSoNguyenDuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai7DoiCho2SoNguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai8DaoNguocMangSoNguyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai9KiemTraKyTuCoNamTrongMangKhong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai5UngDungQuanLySPSuDungHam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai6KiemTraTuDoiXung.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai1XayDungLopDate.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai2XayDungLopHinhTron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai3FunnyCircle/VD1VeHinhTronKichThuocCoDinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai3FunnyCircle/VD2HinhTronVoiBanKinhNgauNhien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai3FunnyCircle/VD3VeHinhTronVoiMauNgauNhien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai3FunnyCircle/VD4VeHinhTronOViTriNgauNhien.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai2HienThiSoNguyenToDauTien.html" beforeDir="false" afterPath="$PROJECT_DIR$/11_cau_truc_lap_2/bai_tap/Bai2HienThiSoNguyenToDauTien.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai4UngDungVuiFakingTextareaOnTyping.html" beforeDir="false" afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai4UngDungVuiFakingTextareaOnTyping.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_ham_1/thuc_hanh/Bai1TaoVaGoiHam.html" beforeDir="false" afterPath="$PROJECT_DIR$/14_ham_1/thuc_hanh/Bai1TaoVaGoiHam.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/12_mang_1/thuc_hanh/Bai3TimGiaTriTrongMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/12_mang_1/thuc_hanh/Bai3TimGiaTriTrongMang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5gLTMang1XoaVTrongMang.html" beforeDir="false" afterPath="$PROJECT_DIR$/13_mang_2/bai_tap/Bai5gLTMang1XoaVTrongMang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai1HamKiemTraSoNguyen.html" beforeDir="false" afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai1HamKiemTraSoNguyen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau3.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai3LuyenTapTaoVaSuDungHam1/Bai1TaoHamAlertMessage.html" beforeDir="false" afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai3LuyenTapTaoVaSuDungHam1/Bai1TaoHamAlertMessage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/~$seStudy_FuramaResort_Module1_final.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +56,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/yeuCau3.html" />
+    <property name="last_opened_file_path" value="E:/sanPham06.html" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -106,7 +125,9 @@
       <workItem from="1594649285366" duration="1904000" />
       <workItem from="1594689007661" duration="22811000" />
       <workItem from="1594736915396" duration="999000" />
-      <workItem from="1594776019883" duration="5817000" />
+      <workItem from="1594776019883" duration="16433000" />
+      <workItem from="1594815512729" duration="13129000" />
+      <workItem from="1594861712537" duration="18165000" />
     </task>
     <servers />
   </component>
@@ -122,10 +143,42 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="324" y="132" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593679760824" />
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1594530557791">
+    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1594874890844">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594530557791" />
+    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594874890844" />
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1594809506443">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594809506443" />
+    <state width="1345" height="179" key="GridCell.Tab.0.center" timestamp="1594809506443">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1594809506443" />
+    <state width="1345" height="179" key="GridCell.Tab.0.left" timestamp="1594809506442">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1594809506442" />
+    <state width="1345" height="179" key="GridCell.Tab.0.right" timestamp="1594809506443">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1594809506443" />
+    <state width="1345" height="179" key="GridCell.Tab.1.bottom" timestamp="1594809506444">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1594809506444" />
+    <state width="1345" height="179" key="GridCell.Tab.1.center" timestamp="1594809506443">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1594809506443" />
+    <state width="1345" height="179" key="GridCell.Tab.1.left" timestamp="1594809506443">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1594809506443" />
+    <state width="1345" height="179" key="GridCell.Tab.1.right" timestamp="1594809506443">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1345" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594809506443" />
     <state x="342" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594000951562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

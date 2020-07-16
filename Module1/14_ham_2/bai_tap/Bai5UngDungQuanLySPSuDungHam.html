@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng Quản Lý Sản Phẩm Sử Dụng Hàm</title>
+</head>
+<body>
+<form>
+    <h3 style="margin-left: 38px">Thêm Sản Phẩm</h3>
+    <input id="newSP" type="text" placeholder="Nhập Tên Sản Phẩm">
+    <button type="button" value="Thêm" onclick="themSP()">Thêm</button>
+    <strong><p id="soLuongSP"></p></strong>
+    <p id="hienThiSP"></p>
+</form>
+<script>
+    let array = ["Sách", "Vở", "Bút Đỏ", "Bút Xanh", "Bút Chì", "Bút Xóa", "Thước", "Tẩy", "Kéo", "Hộp Bút"];
+
+    menu();
+
+    function menu() {
+        let menu = parseInt(prompt("Chọn: " + "\n" + " " +
+            "1.Hiển Thị" + "\n" + " " +
+            "2.Sửa Sản Phẩm" + "\n" + " " +
+            "3.Xóa Sản Phẩm" + "\n" + " " +
+            "4.Thêm Sản Phẩm" + "\n" + " " +
+            "5.Exit" + "\n" + " "));
+        switch (menu) {
+            case 1:
+                hienThiSP();
+                break;
+            case 2:
+                suaSP();
+                break;
+            case 3:
+                xoaSP();
+                break;
+            case 4:
+                themSP();
+                break;
+            case 5:
+                break;
+        }
+
+    }
+
+    function hienThiSP() {
+        let productTable = '<table border="1">';
+        productTable += '<tr>';
+        productTable += '<th>STT</th>';
+        productTable += '<th>Tên Sản Phẩm</th>';
+        productTable += '<th>Sửa</th>';
+        productTable += '<th>Xóa</th>';
+        productTable += '</tr>';
+
+        for (let i = 0; i < array.length; i++) {
+            productTable += '<tr>';
+            productTable += '<td style="text-align: center">' + (i) + '</td>';
+            productTable += '<td>' + array[i] + '</td>';
+            productTable += '<td><button type="button" value="Sửa" onclick="suaSP()">Sửa</button></td>';
+            productTable += '<td><button type="button" value="Xóa" onclick="xoaSP()">Xóa</button></td>';
+            productTable += '</tr>';
+        }
+        productTable += '</table>';
+        document.getElementById("hienThiSP").innerHTML = productTable;
+        document.getElementById("soLuongSP").innerHTML = "Số lượng Sản Phẩm: " + array.length;
+    }
+
+    function themSP() {
+        let newSP = prompt("Nhập Sản Phẩm Mới: ");
+         array.push(newSP);
+         document.getElementById("newSP").value = " ";
+        hienThiSP();
+    }
+
+    function xoaSP() {
+        let xoaSP = parseInt(prompt("Nhập Sản Phẩm Muốn Xóa: " + "\n" + " " +
+            "0.Sách" + "\n" + " " +
+            "1.Vở" + "\n" + " " +
+            "2.Bút Đỏ" + "\n" + " " +
+            "3.Bút Xanh" + "\n" + " " +
+            "4.Bút Chì" + "\n" + " " +
+            "5.Bút Xóa" + "\n" + " " +
+            "6.Thước" + "\n" + " " +
+            "7.Tẩy" + "\n" + " " +
+            "8.Kéo" + "\n" + " " +
+            "9.Hộp Bút" + "\n" + " "));
+        confirm("Bạn có chắc chắn muốn Xóa Không?");
+         array.splice(xoaSP, 1);
+        hienThiSP();
+    }
+
+    function suaSP() {
+        let chon = parseInt(prompt("Nhập sản phẩm muốn sửa: " + "\n" +
+            "0.Sách" + "\n" +
+            "1.Vở" + "\n" + " " +
+            "2.Bút Đỏ" + "\n" + " " +
+            "3.Bút Xanh" + "\n" + " " +
+            "4.Bút Chì" + "\n" + " " +
+            "5.Bút Xóa" + "\n" + " " +
+            "6.Thước" + "\n" + " " +
+            "7.Tẩy" + "\n" + " " +
+            "8.Kéo" + "\n" + " " +
+            "9.Hộp Bút" + "\n" + " "));
+
+        switch (chon) {
+            case 0:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+            case 1:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+            case 2:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+            case 3:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+            case 4:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+            case 5:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+            case 6:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+            case 7:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+            case 8:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+            case 9:
+                array[chon] = prompt("Sửa Tên SP:");
+                break;
+        }
+        hienThiSP();
+    }
+</script>
+</body>
+</html>

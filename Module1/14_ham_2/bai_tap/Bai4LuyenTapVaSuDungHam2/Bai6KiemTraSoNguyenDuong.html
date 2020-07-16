@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Xem Có Phải Số Nguyên Dương Không</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập Số Nguyên:"));
+
+    function soNguyenDuong() {
+        if (number >= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    let result = soNguyenDuong(number);
+    alert(result);
+</script>
+</body>
+</html>

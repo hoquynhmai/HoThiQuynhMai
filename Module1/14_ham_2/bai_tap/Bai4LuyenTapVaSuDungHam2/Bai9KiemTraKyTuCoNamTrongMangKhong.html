@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Kí Tự Có Nằm Trong mảng Không</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập Số Lượng Mảng:"));
+    let array = new Array(number);
+    let count = 0;
+
+    for (let i = 0; i < array.length; i++) {
+        array[i] = prompt("Nhập Phần Tử Thứ " + i);
+    }
+
+    let value = prompt("Nhập Giá Trị Cần Tìm:");
+    function timSo(array) {
+        for (let i = 0; i < array.length; i++) {
+            if (value === array[i]) {
+                count += 1;
+            }
+        }
+       return "Mảng đã nhập: " + array + "\n" + "Số cần tìm: " + value + " có trong mảng" + "\n" + "Hiển Thị " + count + " lần";
+    }
+    let result = timSo(array);
+    alert(result);
+</script>
+</body>
+</html>

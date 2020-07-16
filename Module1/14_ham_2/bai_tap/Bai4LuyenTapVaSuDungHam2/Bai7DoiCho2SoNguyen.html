@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi Chỗ 2 Số Nguyên</title>
+</head>
+<body>
+<script>
+    let num1 = parseInt(prompt("Nhập 1 Số Bất Kỳ"));
+    let num2 = parseInt(prompt("Nhập 1 Số Bất Kỳ"));
+    let result ;
+    let tempnum;
+
+    function doiCho() {
+        tempnum = num1;
+        num1 = num2;
+        num2 = tempnum;
+        return alert("Số Thứ Nhất: " + num1 +"\n" + "Số Thứ 2: " + num2);
+    }
+    doiCho();
+</script>
+</body>
+</html>

@@ -6,25 +6,23 @@
 </head>
 <body>
 <script>
-    function kiemTraSoNguyenTo(n) {
-        if (n < 2) {
-            return false;
-        }
-        for (let i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) {
+    let i = 2;
+    let snt = 2;
+
+    function kiemTraSoNguyenTo(number) {
+        for (i; i <= Math.sqrt(number); i++) {
+            if (number % i == 0) {
                 return false;
             }
         }
         return true;
     }
 
-    let soCanKiemTra = 2;
-    while (count < numbers) {
-        if (kiemTraSoNguyenTo(soCanKiemTra)) {
-            document.write(soCanKiemTra + '\n');
-            count++;
+    <!-- snt là số Cầm Kiểm Tra -->
+    for (snt; snt < 10000; snt++) {
+        if (kiemTraSoNguyenTo(snt)) {
+            document.write(snt + "<br>");
         }
-        soCanKiemTra++;
     }
 </script>
 </body>

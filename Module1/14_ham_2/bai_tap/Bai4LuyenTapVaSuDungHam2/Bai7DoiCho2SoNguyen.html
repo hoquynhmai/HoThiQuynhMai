@@ -8,16 +8,18 @@
 <script>
     let num1 = parseInt(prompt("Nhập 1 Số Bất Kỳ"));
     let num2 = parseInt(prompt("Nhập 1 Số Bất Kỳ"));
-    let result ;
+    let result;
     let tempnum;
+    doiCho(num1, num2);
 
-    function doiCho() {
+    function doiCho(num1, num2) {
         tempnum = num1;
         num1 = num2;
         num2 = tempnum;
-        return alert("Số Thứ Nhất: " + num1 +"\n" + "Số Thứ 2: " + num2);
+        return result = "Số Thứ Nhất: " + num1 + "\n" + "Số Thứ 2: " + num2;
     }
-    doiCho();
+
+    alert(result);
 </script>
 </body>
 </html>

@@ -18,11 +18,11 @@
     let service = prompt("Loại dịch vụ: ");
     let room = prompt("Loại phòng: ");
 
-    if (service == "Villa") {
+    if (service === "Villa") {
         money =  500 * rentDay * (1 - discount / 100);
     }
     else {
-        if (service == "House")
+        if (service === "House")
             money =  300 * rentDay * (1-discount/100);
         else money =  100 * rentDay * (1-discount/100);
     }

@@ -6,39 +6,21 @@
 </head>
 <body>
 <script>
-    let MyDate = function (day, month, year) {
-        this.day = day;
-        this.month = month;
-        this.year = year;
-    };
-    this.getDay = function () {
-        return this.day;
+
+    class date {
+        constructor(date, month, year) {
+            this.day = date;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDayMonthYear() {
+            document.write("Ngày " + this.day + "<br>" + "Tháng " + this.month + "<br>" + "Năm " + this.year);
+        }
     }
-    this.getMonth = function () {
-        return this.month;
-    }
-    this.getYear = function () {
-        return this.year;
-    // }
-    // this.setDay = function (day) {
-    //     this.day = day;
-    // }
-    // this.setMonth = function (month) {
-    //     this.month = month;
-    // }
-    // this.setYear = function (year) {
-    //     this.year = year;
-    // }
-    let date = new MyDate(2, 2, 2007);
-    let day = date.getDay();
-    let month = date.getMonth();
-    let year = date.getYear();
-    alert(day + "/" + month + "/" + year);
-    // date.setDay(10);
-    // date.setMonth(10);
-    // date.setYear(2019);
-    // alert(day + "/" + month + "/" + year);
-    <!--Chưa được -->
+
+    let result = new date(2, 2, 2020);
+    result.getDayMonthYear();
 </script>
 </body>
 </html>

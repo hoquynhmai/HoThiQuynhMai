@@ -6,23 +6,19 @@
 </head>
 <body>
 <script>
-    let Circle = function(radius) {
-        this.radius = radius;
-    };
+    class hinhTron {
+        constructor(banKinh) {
+            this.radius = banKinh;
+        }
+        dienTich(){
+            document.write("Bán Kính: " + this.radius + "<br>" + "Chu Vi: " + 2*Math.PI*this.radius + "<br>" + "Diện Tích: " + Math.PI * this.radius * this.radius + "<br>" + "<br>");
+        }
+    }
+    let hinhTron1 = new hinhTron(2);
+    let hinhTron2 = new hinhTron(5);
+    hinhTron1.dienTich();
+    hinhTron2.dienTich();
 
-    this.getRadius = function() {
-        return radius;
-    };
-
-    this.getArea = function() {
-        return Math.PI * radius * radius;
-    };
-
-    let circle = new Circle(2);
-    let radius = circle.getRadius();
-
-    let area = circle.getArea();
-    alert("radius: " + radius + "; area: " + area);
 </script>
 </body>
 </html>

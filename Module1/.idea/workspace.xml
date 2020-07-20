@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/bai_tap/Bai1XayDungMoTaHinhChuNhat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/bai_tap/Bai2XayDungLopMoTaTemperature.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/bai_tap/Bai3XayDungLopMoTaDienThoai.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/caseStudy1/yeuCau4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai1GameDonGianDiChuyenDoiTuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai2PhatTrienUngDungMoPhongCauChuyenAdamVaEva.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/thuc_hanh/Bai1XayDungMoPhongHoatDongCuaDenPin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudy1/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudy1/yeuCau5.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai7DoiCho2SoNguyen.html" beforeDir="false" afterPath="$PROJECT_DIR$/14_ham_2/bai_tap/Bai4LuyenTapVaSuDungHam2/Bai7DoiCho2SoNguyen.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai1XayDungLopDate.html" beforeDir="false" afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai1XayDungLopDate.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai2XayDungLopHinhTron.html" beforeDir="false" afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/thuc_hanh/Bai2XayDungLopHinhTron.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/bai_tap/Bai3XayDungLopMoTaDienThoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/bai_tap/Bai3XayDungLopMoTaDienThoai.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau4.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau4.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/sanPham06.html" />
+    <property name="last_opened_file_path" value="E:/thuat_toan" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -112,7 +111,14 @@
       <workItem from="1594776019883" duration="16433000" />
       <workItem from="1594815512729" duration="13129000" />
       <workItem from="1594861712537" duration="19719000" />
-      <workItem from="1594960344548" duration="12142000" />
+      <workItem from="1594960344548" duration="12788000" />
+      <workItem from="1595038199338" duration="7050000" />
+      <workItem from="1595050664736" duration="18000" />
+      <workItem from="1595051038596" duration="963000" />
+      <workItem from="1595065389062" duration="551000" />
+      <workItem from="1595125911136" duration="63000" />
+      <workItem from="1595211159364" duration="8873000" />
+      <workItem from="1595260602228" duration="3956000" />
     </task>
     <servers />
   </component>
@@ -128,10 +134,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="324" y="132" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593679760824" />
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1594874890844">
+    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1595217791471">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1594874890844" />
+    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595217791471" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1594809506443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

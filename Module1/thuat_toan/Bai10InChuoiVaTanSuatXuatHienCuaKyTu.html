@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In Chuỗi, Đếm Số Ký Tự Và Tần Suất Xuất Hiện Của Ký Tự</title>
+</head>
+<body>
+<script>
+    let string = prompt("Nhập 1 chuỗi bất kỳ: ");
+    let newString = string.replace(/\s+/g, ' ');
+    alert(newString);
+    let result = "";
+    // "Đây Là Chương Trình Đếm Số Từ Trong Một Chuỗi";
+    let count = 0;
+    for (let i = 0; i < newString.length; i++) {
+        if (newString[i] === " ") {
+            count += 1;
+            result += newString[i] + "<br>";
+        } else {
+            result += newString[i];
+        }
+    }
+    document.write(result);
+    document.write("<br>" + "Số từ có trong chuỗi: " + (count + 1));
+</script>
+</body>
+</html>

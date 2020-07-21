@@ -6,65 +6,73 @@
 </head>
 <body>
 <script>
-    let Battery = function () {
+    class Batery {
+        constructor(engery) {
+            this.engery = engery;
+        }
 
-        this.setEnergy = function (energy) {
-            this.energy = energy;
-        };
+        setEngery(engery) {
+            this.engery = engery;
+        }
 
-        this.getEnergy = function () {
-            return this.energy;
-        };
+        getEngery() {
+            return this.engery;
+        }
 
-        this.decreaseEnergy = function () {
-            if (this.energy > 0) {
-                this.energy--;
+        deascreaseEngery() {
+            this.engery--;
+        }
+    }
+
+    class FlashLamp {
+        constructor(status, batery) {
+            this.status = status;
+            this.batery = batery;
+        }
+
+        setBatery(batery) {
+            this.batery = batery;
+        }
+
+        getBateryInfo() {
+            return this.batery.getEngery();
+        }
+
+        light() {
+            if (this.status) {
+                alert ("Lighting");
+            } else {
+                alert ("Not lighting");
             }
         }
-    };
-    let FlashLamp = function () {
-
-        this.setBattery = function (battery) {
-            this.battery = battery;
-        };
-
-        this.getBatteryInfo = function () {
-            return this.battery.getEnergy();
-        };
-
-        this.light = function () {
-            if(this.status){
-                alert("Lighting");
+        turnOn() {
+            if (this.batery.engery > 0) {
+                this.status = true;
+                this.batery.deascreaseEngery();
             } else {
-                alert("Not lighting");
+                alert ("Đã hết pin");
             }
-        };
-
-        this.turnOn = function () {
-            this.status = true;
-        };
-
-        this.turnOff = function () {
+        }
+        turnOff() {
             this.status = false;
         }
-    };
-    let battery = new Battery();
-    battery.setEnergy(10);
+    }
+    let batery = new Batery(10);
+    let fashLamp = new FlashLamp(true,batery);
 
-    let flashLamp = new FlashLamp();
-    flashLamp.setBattery(battery);
+    fashLamp.getBateryInfo();
+    fashLamp.light();
 
-    document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
-    flashLamp.light();
+    alert("Turn On");
+    fashLamp.turnOn();
+    fashLamp.light();
+    alert(fashLamp.getBateryInfo());
 
-    document.write("Turn on<br/>");
-    flashLamp.turnOn();
-    flashLamp.light();
-    document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
-
-    document.write("Turn off<br/>");
-    flashLamp.turnOff();
-    flashLamp.light();
+    alert("Turn Off");
+    fashLamp.turnOff();
+    fashLamp.light();
+    alert(fashLamp.getBateryInfo());
+    <!-- Chưa được -->
 </script>
 </body>
 </html>

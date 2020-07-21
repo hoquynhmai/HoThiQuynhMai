@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai1GameDonGianDiChuyenDoiTuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai2PhatTrienUngDungMoPhongCauChuyenAdamVaEva.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/thuc_hanh/Bai1XayDungMoPhongHoatDongCuaDenPin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/caseStudy1/demo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/caseStudy1/yeuCau5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai3PhatTrienTuongTacGiuaCongTacVaBongDen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai4PhatTrienUngDungMMeoBatChuot4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuat_toan/Bai11TaoMangTinhTongTimSNTrongMang.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/bai_tap/Bai3XayDungLopMoTaDienThoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/bai_tap/Bai3XayDungLopMoTaDienThoai.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/CaseStudy_FuramaResort_Module1_final.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau4.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai1GameDonGianDiChuyenDoiTuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai1GameDonGianDiChuyenDoiTuong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/thuc_hanh/Bai1XayDungMoPhongHoatDongCuaDenPin.html" beforeDir="false" afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/thuc_hanh/Bai1XayDungMoPhongHoatDongCuaDenPin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/thuat_toan/demo.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +44,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -119,6 +118,8 @@
       <workItem from="1595125911136" duration="63000" />
       <workItem from="1595211159364" duration="8873000" />
       <workItem from="1595260602228" duration="3956000" />
+      <workItem from="1595294349322" duration="19946000" />
+      <workItem from="1595332080963" duration="3784000" />
     </task>
     <servers />
   </component>
@@ -170,6 +171,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1345" height="179" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1594809506443" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1595319420182">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1595319420182" />
     <state x="342" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1594000951562">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

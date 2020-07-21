@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Mảng Số Nguyên, Tính Tổng, Tìm Số Nguyên Trong Mảng</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập số lượng mảng:"));
+    let array = new Array(number);
+    let total = 0;
+    let value;
+    let index;
+    let check = false;
+
+    for (let i = 0; i < array.length; i++) {
+        array[i] = parseInt(prompt("Nhập phần tử thứ " + i));
+    }
+    document.write("Mảng đã nhập: " + array);
+
+    // Tính Tổng các số Nguyên Dương Lẻ
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] > 0 && array[i] % 2 !== 0) {
+            total += array[i];
+        }
+    }
+    document.write("<br>" + "Tổng các số lẻ có trong mảng: " + total);
+
+    // Tìm phần tử trong mảng và hiển thị ra vị trí đầu tiên tìm thấy của phần tử
+    value = parseInt(prompt("Nhập số cần tìm: "));
+    for (let i = 0; i < array.length; i++) {
+        if (value === array[i]) {
+            check = true;
+            index = i;
+            break;
+        }
+    }
+    if (check) {
+        document.write("<br>" + "Giá Trị Cần Tìm là: " + array[index] + "<br>" + "Nằm ở vị trí " + index + " trong mảng");
+    } else {
+        document.write("<br>" + "Giá Trị Cần Tìm Không Có Trong Mảng");
+    }
+
+    //Sắp xếp mảng theo thứ tự tăng dần
+    array.sort(function (a, b) {
+        return a - b;
+    });
+    document.write("<br>" + "Thứ tự Tăng Dần Trong Mảng: " + array);
+
+    //Chèn thêm phần tử vào mảng, vẫn đảm bảo được sắp xếp theo thứ tự tăng dần
+    let chen = parseInt(prompt("Số cần chèn: "));
+    array.push(chen);
+    array.sort(function (a, b) {
+        return a - b;
+    });
+    document.write("<br>" + "Số cần chèn: " + chen + "<br>" + "Mảng mới sau khi chèn: " + array);
+    <!-- Vẫn cảm thấy ngáo , chèn nhưng ko thay đổi thứ tự tăng dần-->
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính Tổng Và Tích Số Nguyên Dương Cho Trước</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập số lượng mảng:"));
+    let array = new Array (number);
+    let total = 0;
+    let mul = 1;
+
+    for (let i = 0; i< array.length; i++) {
+        array[i] = parseInt(prompt("Nhập phần tử thứ " + i));
+    }
+    document.write("Mảng đã nhập: " + array);
+
+    for (let i = 0 ; i < array.length; i++) {
+        total += array[i];
+        mul *= array[i];
+    }
+    document.write("<br>" + "Tổng: " + total + "<br>" + "Tích: " + mul);
+
+
+
+
+    <!-- Cách 2 -->
+    // let number = prompt("Nhập số lượng mảng:");
+    // let total = 0;
+    // let mul = 1;
+    // document.write (number.split(""));
+    // for (let i = 0; i< number.length; i++) {
+    //     total += parseInt(number[i]);
+    //     mul *= number[i];
+    // }
+    // document.write("<br>" + "Tổng: " + total + "<br>" + "Tích: " + mul);
+
+</script>
+</body>
+</html>

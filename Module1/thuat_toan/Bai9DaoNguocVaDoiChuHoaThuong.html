@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo Ngược và Đổi Chữ Hoa Thường</title>
+</head>
+<body>
+<script>
+    let string = prompt("Nhập 1 chuỗi ký tự bất kỳ: ");
+    let cat = string.split("");
+    let daoNguoc = cat.reverse();
+    let chuHoa = string.toUpperCase();
+    let chuThuong = string.toLowerCase();
+    let ketQua = [];
+    for(let i = 0; i < string.length; i++)
+    {
+        if(chuHoa.indexOf(string[i]) !== -1)
+        {
+            ketQua.push(string[i].toLowerCase());
+        }
+        else if(chuThuong.indexOf(string[i]) !== -1)
+        {
+            ketQua.push(string[i].toUpperCase());
+        }
+        else
+        {
+            ketQua.push(string[i]);
+        }
+    }
+   document.write("Chuỗi đã nhập: " + string + "<br>" + "Chuỗi đảo ngược: " + daoNguoc + "<br>" + "<br>" + "Chữ Hoa: " + chuHoa + "<br>" + "<br>" + "Chữ Thường: " + chuThuong + "<br>" + "<br>" + "Kết Quả: " + ketQua.join(""));
+</script>
+</body>
+</html>

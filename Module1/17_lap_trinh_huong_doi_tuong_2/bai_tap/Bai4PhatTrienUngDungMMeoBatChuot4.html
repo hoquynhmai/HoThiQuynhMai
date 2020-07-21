@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng Dụng Mô Phỏng Mèo Bắt Chuột Và Ăn</title>
+</head>
+<body>
+<script>
+    class Rat {
+        constructor(name, weight, speed, live) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+            this.live = live;
+        }
+
+        sound() {
+            alert("Chít Chít");
+        }
+    }
+
+    class Cat {
+        constructor(name, weight, speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+        }
+
+        sound() {
+            alert("Meo Meo");
+        }
+
+        catchRat(rat) {
+            if (this.speed > rat.speed) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        eatRat(rat) {
+            if (this.catchRat(rat) && rat.live === 1) {
+                this.weight += rat.weight;
+            }
+        }
+    }
+
+    let cat = new Cat("Mèo", 0, 50);
+    let count = 0;
+    for (let i = 0; i < 50; i++) {
+        let rat = new Rat(("Chuột" + i), 10, 20, Math.round(Math.random()));
+        if (rat.live === 1) {
+            cat.eatRat(rat);
+            count++;
+        }
+    }
+    document.write("Số chuột sống: " + count + "<br>");
+    document.write("Trọng lượng của mèo sau khi ăn chuột: " + cat.weight);
+
+
+    // let cat = new Cat("Mèo", 30, 50);
+    // rat.sound();
+    //
+    // cat.eatRat(rat);
+    // cat.sound();
+    // alert(cat.weight);
+</script>
+</body>
+</html>

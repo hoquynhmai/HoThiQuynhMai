@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phân Số</title>
+</head>
+<body>
+<script>
+    class PhanSo {
+        constructor(tuSo, mauSo) {
+            this.tuSo = tuSo;
+            this.mauSo = mauSo;
+        }
+
+        getPhanSo() {
+            return this.tuSo + "/" + this.mauSo;
+        }
+
+        cong(phanSo1, phanSo2) {
+            this.tuSo = phanSo1.tuSo * phanSo2.mauSo + phanSo2.tuSo * phanSo1.mauSo;
+            this.mauSo = phanSo1.mauSo * phanSo2.mauSo;
+            return this.tuSo + "/" + this.mauSo;
+        }
+
+        tru(phanSo1, phanSo2) {
+            this.tuSo = phanSo1.tuSo * phanSo2.mauSo - phanSo2.tuSo * phanSo1.mauSo;
+            this.mauSo = phanSo1.mauSo * phanSo2.mauSo;
+            return result.tuSo + "/" + result.mauSo;
+        }
+
+        nhan(phanSo1, phanSo2) {
+            this.tuSo = phanSo1.tuSo * phanSo2.tuSo;
+            this.mauSo = phanSo1.mauSo * phanSo2.mauSo;
+            return result.tuSo + "/" + result.mauSo;
+        }
+
+        chia(phanSo1, phanSo2) {
+            this.tuSo = phanSo1.tuSo * phanSo2.mauSo;
+            this.mauSo = phanSo1.mauSo * phanSo2.tuSo;
+            return result.tuSo + "/" + result.mauSo;
+        }
+    }
+
+    let phanSo1 = new PhanSo(2, 3);
+    document.write("Phân Số 1: " + phanSo1.getPhanSo() + '<br>');
+    let phanSo2 = new PhanSo(3, 4);
+    document.write("Phân Số 2: " + phanSo2.getPhanSo() + '<br>');
+    let result = new PhanSo();
+    document.write("Tổng: " + result.cong(phanSo1, phanSo2) + "<br>");
+    document.write("Hiệu: " + result.tru(phanSo1, phanSo2) + "<br>");
+    document.write("Tích: " + result.nhan(phanSo1, phanSo2) + "<br>");
+    document.write("Thương: " +result.chia(phanSo1, phanSo2) + "<br>");
+</script>
+</body>
+</html>

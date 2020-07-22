@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai3PhatTrienTuongTacGiuaCongTacVaBongDen.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai4PhatTrienUngDungMMeoBatChuot4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thuat_toan/Bai11TaoMangTinhTongTimSNTrongMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai1PhanSo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai2XayDungLopThiSinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai3XayDungChuongTrinhQuanLyDSSinhVien.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/bai_tap/Bai3XayDungLopMoTaDienThoai.html" beforeDir="false" afterPath="$PROJECT_DIR$/16_lap_trinh_huong_doi_tuong_1/bai_tap/Bai3XayDungLopMoTaDienThoai.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai1GameDonGianDiChuyenDoiTuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/bai_tap/Bai1GameDonGianDiChuyenDoiTuong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/thuc_hanh/Bai1XayDungMoPhongHoatDongCuaDenPin.html" beforeDir="false" afterPath="$PROJECT_DIR$/17_lap_trinh_huong_doi_tuong_2/thuc_hanh/Bai1XayDungMoPhongHoatDongCuaDenPin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/demo.html" beforeDir="false" afterPath="$PROJECT_DIR$/thuat_toan/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuat_toan/demo.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +116,8 @@
       <workItem from="1595211159364" duration="8873000" />
       <workItem from="1595260602228" duration="3956000" />
       <workItem from="1595294349322" duration="19946000" />
-      <workItem from="1595332080963" duration="3784000" />
+      <workItem from="1595332080963" duration="6377000" />
+      <workItem from="1595380681287" duration="14464000" />
     </task>
     <servers />
   </component>

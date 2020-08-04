@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sắp Xếp Mảng</title>
+</head>
+<body>
+<script>
+    let array = new Array();
+
+    for (let i = 0; i < 5; i++) {
+        let element;
+        do {
+            element = Number(prompt("Nhập phần tử của mảng :"));
+            if (!Number.isInteger(element)) {
+                alert("Phần tử của mảng phải là số nguyên !");
+            } else {
+                break;
+            }
+        } while (1);
+        array.push(element);
+    }
+    document.write("Mảng Đã Nhập: " + array + "<br>" + "<br>");
+    let arrange = array.sort(function (element1, element2) {
+        return element1 - element2;
+    });
+    document.write("Mảng Đã Được Sắp Xếp: " + arrange);
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ Hình tròn</title>
+</head>
+<body>
+<canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;">
+<script>
+    class Circle {
+        constructor(toaDoX, toaDoY, radius, color) {
+            this.toDoX = toaDoX;
+            this.toDoY = toaDoY;
+            this.radius = radius;
+            this.color = color;
+        }
+        getToaDoX(){
+            return this.toDoX;
+        }
+        getToaDoY(){
+            return this.toDoY;
+        }
+        getRadius(){
+            return this.radius;
+        }
+        getColor(){
+            return this.color;
+        }
+        setToaDoX(toaDoX){
+            this.toDoX = toaDoX;
+        }
+        setToaDoY(toaDoY){
+            this.toDoY = toaDoY;
+        }
+        setRadius(radius){
+            this.radius = radius;
+        }
+        setColor(color){
+            this.color = color;
+        }
+        render(canvas){
+            drawCircle();
+        }
+    }
+    function drawCircle(){
+        let ctx = document.getElementById("myCanvas").getContext("2d");
+        let circle = new Circle("100","100","100","#999999");
+        ctx.beginPath();
+        ctx.arc(circle.toDoX, circle.toDoY, circle.radius, 0, 2 * Math.PI);
+        ctx.fillStyle = this.color;
+        ctx.fill();
+    }
+    drawCircle();
+
+</script>
+</body>
+</html>

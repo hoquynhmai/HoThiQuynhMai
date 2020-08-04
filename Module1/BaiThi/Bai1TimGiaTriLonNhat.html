@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Điểm Số Lớn Nhất Trong Mảng</title>
+</head>
+<body>
+<script>
+    let scores = [9, 10, 3, 5, 8, 9, 5, 3];
+    let Max = scores[0];
+    let index = 0;
+    let scoresLength = scores.length;
+    findMax(scores);
+
+    function findMax(scores) {
+        for (let i = 0; i < scoresLength; i++) {
+            if (Max < scores[i]) {
+                Max = scores[i];
+                index = i;
+            }
+        }
+        return Max;
+    }
+
+    document.write("The highest score: " + Max + "<br>" + "Located in position: " + index);
+</script>
+</body>
+</html>

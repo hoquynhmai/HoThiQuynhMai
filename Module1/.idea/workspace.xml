@@ -2,11 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai1PhanSo.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai2XayDungLopThiSinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai3XayDungChuongTrinhQuanLyDSSinhVien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BaiThi/Bai1TimGiaTriLonNhat.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BaiThi/Bai2NhapMangSoNguyenVaXoaSoNguyenX.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BaiThi/Bai3DaySoFiBoNacci.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/BaiThi/Bai4VeHinhTron.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnTap/Bai10KiemTraHocLucHocSinh.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnTap/Bai11SapXepMang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnTap/Bai5KiemTraViTriNgayTrongNam.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnTap/Bai6KiemTraViTriSoNgayTrongThang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnTap/Bai7SoChinhPhuong.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnTap/Bai8SoHoanHaoTraVeTrueFalse.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnTap/Bai9TimDiemCaoNhatVaViTriCuoiCung.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnTap/KiemTraNgayThang.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OnTap/LyThuyet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/caseStudy1/yeuCau6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuat_toan/Bai12NhapMaTranVaTinhTichBoiSoCua3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuat_toan/QuanLyNhanVien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuat_toan/VeChuENguoc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuat_toan/VeChuZ.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/thuat_toan/VeHCN.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/ChiSoCanNangCoTheTH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/DienTichHCNTH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/HienThiLoiChaoBT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/HienThiThoiGianHeThongTH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/KhaiBaoSuDungBienTH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/KiemTraNamNhuanTH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/PTBacNhatTH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/TinhSoNgayTrongThangTH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/UngDungChuyenDoiTienTeBT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/UngDungDocSoThanhChuBT.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThi20SoNguyenToBT2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThiCacLoaiHinhBT1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThiSoNguyenTo1Den100BT3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/KiemTraSoNguyenToTh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/ThietKeMenuChoUngDungTH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/TimUocChungLonNhatTH.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/UngDungTinhTienLaiTH.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thuat_toan/demo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai3XayDungChuongTrinhQuanLyDSSinhVien.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai3XayDungChuongTrinhQuanLyDSSinhVien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/~$iTapHUongDoiTuong.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau3.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau5.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thuat_toan/Bai7TinhTongVaTichSoNguyenDuongChoTruoc.html" beforeDir="false" afterPath="$PROJECT_DIR$/thuat_toan/Bai7TinhTongVaTichSoNguyenDuongChoTruoc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../my_project" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +75,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/thuat_toan" />
+    <property name="last_opened_file_path" value="E:/soChinhPhuong (1).html" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -117,7 +158,23 @@
       <workItem from="1595260602228" duration="3956000" />
       <workItem from="1595294349322" duration="19946000" />
       <workItem from="1595332080963" duration="6377000" />
-      <workItem from="1595380681287" duration="14464000" />
+      <workItem from="1595380681287" duration="21402000" />
+      <workItem from="1595418887175" duration="12807000" />
+      <workItem from="1595467230912" duration="14904000" />
+      <workItem from="1595553396504" duration="12361000" />
+      <workItem from="1595641735363" duration="991000" />
+      <workItem from="1595673800625" duration="818000" />
+      <workItem from="1595680612911" duration="53000" />
+      <workItem from="1595683177363" duration="18000" />
+      <workItem from="1595760100792" duration="12946000" />
+      <workItem from="1595840541995" duration="7428000" />
+      <workItem from="1595902076116" duration="23142000" />
+      <workItem from="1595938297578" duration="1839000" />
+      <workItem from="1596257528256" duration="1274000" />
+      <workItem from="1596431476474" duration="61000" />
+      <workItem from="1596437868578" duration="2000" />
+      <workItem from="1596461135987" duration="4016000" />
+      <workItem from="1596514890704" duration="467000" />
     </task>
     <servers />
   </component>
@@ -125,18 +182,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594343914384">
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595915943458">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1594343914384" />
+    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1595915943458" />
     <state x="324" y="132" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1593679760824">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="324" y="132" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593679760824" />
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1595217791471">
+    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1595907933512">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595217791471" />
+    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595907933512" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1594809506443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

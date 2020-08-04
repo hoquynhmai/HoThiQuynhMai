@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết hàm tính tiền lãi biết lãi xuất ngân hàng là 10%</title>
+</head>
+<body>
+<script>
+    let tienVayBanDau;
+    do {
+        tienVayBanDau = prompt("Nhập số tiền vay ban đầu :");
+        if (isNaN(tienVayBanDau) || tienVayBanDau <= 0) {
+            alert("Số tiền vay phải là số lớn hơn 0 !");
+        } else break;
+    } while (1);
+    let thangVay;
+    do {
+        thangVay = prompt("Nhập số  tháng vay :");
+        if (isNaN(thangVay) || thangVay <= 0) {
+            alert("Số Tháng Vay phải là số lớn hơn 0 !");
+        } else break;
+    } while (1);
+
+    tinhLaiNganHang(parseFloat(tienVayBanDau),parseFloat(thangVay),0.1);
+
+    function tinhLaiNganHang(tienVay,soThangVay,laiSuat) {
+        let totalPay = tienVay + tienVay*laiSuat;
+        for (let i=1;i<soThangVay;i++){
+            totalPay = totalPay + totalPay*laiSuat;
+        }
+        let tienLai = totalPay - tienVay;
+        return document.write("Số tiền lãi phải trả là : " + tienLai + "<br>");
+    }
+</script>
+</body>
+</html>

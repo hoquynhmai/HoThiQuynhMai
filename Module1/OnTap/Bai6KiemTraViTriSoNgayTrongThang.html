@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Vị Trí Ngày Trong Tháng</title>
+</head>
+<body>
+<script>
+    let inputMonthYear;
+    let regexDate = /^(([0][1-9])|1[0-2])\/([0-9]{4})$/;
+    let check = true;
+
+    do {
+        inputMonthYear = prompt("Nhập tháng bất kỳ của năm bất kỳ cần xem số ngày :" + '\nTheo định dạng : MM/YYYY');
+        if (inputMonthYear === null){
+            check = false;
+            alert("Bạn đã nhấn nút Cancel nên sẽ thoát chương trình !");
+            break;
+        }
+        else if (!regexDate.test(inputMonthYear)) {
+            alert('Bạn nhập thông tin không đúng định dạng !' + '\nĐề nghị nhập lại theo định dạng : MM/YYYY !');
+        }else break;
+    } while (1);
+
+    if (check){
+        testDayInMonth(inputMonthYear);
+    }
+
+    function testDayInMonth(inputMonthYear) {
+        let month = inputMonthYear.slice(0,2);
+        let year = parseInt(inputMonthYear.slice(3));
+        switch (month) {
+            case '02':
+                if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0) {
+                    return document.write("Năm " + year + " là năm nhuận nên tháng 2 có 29 ngày.");
+                } else return document.write("Năm " + year + " là năm không nhuận nên tháng 2 có 28 ngày.");
+            case '01':
+            case '03':
+            case '05':
+            case '07':
+            case '08':
+            case '10':
+            case '12':
+                return document.write("Tháng " + month + "/" + year + " có 31 ngày.");
+            case '04':
+            case '06':
+            case '09':
+            case '11':
+                return document.write("Tháng " + month + "/" + year + " có 30 ngày.");
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Dãy Số FiboNacci</title>
+</head>
+<body>
+<script>
+    let value = Number(prompt("Nhập số cần kiểm tra: "));
+
+    function isFibonaccis(value){
+        if ( value === 0 || value === 1){
+            return true;
+        } else {
+            let fiBo1 = 1;
+            let fiBo2 = 1;
+            let fiBoN = 0;
+            while (fiBo1 <= value) {
+                fiBoN = fiBo1 + fiBo2;
+                fiBo1 = fiBo2;
+                fiBo2 = fiBoN;
+                if (fiBo1 === value){
+                    return true;
+                }
+            }
+            return false;
+        }
+    }
+    alert (isFibonaccis(value));
+</script>
+</body>
+</html>

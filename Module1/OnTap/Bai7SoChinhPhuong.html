@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Có Phải Là Số Chính Phương Không</title>
+</head>
+<body>
+<script>
+    let inputNumber = Number(prompt("Enter any integer :"));
+
+    if (isMainNumber(inputNumber)) {
+        alert(true);
+    } else alert(false);
+
+    function isMainNumber(numberToCheck) {
+        if (!Number.isInteger(numberToCheck) || numberToCheck < 0) {
+            return false;
+        } else {
+            let squareRoot = Math.sqrt(numberToCheck); // squareRoot = can bac hai
+            if (!Number.isInteger(squareRoot)) {
+                return false;
+            } else {
+                return true;
+            }
+        }
+    }
+</script>
+</body>
+</html>

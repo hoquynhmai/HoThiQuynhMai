@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Vị Trí Ngày Trong Tháng</title>
+</head>
+<body>
+<script>
+    let date;
+    let check = true;
+    do {
+        date = prompt("Nhập ngày , tháng , năm cần tính :" + '\nTheo định dạng : DD/MM/YYYY');
+        if (date === null) {
+            check = false;
+            alert("Bạn đã nhấn nút Cancel nên sẽ thoát chương trình !");
+            break;
+        }
+        if (testDayMonth(date)) {
+            alert("Ngày tháng bạn nhập không hợp lệ !");
+        } else break;
+    } while (1);
+
+    if (check) {
+        findPosition(date);
+    }
+
+    function testDayMonth(dayMonthYear) {
+        let regexDate = /^((0[1-9])|([1-2][0-9])|(3[0-1]))\/(([0][1-9])|1[0-2])\/(19[0-9]{2}|20[0-1][0-9]|2020)$/;
+        let year = parseInt(dayMonthYear.slice(6));
+        let month = dayMonthYear.slice(3, 5);
+        let day = dayMonthYear.slice(0, 2);
+        let check = true;
+        if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0) {
+            check = false;
+        }
+        if (!regexDate.test(dayMonthYear) || (check && month == '02' && day == '29') || (month == '02' && day == '30') || (month == '02' && day == '31')
+            || (month == '04' && day == '31') || (month == '06' && day == '31') || (month == '09' && day == '31') || (month == '11' && day == '31')) {
+            return true;
+        } else return false;
+    }
+
+    function findPosition(dayMonthYear) {
+        let year = parseInt(dayMonthYear.slice(6));
+        let month = parseInt(dayMonthYear.slice(3, 5));
+        let day = parseInt(dayMonthYear.slice(0, 2));
+        let numberOfDay = [31, 0, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        let position = 0;
+        for (let i = 1; i < month; i++) {
+            position += numberOfDay[i - 1];
+        }
+        position += day;
+        if (month > 2) {
+            if (year % 400 === 0 || year % 4 === 0 && year % 100 !== 0) {
+                position += 29;
+            } else {
+                position += 28;
+            }
+        }
+        return document.write("Ngày " + dayMonthYear + " là ngày thứ " + position + " trong năm " + year);
+    }
+</script>
+</body>
+</html>

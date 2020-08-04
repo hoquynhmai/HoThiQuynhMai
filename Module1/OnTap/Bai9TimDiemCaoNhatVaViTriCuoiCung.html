@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm Điểm Cao Nhất Ở Vị Trí Cuối Cùng</title>
+</head>
+<body>
+<script>
+    let scores = [9,10,3,5,10,9,5,9];
+    let Max = scores[0];
+    let index = 0;
+    let scoresLength = scores.length;
+    for (let i=0; i < scoresLength ; i++) {
+        if (Max < scores[i]) {
+            Max = scores[i];
+        }
+        index = scores.lastIndexOf(Max);
+    }
+    document.write("The highest score: " + Max + "<br>" + "Located in position: " + index);
+</script>
+</body>
+</html>

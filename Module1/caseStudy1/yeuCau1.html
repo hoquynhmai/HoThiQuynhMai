@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Nhập thông tin</title>
+    <title>Yêu Cầu 1</title>
 </head>
 <body>
 <script>
     let fullName = prompt("Nhập Họ và Tên: ");
-    let cmnd = prompt("Nhập số CMND: ");
+    let id = prompt("Nhập số CMND: ");
     let birthDay = prompt("Nhập Ngày Tháng Năm Sinh: ");
     let email = prompt("Nhập Email: ");
     let address = prompt("Nhập Địa chỉ: ");
     let customer = prompt("Loại khách hàng: ");
-    let discount = prompt("Giảm giá: ");
-    let amountPeople = prompt("Số lượng người đi kèm: ");
-    let rentDay = prompt("Số ngày thuê: ");
+    let discount = parseInt(prompt("Giảm giá: "));
+    let amountPeople = parseInt(prompt("Số lượng người đi kèm: "));
+    let rentDay = parseInt(prompt("Số ngày thuê: "));
     let service = prompt("Loại dịch vụ: ");
     let room = prompt("Loại phòng: ");
 
@@ -28,7 +28,7 @@
     }
 
     alert("1. Họ và Tên " + fullName + "\n" +
-          "2. CMND:  " + cmnd + "\n" +
+          "2. CMND:  " + id + "\n" +
           "3. Ngày Tháng Năm Sinh: " + birthDay + "\n" +
           "4. Email: " + email + "\n" +
           "5. Địa chỉ: " + address + "\n" +
@@ -39,7 +39,6 @@
          "10. Loại dịch vụ: " + service + "\n" +
          "11. Loại phòng: " + room + "\n" + "\n"+
         "Tổng tiền phải thanh toán: " + price +" $");
-
 </script>
 </body>
 </html>

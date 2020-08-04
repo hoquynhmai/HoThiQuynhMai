@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm Tra Học Lực Học Sinh</title>
+</head>
+<body>
+<h2 style="margin-left: 25px">Kiểm Tra Học Lực Học Sinh</h2>
+<p id="hienThi"></p>
+<script>
+    class HocSinh {
+        constructor(soThuTu, hoVaTen, ngaySinh, diemTrungBinh) {
+            this.soThuTu = soThuTu;
+            this.hoVaTen = hoVaTen;
+            this.ngaySinh = ngaySinh;
+            this.diemTrungBinh = diemTrungBinh;
+        }
+        getSoThuTu() {
+            return this.soThuTu;
+        }
+        getHoVaTen() {
+            return this.hoVaTen;
+        }
+        getNgaySinh() {
+            return this.ngaySinh;
+        }
+        getDiemTrungBinh() {
+            return this.diemTrungBinh;
+        }
+        setSoThuTu(soThuTu) {
+            this.maNV = soThuTu;
+        }
+
+        setHoVaTen(hoVaTen) {
+            this.hoVaTen = hoVaTen;
+        }
+        setNgaySinh(ngaySinh) {
+            this.ngaySinh = ngaySinh;
+        }
+        setDiemTrungBinh(diemTrungBinh) {
+            this.diemTrungBinh = diemTrungBinh;
+        }
+    }
+
+    let danhSachHocSinh = new Array();
+    let hocSinh1 = new HocSinh("01", "Hồ Thị Quỳnh Mai", "15/05/1995", "9.5");
+    let hocSinh2 = new HocSinh("02", "Trịnh Phạm Nhã Uyên", "11/11/1995", "7.5");
+    let hocSinh3 = new HocSinh("03", "Trịnh Anh Sang", "03/01/1995", "5.5");
+    let hocSinh4 = new HocSinh("04", "Nguyễn Hữu Anh Quốc", "04/06/1995", "3.5");
+    let hocSinh5 = new HocSinh("05", "Lê Hoàng Oanh", "01/10/1995", "2.9");
+
+    danhSachHocSinh.push(hocSinh1, hocSinh2, hocSinh3,hocSinh4,hocSinh5);
+    hienThi(danhSachHocSinh);
+
+    function hienThi(danhSach) {
+        let doDaiDanhSach = danhSach.length;
+        let bang = '<table border="1">' +
+            '<tr>' +
+            '<th> STT</th>' +
+            '<th> Tên Học Sinh</th>' +
+            '<th> Ngày Sinh</th>' +
+            '<th> Điểm TB</th>' +
+            '</tr>';
+        for (let i = 0; i < doDaiDanhSach; i++) {
+            bang += '<tr>' +
+                '<td style="text-align: center"> ' + danhSach[i].getSoThuTu() + '</td>' +
+                '<td> ' + danhSach[i].getHoVaTen() + '</td>' +
+                '<td> ' + danhSach[i].getNgaySinh() + '</td>' +
+                '<td style="text-align: center"> ' + danhSach[i].getDiemTrungBinh() + '</td>' +
+                '</tr>';
+        }
+        bang += '</table>';
+        document.getElementById("hienThi").innerHTML = bang;
+    }
+
+    kiemTraHocLuc(danhSachHocSinh);
+
+    function kiemTraHocLuc(danhSach) {
+        let doDaiDanhSach = danhSach.length;
+        for (let i=0;i<doDaiDanhSach; i++){
+            if (danhSach[i].getDiemTrungBinh() > 8){
+                document.write("Học sinh  " + danhSach[i].getHoVaTen() + " là học sinh GIỎI ." + '<br>');
+            }else if (danhSach[i].getDiemTrungBinh() >= 6.5){
+                document.write("Học sinh  " + danhSach[i].getHoVaTen() + " là học sinh KHÁ ." + '<br>');
+            }else if (danhSach[i].getDiemTrungBinh() >= 5){
+                document.write("Học sinh  " + danhSach[i].getHoVaTen() + " là học sinh TRUNG BÌNH ." + '<br>');
+            }else if (danhSach[i].getDiemTrungBinh() >= 3.5){
+                document.write("Học sinh  " + danhSach[i].getHoVaTen() + " là học sinh YẾU ." + '<br>');
+            }else document.write("Học sinh  " + danhSach[i].getHoVaTen() + " là học sinh KÉM ." + '<br>');
+        }
+    }
+</script>
+</body>
+</html>

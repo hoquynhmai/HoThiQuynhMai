@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý nhân viên</title>
+</head>
+<body>
+<h2 style="margin-left: 150px">Quản Lý Công Nhân</h2>
+<input style="margin-left: 185px" type="button" value="Thêm mới Công Nhân" onclick="themMoiCN();">
+<p id="hienThi"></p>
+<script>
+    class CongNhan {
+        constructor(tenNV, ngaySinhNV, diaChiNV, luongNV, chucVuNV) {
+            this.tenNV = tenNV;
+            this.ngaySinhNV = ngaySinhNV;
+            this.diaChiNV = diaChiNV;
+            this.luongNV = luongNV;
+            this.chucVuNV = chucVuNV;
+        }
+
+        getTenNV() {
+            return this.tenNV;
+        }
+
+        getNgaySinhNV() {
+            return this.ngaySinhNV;
+        }
+
+        getDiaChiNV() {
+            return this.diaChiNV;
+        }
+
+        getLuongNV() {
+            return this.luongNV;
+        }
+
+        getChucVuNV() {
+            return this.chucVuNV;
+        }
+
+        setTenNV(tenNV) {
+            this.tenNV = tenNV;
+        }
+
+        setNgaySinhNV(ngaySinhNV) {
+            this.ngaySinhNV = ngaySinhNV;
+        }
+
+        setDiaChiNV(diaChiNV) {
+            this.diaChiNV = diaChiNV;
+        }
+
+        setLuongNV(luongNV) {
+            this.luongNV = luongNV;
+        }
+
+        setChucVuNV(chucVuNV) {
+            this.chucVuNV = chucVuNV;
+        }
+
+        getInfo() {
+            return "1. Tên NV: " + this.tenNV + "\n2. Ngày Sinh: " + this.ngaySinhNV +
+                "\n3. Địa Chỉ: " + this.diaChiNV + "\n4. Lương: " + this.luongNV +
+                "\n5. Chức Năng: " + this.chucVuNV;
+        }
+    }
+
+    let danhSachCN = [];
+    let congNhan1 = new CongNhan("Phan Văn A", "12/12/2020", "Đà Nẵng", "3000000", "Nhân Viên");
+    let congNhan2 = new CongNhan("Nguyễn B", "12/12/2020", "Huế", "4000000", "Tổ Trưởng");
+    let congNhan3 = new CongNhan("Trần C", "12/12/2020", "Quảng Nam", "5000000", "Quản Lý");
+    danhSachCN.push(congNhan1);
+    danhSachCN.push(congNhan2);
+    danhSachCN.push(congNhan3);
+    hienThi(danhSachCN);
+
+    function hienThi(danhSach) {
+        let danhSachDaSX = sapXepTheoTen(danhSach);
+        let doDaiDS = danhSachDaSX.length;
+        let bang = '<table border="1">\n' +
+            '    <tr>\n' +
+            '        <th> STT</th>\n' +
+            '        <th> Họ Và Tên</th>\n' +
+            '        <th> Ngày Sinh</th>\n' +
+            '        <th> Địa Chỉ</th>\n' +
+            '        <th> Lương</th>\n' +
+            '        <th> Chức Vụ</th>\n' +
+            '        <th> Sửa</th>\n' +
+            '        <th> Xóa</th>\n' +
+            '    </tr>';
+        for (let i = 0; i < doDaiDS; i++) {
+            bang += '<tr>\n' +
+                '        <td style="text-align: center"> ' + (i + 1) + '</td>\n' +
+                '        <td> ' + danhSachDaSX[i].getTenNV() + '</td>\n' +
+                '        <td> ' + danhSachDaSX[i].getNgaySinhNV() + '</td>\n' +
+                '        <td> ' + danhSachDaSX[i].getDiaChiNV() + '</td>\n' +
+                '        <td> ' + danhSachDaSX[i].getLuongNV() + '</td>\n' +
+                '        <td> ' + danhSachDaSX[i].getChucVuNV() + '</td>\n' +
+                '        <td> <input type="button" value="Sửa" onclick="suaThongTinCN(' + i + ')"></td>\n' +
+                '        <td> <input type="button" value="Xóa" onclick="xoaNV(' + i + ');"></td>\n' +
+                '    </tr>';
+        }
+        bang += '</table>';
+        document.getElementById("hienThi").innerHTML = bang;
+    }
+
+    function themMoiCN() {
+        let tenNV = prompt(" Nhập tên công nhân").replace(/\s+/g, ' ');
+        let ngaySinhNV;
+        do {
+            ngaySinhNV = prompt(" Nhập ngày , tháng , năm sinh của nhân viên :");
+            if (kiemTraNgayThang(ngaySinhNV)) {
+                alert("Ngày , tháng , năm sinh không hợp lệ !");
+            } else break;
+        }
+        while (kiemTraNgayThang(ngaySinhNV));
+
+        let diaChiNV = prompt(" Nhập địa chỉ công nhân").replace(/\s+/g, ' ');
+        let luongNV;
+        do {
+            luongNV = Number(prompt("Nhập lương công nhân"));
+            if (isNaN(luongNV)){
+                alert("Nhập lại Lương Của Công Nhân!");
+            } else {
+                break;
+            }
+        }while (1);
+        let chucVuNV = prompt(" Nhập chức vụ công nhân").replace(/\s+/g, ' ');
+
+        let congNhan = new CongNhan(tenNV, ngaySinhNV, diaChiNV, luongNV, chucVuNV);
+        danhSachCN.push(congNhan);
+        hienThi(danhSachCN);
+    }
+
+    function xoaNV(i) {
+        let xacNhanXoa = confirm(" Bạn có muốn xóa tên nhân viên: " + danhSachCN[i].getTenNV());
+        if (xacNhanXoa) {
+            danhSachCN.splice(i, 1);
+        } else {
+            alert(" Bạn ko muốn xóa nhân viên này")
+        }
+        hienThi(danhSachCN);
+
+    }
+
+    function suaThongTinCN(i) {
+        let luaChon = prompt(" Chọn thông tin cần sửa \n" +
+            danhSachCN[i].getInfo() + "\n6.Thoát");
+        switch (luaChon) {
+            case "1":
+                let tenNV = prompt("Nhập lại tên công nhân");
+                danhSachCN[i].setTenNV(tenNV);
+                suaThongTinCN(i);
+                break;
+            case "2":
+                let ngaySinhNV = prompt("Nhập lại ngày sinh công nhân");
+                danhSachCN[i].setNgaySinhNV(ngaySinhNV);
+                suaThongTinCN(i);
+                break;
+            case "3":
+                let diaChiNV = prompt("Nhập lại địa chỉ công nhân");
+                danhSachCN[i].setDiaChiNV(diaChiNV);
+                suaThongTinCN(i);
+                break;
+            case "4":
+                let luongNV = prompt("Nhập lại lương công nhân");
+                danhSachCN[i].setLuongNV(luongNV);
+                suaThongTinCN(i);
+                break;
+            case "5":
+                let chucVuNV = prompt("Nhập lại chức vụ công nhân");
+                danhSachCN[i].setChucVuNV(chucVuNV);
+                suaThongTinCN(i);
+                break;
+            case "6":
+                break;
+            default:
+                alert("Vui Lòng Chọn Lại. Chọn 6 Nếu Bạn Muốn Thoát");
+                suaThongTinCN(i);
+        }
+        hienThi(danhSachCN);
+    }
+
+    // Sắp Xếp Tên Công Nhân Theo Alphabet
+    function sapXepTheoTen(danhSach) {
+        danhSach.sort(function (a, b) {
+            let tenA = a.tenNV;
+            let tenB = b.tenNV;
+            if (tenA < tenB) {
+                return -1;
+            }
+            if (tenA > tenB) {
+                return 1;
+            }
+            return 0;
+        });
+        return danhSach;
+    }
+
+    // Kiểm Tra Ngày/Tháng/Năm Sinh theo đúng định dạng dd/mm/yyyy
+    function kiemTraNgayThang(ngayThangNam) {
+        let regexKiemTra = /^((0[1-9])|([1-2][0-9])|(3[0-1]))\/(([0][1-9])|1[0-2])\/(19[0-9]{2}|20[0-1][0-9]|2020)$/;
+        let nam = ngayThangNam.slice(6);
+        let thang = ngayThangNam.slice(3,5);
+        let ngay = ngayThangNam.slice(0,2);
+        let check = true;
+        if (nam % 400 === 0 || nam % 4 === 0 && nam % 100 !== 0){
+            check = false;
+        }
+        if ( !regexKiemTra.test(ngayThangNam) || (check && thang == '02' && ngay == '29') || (thang == '02' && ngay == '30') || (thang == '02' && ngay == '31')
+            || (thang == '04' && ngay == '31') || (thang == '06' && ngay == '31') || (thang == '09' && ngay == '31') || (thang == '11' && ngay == '31') )
+        {
+            return true;
+        } else {return false;}
+    }
+</script>
+</body>
+</html>
+
+
+
+

@@ -2,52 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/BaiThi/Bai1TimGiaTriLonNhat.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaiThi/Bai2NhapMangSoNguyenVaXoaSoNguyenX.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaiThi/Bai3DaySoFiBoNacci.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/BaiThi/Bai4VeHinhTron.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OnTap/Bai10KiemTraHocLucHocSinh.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OnTap/Bai11SapXepMang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OnTap/Bai5KiemTraViTriNgayTrongNam.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OnTap/Bai6KiemTraViTriSoNgayTrongThang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OnTap/Bai7SoChinhPhuong.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OnTap/Bai8SoHoanHaoTraVeTrueFalse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OnTap/Bai9TimDiemCaoNhatVaViTriCuoiCung.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OnTap/KiemTraNgayThang.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OnTap/LyThuyet.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/caseStudy1/yeuCau6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thuat_toan/Bai12NhapMaTranVaTinhTichBoiSoCua3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thuat_toan/QuanLyNhanVien.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thuat_toan/VeChuENguoc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thuat_toan/VeChuZ.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thuat_toan/VeHCN.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/ChiSoCanNangCoTheTH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/DienTichHCNTH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/HienThiLoiChaoBT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/HienThiThoiGianHeThongTH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/KhaiBaoSuDungBienTH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/KiemTraNamNhuanTH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/PTBacNhatTH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/TinhSoNgayTrongThangTH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/UngDungChuyenDoiTienTeBT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/introction_to_java/UngDungDocSoThanhChuBT.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThi20SoNguyenToBT2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThiCacLoaiHinhBT1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThiSoNguyenTo1Den100BT3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/KiemTraSoNguyenToTh.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/ThietKeMenuChoUngDungTH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/TimUocChungLonNhatTH.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/UngDungTinhTienLaiTH.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai3XayDungChuongTrinhQuanLyDSSinhVien.html" beforeDir="false" afterPath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/Bai3XayDungChuongTrinhQuanLyDSSinhVien.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bai_tap_huong_doi_tuong/~$iTapHUongDoiTuong.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/Check List CaseStudy C0620G1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau3.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau3.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/caseStudy1/yeuCau5.html" beforeDir="false" afterPath="$PROJECT_DIR$/caseStudy1/yeuCau5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thuat_toan/Bai7TinhTongVaTichSoNguyenDuongChoTruoc.html" beforeDir="false" afterPath="$PROJECT_DIR$/thuat_toan/Bai7TinhTongVaTichSoNguyenDuongChoTruoc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../my_project" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/bai_tap/GopMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/bai_tap/TimGiaTriNhoNhatTrongMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/bai_tap/XoaPhanTuKhoiMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/bai_tap/demo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/ChuyenDoiNhietDo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/DaoNguocCacPhanTuCuaMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/TimGiaTriLonNhatTrongMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/TimGiaTriNhoNhatTrongMangSuDungPhuongThuc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/TimGiaTriTrongMang.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/vong_lap_trong_for/HienThiCacLoaiHinhBT1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/vong_lap_trong_for/HienThiCacLoaiHinhBT1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThiCacLoaiHinhBT1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThiCacLoaiHinhBT1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,6 +140,7 @@
       <workItem from="1596437868578" duration="2000" />
       <workItem from="1596461135987" duration="4016000" />
       <workItem from="1596514890704" duration="467000" />
+      <workItem from="1596590362377" duration="271000" />
     </task>
     <servers />
   </component>

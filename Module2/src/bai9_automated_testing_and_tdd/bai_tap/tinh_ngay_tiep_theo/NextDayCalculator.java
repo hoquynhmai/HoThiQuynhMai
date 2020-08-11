@@ -1,8 +1,6 @@
 package bai9_automated_testing_and_tdd.bai_tap.tinh_ngay_tiep_theo;
 
 public class NextDayCalculator {
-    //    public static int nextDay(int day,int month, int year){
-//    }
 
     public boolean isLeapYear(int year) {
         if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
@@ -40,12 +38,12 @@ public class NextDayCalculator {
         }
     }
 
-//    public boolean isSuitable(int day, int month, int year) {
+//    public boolean isDaySuitable(int day, int month, int year) {
 //        if (!(year > 0)) {
 //            return false;
 //        } else if (!(month >= 1 && month <= 12)) {
 //            return false;
-//        } else if (!(day >= 1 && day <= dayInMonth(month, year))) {
+//        } else if ((day < 1 && day >= dayInMonth(month, year))) {
 //            return false;
 //        } else {
 //            return true;

@@ -87,7 +87,6 @@ public class FizzBuzz {
                 break;
         }
 
-        
         switch (unitRow) {
             case 0:
                 result += "KHÔNG";

@@ -37,6 +37,7 @@ public class NextDayCalculator {
                 break;
         }
     }
+}
 
 //    public boolean isDaySuitable(int day, int month, int year) {
 //        if (!(year > 0)) {
@@ -55,5 +56,5 @@ public class NextDayCalculator {
 //            month += 1;
 //        }
 //    }
-}
+//}
 // Sai rồi

@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class NextDayCalculatorTest {
+//public class NextDayCalculatorTest {
 //    @Test
 //    public void testNextDay0() {
 //        int day = 1;
@@ -12,7 +12,7 @@ public class NextDayCalculatorTest {
 //        int year = 2018;
 //        int expected = 2;
 //
-//        int result = NextDayCalculator.nextDay(day,month,year);
+//        String result = NextDayCalculator.timNgayHomSau(day,month,year);
 //        assertEquals(expected, result);
-    }
+//    }
 

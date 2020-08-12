@@ -11,7 +11,7 @@ public class TriangleTest {
         int side3 = 5;
         String expected = "Tam giác thường";
 
-        String result = Triangle.conditionTriangle(side1,side2,side3);
+        String result = Triangle.testTriangle(side1,side2,side3);
         assertEquals(expected, result);
     }
 
@@ -22,7 +22,7 @@ public class TriangleTest {
         int side3 = 3;
         String expected = "Không phải tam giác";
 
-        String result = Triangle.conditionTriangle(side1,side2,side3);
+        String result = Triangle.testTriangle(side1,side2,side3);
         assertEquals(expected, result);
     }
 
@@ -33,7 +33,7 @@ public class TriangleTest {
         int side3 = 1;
         String expected = "Không phải tam giác";
 
-        String result = Triangle.conditionTriangle(side1,side2,side3);
+        String result = Triangle.testTriangle(side1,side2,side3);
         assertEquals(expected, result);
     }
 
@@ -44,7 +44,7 @@ public class TriangleTest {
         int side3 = 1;
         String expected = "Không phải tam giác";
 
-        String result = Triangle.conditionTriangle(side1,side2,side3);
+        String result = Triangle.testTriangle(side1,side2,side3);
         assertEquals(expected, result);
     }
 
@@ -55,7 +55,7 @@ public class TriangleTest {
         int side3 = 2;
         String expected = "Tam giác đều";
 
-        String result = Triangle.equilateralTriangle(side1,side2,side3);
+        String result = Triangle.testTriangle(side1,side2,side3);
         assertEquals(expected, result);
     }
 
@@ -66,7 +66,7 @@ public class TriangleTest {
         int side3 = 3;
         String expected = "Tam giác cân";
 
-        String result = Triangle.isoscelesTriangle(side1,side2,side3);
+        String result = Triangle.testTriangle(side1,side2,side3);
         assertEquals(expected, result);
     }
 }

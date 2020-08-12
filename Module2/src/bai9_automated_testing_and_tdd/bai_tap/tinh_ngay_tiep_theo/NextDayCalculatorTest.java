@@ -14,16 +14,5 @@ public class NextDayCalculatorTest {
 //
 //        int result = NextDayCalculator.nextDay(day,month,year);
 //        assertEquals(expected, result);
-//    }
-//
-//    @Test
-//    public void testNextDay1() {
-//        int day = 31;
-//        int month = 1;
-//        int year = 2018;
-//        int expected = 1;
-//
-//        int result = NextDayCalculator.nextDay(day,month,year);
-//        assertEquals(expected, result);
-//    }
-}
+    }
+

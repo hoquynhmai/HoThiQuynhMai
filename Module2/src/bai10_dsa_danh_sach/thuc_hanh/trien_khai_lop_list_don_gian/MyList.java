@@ -11,7 +11,7 @@ public class MyList<E> {
         elements = new Object[DEFAULT_CAPACITY];
     }
 
-    //Tăng gấp đôi kích thước mảng chứa các phần tử
+    //Tăng gấp đôi kích thước mảng chứa các phần tử`
     private void ensureCapa() {
         int newSize = elements.length * 2;
         elements = Arrays.copyOf(elements, newSize);

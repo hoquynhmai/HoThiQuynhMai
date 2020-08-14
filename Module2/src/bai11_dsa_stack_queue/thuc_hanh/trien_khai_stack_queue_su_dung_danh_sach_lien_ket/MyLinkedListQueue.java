@@ -28,6 +28,4 @@ public class MyLinkedListQueue {
             this.tail = null;
         return temp;
     }
-
-
 }

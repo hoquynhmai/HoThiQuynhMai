@@ -5,11 +5,11 @@ public class GenericStackClient {
     //phương thức stackOfStrings()
     private static void stackOfIStrings() {
         MyGenericStack<String> stack = new MyGenericStack();
-        stack.push("Five");
+        stack.push("One");
         stack.push("Four");
         stack.push("Three");
         stack.push("Two");
-        stack.push("One");
+        stack.push("Five");
         System.out.println("1.1 Size of stack after push operations: " + stack.size());
         System.out.printf("1.2. Pop elements from stack : ");
         while (!stack.isEmpty()) {
@@ -36,9 +36,9 @@ public class GenericStackClient {
     }
 
     public static void main(String[] args) {
-        System.out.println("1. Stack of integers");
-        stackOfIntegers();
-        System.out.println("\n2. Stack of Strings");
+        System.out.println("1. Stack of Strings");
         stackOfIStrings();
+        System.out.println("\n2. Stack of integers");
+        stackOfIntegers();
     }
 }

@@ -1,4 +1,4 @@
-package bai11_dsa_stack_queue.bai_tap.opitional;
+package bai11_dsa_stack_queue.bai_tap.opitional.chuyen_doi_he;
 
 import java.math.BigInteger;
 import java.util.Scanner;

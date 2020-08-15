@@ -3,7 +3,7 @@ package bai10_dsa_danh_sach.bai_tap.trien_khai_phuong_thuc_arraylist;
 import java.util.Arrays;
 
 public class MyList<E> {
-    private int size ;
+    private int size;
     private static final int DEFAULT_CAPACITY = 10;
     private Object elements[];
 
@@ -57,10 +57,11 @@ public class MyList<E> {
         return size;
     }
 
-//    Trả về một bản sao của ArrayList.
-//    public E clone(){
-        //Chưa hiểu
-//    }
+    //    Trả về một bản sao của ArrayList.
+    public Integer clone() {
+        size = size / 2;
+        return size;
+    }
 
     //Kiểm tra 1 phần tử có nằm trong mảng ko
     public boolean contains(E o) {

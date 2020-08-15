@@ -1,4 +1,4 @@
-package bai11_dsa_stack_queue.bai_tap.opitional;
+package bai11_dsa_stack_queue.bai_tap.opitional.kiem_tra_palindrome;
 
 import java.util.Scanner;
 
@@ -10,11 +10,11 @@ public class TestPalindrome {
         System.out.println("Chuỗi ban đầu: " + string);
 
         //StringBuffer(String str): Tạo ra một bộ đệm chuỗi với chuỗi cụ thể.
-        StringBuffer reverseString = new StringBuffer(string).reverse();
-        String newString = reverseString.toString();
-        System.out.println("Chuỗi đảo ngược: " + newString);
+        StringBuffer newString = new StringBuffer(string).reverse();
+        String reverseString = newString.toString();
+        System.out.println("Chuỗi đảo ngược: " + reverseString);
 
-        if (string.equalsIgnoreCase(newString)) {
+        if (string.equalsIgnoreCase(reverseString)) {
             System.out.println("Là chuỗi Palindrome");
         } else {
             System.out.println("Không phải là chuỗi Palindrome");

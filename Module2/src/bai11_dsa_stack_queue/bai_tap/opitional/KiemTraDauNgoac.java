@@ -41,3 +41,4 @@ public class KiemTraDauNgoac {
         } else System.out.println("Biểu thức " + string + " không hợp lệ");
     }
 }
+//Vẫn sai, trường hợp ko có biểu thức bên trong vẫn đúng -_-

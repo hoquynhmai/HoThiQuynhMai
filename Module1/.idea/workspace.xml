@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/bai_tap/GopMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/bai_tap/TimGiaTriNhoNhatTrongMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/bai_tap/XoaPhanTuKhoiMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/bai_tap/demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/ChuyenDoiNhietDo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/DaoNguocCacPhanTuCuaMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/TimGiaTriLonNhatTrongMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/TimGiaTriNhoNhatTrongMangSuDungPhuongThuc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/mang_va_phuong_thuc_trong_mang/thuc_hanh/TimGiaTriTrongMang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/vong_lap_trong_for/HienThiCacLoaiHinhBT1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/vong_lap_trong_for/HienThiCacLoaiHinhBT1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThiCacLoaiHinhBT1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/vong_lap_trong_for/HienThiCacLoaiHinhBT1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +30,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/soChinhPhuong (1).html" />
+    <property name="last_opened_file_path" value="E:/HQM" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -141,6 +131,9 @@
       <workItem from="1596461135987" duration="4016000" />
       <workItem from="1596514890704" duration="467000" />
       <workItem from="1596590362377" duration="271000" />
+      <workItem from="1597558070102" duration="128000" />
+      <workItem from="1597561961840" duration="4000" />
+      <workItem from="1597563347181" duration="12000" />
     </task>
     <servers />
   </component>
@@ -156,10 +149,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="324" y="132" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593679760824" />
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1595907933512">
+    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1597563357262">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1595907933512" />
+    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597563357262" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1594809506443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

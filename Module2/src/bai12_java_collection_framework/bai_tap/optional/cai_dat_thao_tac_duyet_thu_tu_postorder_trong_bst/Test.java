@@ -2,25 +2,18 @@ package bai12_java_collection_framework.bai_tap.optional.cai_dat_thao_tac_duyet_
 
 public class Test {
     public static void main(String[] args) {
-        DuyetBST<String> test = new DuyetBST<>();
-//        test.insert("George");
-//        test.insert("Michael");
-//        test.insert("Tom");
-//        test.insert("Adam");
-//        test.insert("Jones");
-//        test.insert("Peter");
-//        test.insert("Daniel");
+        DuyetBST<Integer> test = new DuyetBST<>();
 
-        test.insert("15");
-        test.insert("20");
-        test.insert("85");
-        test.insert("70");
-        test.insert("25");
-        test.insert("30");
-        test.insert("49");
+        test.insert(15);
+        test.insert(20);
+        test.insert(85);
+        test.insert(70);
+        test.insert(25);
+        test.insert(30);
+        test.insert(49);
 
         System.out.println("1.Inorder: ");
-        test.inorder( );
+        test.inorder();
         System.out.println("\nThe number of nodes is: " + test.getSize());
 
         System.out.println("\n2.Postorder: ");
@@ -30,5 +23,14 @@ public class Test {
         System.out.println("\n3.Preorder: ");
         test.preorder();
         System.out.println("\nThe number of nodes is: " + test.getSize());
+
+        System.out.println("\n4.Xóa Node: ");
+        test.remove(25);
+        test.inorder();
+        System.out.println("\nThe number of nodes is: " + test.getSize());
+
+        System.out.println("\n5.Tìm kiếm: ");
+        System.out.println(test.search(49));
+        test.inorder();
     }
 }

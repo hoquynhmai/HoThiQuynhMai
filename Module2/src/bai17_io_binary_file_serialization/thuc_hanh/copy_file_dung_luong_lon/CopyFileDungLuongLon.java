@@ -25,6 +25,7 @@ public class CopyFileDungLuongLon {
 
     private static void copyFileUsingJava7Files(File source, File dest) throws IOException {
         Files.copy(source.toPath(), dest.toPath(), StandardCopyOption.REPLACE_EXISTING);
+        //StandardCopyOption.REPLACE_EXISTING : thay thế tệp hiện có nếu nó tồn tại
     }
 
     public static void main(String[] args) {
@@ -39,8 +40,8 @@ public class CopyFileDungLuongLon {
         File destFile = new File(destPath);
 
         try {
-            copyFileUsingJava7Files(sourceFile, destFile);
-            //copyFileUsingStream(sourceFile, destFile);
+//            copyFileUsingJava7Files(sourceFile, destFile);
+            copyFileUsingStream(sourceFile, destFile);
             System.out.printf("Copy completed");
         } catch (IOException ioe) {
             System.out.printf("Can't copy that file");
@@ -48,4 +49,6 @@ public class CopyFileDungLuongLon {
         }
     }
 }
+//D:\CODE GYM\C0620G1-HoThiQuynhMai\Module2\src\bai17_io_binary_file_serialization\thuc_hanh\copy_file_dung_luong_lon\Source.txt
+//D:\CODE GYM\C0620G1-HoThiQuynhMai\Module2\src\bai17_io_binary_file_serialization\thuc_hanh\copy_file_dung_luong_lon\Dest.txt
 

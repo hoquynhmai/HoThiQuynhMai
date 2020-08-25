@@ -52,33 +52,33 @@ public class DuyetBST<E extends Comparable<E>> {
         }
     }
 
-    public boolean insert(E e) {
+    public boolean insert(E value) {
         if (root == null)
-            root = createNewNode(e);
+            root = createNewNode(value);
         else {
             TreeNode<E> parent = null;
             TreeNode<E> current = root;
             while (current != null) {
-                if (e.compareTo(current.element) < 0) {
+                if (value.compareTo(current.element) < 0) {
                     parent = current;
                     current = current.left;
-                } else if (e.compareTo(current.element) > 0) {
+                } else if (value.compareTo(current.element) > 0) {
                     parent = current;
                     current = current.right;
                 } else
                     return false;
             }
-            if (e.compareTo(parent.element) < 0)
-                parent.left = createNewNode(e);
+            if (value.compareTo(parent.element) < 0)
+                parent.left = createNewNode(value);
             else
-                parent.right = createNewNode(e);
+                parent.right = createNewNode(value);
         }
         size++;
         return true;
     }
 
-    protected TreeNode<E> createNewNode(E e) {
-        return new TreeNode<>(e);
+    protected TreeNode<E> createNewNode(E value) {
+        return new TreeNode<>(value);
     }
 
     public int getSize() {

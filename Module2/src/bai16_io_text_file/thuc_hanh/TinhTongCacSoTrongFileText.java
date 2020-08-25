@@ -13,3 +13,5 @@ public class TinhTongCacSoTrongFileText {
         readfileEx.readFileText(path);
     }
 }
+//D:\CODE GYM\C0620G1-HoThiQuynhMai\Module2\src\bai16_io_text_file\thuc_hanh\Tong.txt
+//D:\CODE GYM\C0620G1-HoThiQuynhMai\Module2\src\bai16_io_text_file\thuc_hanh\Tong1.txt

@@ -13,11 +13,11 @@ public class ReaderCSV2 {
         try (BufferedReader br = new BufferedReader(new FileReader(csvFile))) {
             while ((line = br.readLine()) != null) {
                 // Sử dụng dấu phẩy làm dấu phân cách
-                String[] country = line.split(cvsSplitBy);
+                String[] country = line.split(cvsSplitBy); // .split(",");
                 System.out.println("Country [code = " + country[4] + " , name = " + country[5] + "]");
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            e.getMessage(); //printStackTrace() _ toString()
         }
     }
 }

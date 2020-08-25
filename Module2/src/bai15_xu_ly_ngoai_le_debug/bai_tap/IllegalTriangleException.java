@@ -21,8 +21,8 @@ public class IllegalTriangleException extends Exception {
         try {
             Triangle triangle = new Triangle(side1, side2, side3);
             System.out.println(triangle.toString());
-        } catch (IllegalTriangleException e){
-        System.out.println(e.getMessage());
+        } catch (IllegalTriangleException e) {
+            System.out.println(e.getMessage());
         }
     }
 }

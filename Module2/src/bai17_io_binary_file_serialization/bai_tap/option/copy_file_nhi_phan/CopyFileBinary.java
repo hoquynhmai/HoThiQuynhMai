@@ -14,7 +14,7 @@ public class CopyFileBinary {
             int length;
             byte[] buffer = new byte[1024];
 
-            // Chưa bik đúng hay sai
+            //1 character = 1 byte
             while ((length = inStream.read(buffer)) > 0) {
                 outStream.write(buffer, 0, length);
                 System.out.println("Số byte đã sao chép được: " + length + " bytes");

@@ -31,10 +31,10 @@ public class CopyFileDungLuongLon {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        System.out.printf("Enter source file:");
+        System.out.print("Enter source file:");
         String sourcePath = in.nextLine();
-        System.out.printf("Enter destination file:");
-        String destPath = in.nextLine();
+        System.out.print("Enter destination file:");
+        String destPath= in.nextLine();
 
         File sourceFile = new File(sourcePath);
         File destFile = new File(destPath);
@@ -42,10 +42,10 @@ public class CopyFileDungLuongLon {
         try {
 //            copyFileUsingJava7Files(sourceFile, destFile);
             copyFileUsingStream(sourceFile, destFile);
-            System.out.printf("Copy completed");
+            System.out.print("Copy completed");
         } catch (IOException ioe) {
-            System.out.printf("Can't copy that file");
-            System.out.printf(ioe.getMessage());
+            System.out.print("Can't copy that file");
+            System.out.print(ioe.getMessage());
         }
     }
 }

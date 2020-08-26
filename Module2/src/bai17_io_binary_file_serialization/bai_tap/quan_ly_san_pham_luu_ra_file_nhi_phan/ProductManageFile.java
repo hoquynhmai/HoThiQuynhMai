@@ -1,33 +1,34 @@
 package bai17_io_binary_file_serialization.bai_tap.quan_ly_san_pham_luu_ra_file_nhi_phan;
 
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
 public class ProductManageFile {
     public static Scanner scanner = new Scanner(System.in);
     private List<Product> productList;
-    private ProductManage productManage;
+    private ProductStream productStream;
 
     public ProductManageFile() {
-        productManage = new ProductManage();
-        productList = productManage.read(); // ***
+        productStream = new ProductStream();
+        productList = productStream.read();
     }
 
     public void add() {
-        int id = inputId();
+        int id = (productList.size() > 0) ? (productList.size() + 1) : 1;
+        System.out.println("Mã sản phẩm: " + id);
         String name = inputName();
         float cost = inputCost();
         String producer = inputProducer();
         String description = inputDescription();
         Product product = new Product(id, name, cost, producer, description);
         productList.add(product);
-        productManage.write(productList);
+        productStream.write(productList);
     }
 
     public void edit(int id) {
         boolean isExisted = false;
         int size = productList.size();
+        System.out.println("Hiện có " + size + " sản phẩm");
         for (int i = 0; i < size; i++) {
             if (productList.get(i).getId() == id) {
                 isExisted = true;
@@ -39,15 +40,16 @@ public class ProductManageFile {
             }
         }
         if (!isExisted) {
-            System.out.printf("ID = %d không tồn tại.\n", id);
+            System.out.printf("Mã sản phẩm = %d không tồn tại.\n", id);
         } else {
-            productManage.write(productList);
+            productStream.write(productList);
         }
     }
 
     public void delete(int id) {
         Product product = null;
         int size = productList.size();
+        System.out.println("Hiện có " + size + " sản phẩm");
         for (int i = 0; i < size; i++) {
             if (productList.get(i).getId() == id) {
                 product = productList.get(i);
@@ -56,9 +58,9 @@ public class ProductManageFile {
         }
         if (product != null) {
             productList.remove(product);
-            productManage.write(productList);
+            productStream.write(productList);
         } else {
-            System.out.printf("id = %d Không tồn tại.\n", id);
+            System.out.printf("Mã sản phẩm = %d Không tồn tại.\n", id);
         }
     }
 

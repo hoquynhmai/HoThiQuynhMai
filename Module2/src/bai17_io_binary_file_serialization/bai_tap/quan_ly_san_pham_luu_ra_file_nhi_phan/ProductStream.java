@@ -4,9 +4,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductManage {
-    //private static final String PRODUCT_FILE_NAME = "D:\\CODE GYM\\C0620G1-HoThiQuynhMai\\Module2\\src\\bai17_io_binary_file_serialization\\bai_tap\\quan_ly_san_pham_luu_ra_file_nhi_phan\\product.txt";
-    private static final String PRODUCT_FILE_NAME = "product.txt";
+public class ProductStream {
+    private static final String PRODUCT_FILE_NAME = "D:\\CODE GYM\\C0620G1-HoThiQuynhMai\\Module2\\src\\bai17_io_binary_file_serialization\\bai_tap\\quan_ly_san_pham_luu_ra_file_nhi_phan\\product.txt";
     public void write(List<Product> productList) {
         FileOutputStream fos = null;
         ObjectOutputStream oos = null;
@@ -25,13 +24,13 @@ public class ProductManage {
     }
 
     public List<Product> read() {
-        List<Product> studentList = new ArrayList<>();
+        List<Product> productList = new ArrayList<>();
         FileInputStream fis = null;
         ObjectInputStream ois = null;
         try {
             fis = new FileInputStream(new File(PRODUCT_FILE_NAME));
             ois = new ObjectInputStream(fis); // ***
-            studentList = (List<Product>) ois.readObject();
+            productList = (List<Product>) ois.readObject();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -42,7 +41,7 @@ public class ProductManage {
             closeStream(fis);
             closeStream(ois);
         }
-        return studentList;
+        return productList;
     }
 
     private void closeStream(InputStream is) {

@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StudentDao {
-    private static final String STUDENT_FILE_NAME = "student.txt";
+    private static final String STUDENT_FILE_NAME ="D:\\CODE GYM\\C0620G1-HoThiQuynhMai\\Module2\\src\\bai17_io_binary_file_serialization\\bai_tap\\quan_ly_sinh_vien\\student.txt";
 
     public void write(List<Student> studentList) {
         FileOutputStream fos = null;

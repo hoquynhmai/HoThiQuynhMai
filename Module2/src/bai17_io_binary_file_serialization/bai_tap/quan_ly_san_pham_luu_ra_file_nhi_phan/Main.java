@@ -6,12 +6,11 @@ public class Main {
     public static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        String choose = null;
+        String choose;
         boolean exit = false;
         ProductManageFile productManageFile = new ProductManageFile(); //***
         int productID;
 
-        // show menu
         showMenu();
         while (true) {
             choose = scanner.nextLine();
@@ -20,10 +19,12 @@ public class Main {
                     productManageFile.add();
                     break;
                 case "2":
+                    productManageFile.show();
                     productID = productManageFile.inputId();
                     productManageFile.edit(productID);
                     break;
                 case "3":
+                    productManageFile.show();
                     productID = productManageFile.inputId();
                     productManageFile.delete(productID);
                     break;
@@ -52,7 +53,7 @@ public class Main {
         System.out.println("2. Sửa sản phẩm bằng ID");
         System.out.println("3. Xóa sản phẩm bằng ID");
         System.out.println("4. Hiển thị thông tin sản phẩm");
-        System.out.println("0. exit.");
+        System.out.println("0. Exit.");
         System.out.println("---------------------------");
         System.out.print("Chọn: ");
     }

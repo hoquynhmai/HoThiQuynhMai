@@ -60,4 +60,15 @@ public class Product implements Serializable {
     public void setDescription(String description) {
         this.description = description;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "Mã sản phẩm:" + id +
+                ", Tên sản phẩm: " + name + '\'' +
+                ", Giá sản phẩm: " + cost +
+                ", Hãng sản xuất: " + producer + '\'' +
+                ", Miêu tả sản phẩm: '" + description + '\'' +
+                '}';
+    }
 }

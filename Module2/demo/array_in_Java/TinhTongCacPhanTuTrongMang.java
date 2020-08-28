@@ -1,4 +1,4 @@
-package codegym._3_array_method;
+package array_in_Java;
 
 public class MyArray {
     //khai bao

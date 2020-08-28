@@ -1,4 +1,4 @@
-package Bai1_Introduction_Java.Demo;
+package class_and_object;
 
 
 import java.util.Arrays;

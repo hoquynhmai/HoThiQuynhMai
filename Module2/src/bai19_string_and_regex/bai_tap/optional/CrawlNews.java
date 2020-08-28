@@ -21,13 +21,13 @@ public class CrawlNews {
             scanner.close();
 
             // remove all new line
-            content = content.replaceAll("\\n+", "");
+            content = content.replaceAll("\\n+", " ");
 
             // regex
-            Pattern p = Pattern.compile("name_news\">(.*?)</a>");
-            Matcher m = p.matcher(content);
-            while (m.find()) {
-                System.out.println(m.group(1));
+            Pattern pattern = Pattern.compile("<h class= 'name_news_title'><a href=\"(.*?)\" title=\"(.*?)\" </a>");
+            Matcher matcher = pattern.matcher(content);
+            while (matcher.find()) {
+                System.out.println(matcher.group());
             }
         } catch (IOException e) {
             e.printStackTrace();

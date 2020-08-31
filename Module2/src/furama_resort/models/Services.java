@@ -3,21 +3,22 @@ package furama_resort.models;
 public abstract class Services {
     private String id;
     private String tenDichVu;
-    private double dienTichSuDung;
-    private double giaThue; //giá thuê
-    private int soLuongNguoiThue; //số lượng người
-    private String kieuThue; //kiểu thuê
+    private String dienTichSuDung;
+    private String giaThue;
+    private String soLuongNguoiThue;
+    private String kieuThue;
 
     public Services() {
     }
 
-    public Services(String id, String nameServices, double areaUse, double rentCosst, int amountOfPeople, String rentType) {
+
+    public Services(String id, String tenDichVu, String dienTichSuDung, String giaThue, String soLuongNguoiThue, String kieuThue) {
         this.id = id;
-        this.tenDichVu = nameServices;
-        this.dienTichSuDung = areaUse;
-        this.giaThue = rentCosst;
-        this.soLuongNguoiThue = amountOfPeople;
-        this.kieuThue = rentType;
+        this.tenDichVu = tenDichVu;
+        this.dienTichSuDung = dienTichSuDung;
+        this.giaThue = giaThue;
+        this.soLuongNguoiThue = soLuongNguoiThue;
+        this.kieuThue = kieuThue;
     }
 
     public String getId() {
@@ -36,36 +37,36 @@ public abstract class Services {
         this.tenDichVu = tenDichVu;
     }
 
-    public double getAreaUse() {
+    public String getDienTichSuDung() {
         return dienTichSuDung;
     }
 
-    public void setAreaUse(double areaUse) {
-        this.dienTichSuDung = areaUse;
+    public void setDienTichSuDung(String dienTichSuDung) {
+        this.dienTichSuDung = dienTichSuDung;
     }
 
-    public double getRentCost() {
+    public String getGiaThue() {
         return giaThue;
     }
 
-    public void setRentCost(double rentCost) {
-        this.giaThue = rentCost;
+    public void setGiaThue(String giaThue) {
+        this.giaThue = giaThue;
     }
 
-    public int getAmountOfPeople() {
+    public String getSoLuongNguoiThue() {
         return soLuongNguoiThue;
     }
 
-    public void setAmountOfPeople(int amountOfPeople) {
-        this.soLuongNguoiThue = amountOfPeople;
+    public void setSoLuongNguoiThue(String soLuongNguoiThue) {
+        this.soLuongNguoiThue = soLuongNguoiThue;
     }
 
-    public String getRentType() {
+    public String getKieuThue() {
         return kieuThue;
     }
 
-    public void setRentType(String rentType) {
-        this.kieuThue = rentType;
+    public void setKieuThue(String kieuThue) {
+        this.kieuThue = kieuThue;
     }
 
     public abstract String showInfo();

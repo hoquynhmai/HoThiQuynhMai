@@ -3,13 +3,13 @@ package furama_resort.models;
 public class House extends Services {
     private String tieuChuanPhong;
     private String moTaTienNghiKhac;
-    private int soTang;
+    private String soTang;
 
     public House() {
     }
 
-    public House(String id, String nameServices, double areaUse, double rentCosst, int amountOfPeople, String rentType, String tieuChuanPhong, String moTaTienNghiKhac, int soTang) {
-        super(id, nameServices, areaUse, rentCosst, amountOfPeople, rentType);
+    public House(String id, String tenDichVu, String dienTichSuDung, String giaThue, String soLuongNguoiThue, String kieuThue, String tieuChuanPhong, String moTaTienNghiKhac, String soTang) {
+        super(id, tenDichVu, dienTichSuDung, giaThue, soLuongNguoiThue, kieuThue);
         this.tieuChuanPhong = tieuChuanPhong;
         this.moTaTienNghiKhac = moTaTienNghiKhac;
         this.soTang = soTang;
@@ -31,11 +31,11 @@ public class House extends Services {
         this.moTaTienNghiKhac = moTaTienNghiKhac;
     }
 
-    public int getSoTang() {
+    public String getSoTang() {
         return soTang;
     }
 
-    public void setSoTang(int soTang) {
+    public void setSoTang(String soTang) {
         this.soTang = soTang;
     }
 

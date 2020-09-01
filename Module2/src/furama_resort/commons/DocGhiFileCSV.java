@@ -1,5 +1,6 @@
 package furama_resort.commons;
 
+import furama_resort.models.Customer;
 import furama_resort.models.House;
 import furama_resort.models.Room;
 import furama_resort.models.Villa;
@@ -129,5 +130,63 @@ public class DocGhiFileCSV {
             bufferedReader.close();
         }
         return roomList;
+    }
+
+    public static void ghiFileCustomer(Customer customer) throws IOException {
+        File file = new File("D:\\CODE GYM\\C0620G1-HoThiQuynhMai\\Module2\\src\\furama_resort\\data\\Customer.csv");
+        FileWriter fileWriter = new FileWriter(file, true);
+        BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+        try {
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(customer.getHoTen()).append(DAU_PHAY).append(customer.getNgaySinh()).append(DAU_PHAY).append(customer.getGioiTinh()).append(DAU_PHAY).append(customer.getCmnd()).append(DAU_PHAY).append(customer.getSoDT()).append(DAU_PHAY).append(customer.getEmail()).append(DAU_PHAY).append(customer.getLoaiKhach()).append(DAU_PHAY).append(customer.getDiaChi());
+            bufferedWriter.write(stringBuilder.toString());
+            bufferedWriter.write("\n");
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            bufferedWriter.flush();
+            bufferedWriter.close();
+        }
+    }
+
+    public static List<Customer> docFileCustomer() throws IOException {
+        List<Customer> customerList = new ArrayList<>();
+        File file = new File("D:\\CODE GYM\\C0620G1-HoThiQuynhMai\\Module2\\src\\furama_resort\\data\\Customer.csv");
+        BufferedReader bufferedReader = null;
+        try {
+            FileReader fileReader = new FileReader(file);
+            bufferedReader = new BufferedReader(fileReader);
+            String dong = bufferedReader.readLine();
+            String[] mang;
+            while ((dong = bufferedReader.readLine()) != null) {
+                mang = dong.split(DAU_PHAY);
+                Customer customer = new Customer(mang[0], mang[1], mang[2], mang[3], mang[4], mang[5], mang[6], mang[7]);
+                customerList.add(customer);
+            }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } finally {
+            assert bufferedReader != null;
+            bufferedReader.close();
+        }
+        return customerList;
+    }
+
+    public static void ghiFileBooking(Customer customer) throws IOException {
+        File file = new File("D:\\CODE GYM\\C0620G1-HoThiQuynhMai\\Module2\\src\\furama_resort\\data\\Booking.csv");
+        BufferedWriter bufferedWriter = null;
+        try{
+            FileWriter fileWriter = new FileWriter(file,true);
+            bufferedWriter = new BufferedWriter(fileWriter);
+            StringBuilder stringBuilder = new StringBuilder();
+            stringBuilder.append(customer.getHoTen()).append(DAU_PHAY).append(customer.getNgaySinh()).append(DAU_PHAY).append(customer.getGioiTinh()).append(DAU_PHAY).append(customer.getCmnd()).append(DAU_PHAY).append(customer.getSoDT()).append(DAU_PHAY).append(customer.getEmail()).append(DAU_PHAY).append(customer.getLoaiKhach()).append(DAU_PHAY).append(customer.getDiaChi()).append(" === Dịch vụ: ").append(customer.getDichVu());
+            bufferedWriter.write(stringBuilder.toString());
+            bufferedWriter.append("\n");
+        } catch (IOException e){
+            e.printStackTrace();
+        } finally {
+            bufferedWriter.flush();
+            bufferedWriter.close();
+        }
     }
 }

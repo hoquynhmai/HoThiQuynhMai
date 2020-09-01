@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/data/Customer.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/BirthdayException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/EmailException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/GenderException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/IdCardException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/NameException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/models/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/bai19_string_and_regex/thuc_hanh/validate_email/EmailExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/bai19_string_and_regex/thuc_hanh/validate_email/EmailExample.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/bai19_string_and_regex/thuc_hanh/validate_email/EmailExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/bai19_string_and_regex/thuc_hanh/validate_email/EmailExampleTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/commons/DocGhiFileCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/commons/DocGhiFileCSV.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/controllers/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/data/Villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/bai19_string_and_regex/thuc_hanh/validate_email/EmailExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/bai19_string_and_regex/thuc_hanh/validate_email/EmailExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/furama_resort/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/controllers/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module2/src/furama_resort/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/data/Villa.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +45,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/HQM" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -134,6 +149,7 @@
       <workItem from="1597558070102" duration="128000" />
       <workItem from="1597561961840" duration="4000" />
       <workItem from="1597563347181" duration="12000" />
+      <workItem from="1598855322500" duration="1221000" />
     </task>
     <servers />
   </component>

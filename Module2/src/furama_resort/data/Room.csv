@@ -1,3 +1,4 @@
 ID,Tên Dịch Vụ, Diện Tích Sử Dụng, Giá Thuê, Số Lượng Người Tối Đa, Kiểu Thuê, Dịch Vụ Đi Kèm
 SVRO-0001,Room,40,7000,5,3 days,food
 SVRO-0002,Room,50,9000,6,3 days,drink
+SVRO-1234,Room 1,40,5000,5,3 days,food

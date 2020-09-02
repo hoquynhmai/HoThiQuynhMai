@@ -6,8 +6,7 @@ import furama_resort.libs.SapXepHoTenKhach;
 import furama_resort.models.*;
 
 import java.io.IOException;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class MainController {
     static Scanner input = new Scanner(System.in);
@@ -23,7 +22,7 @@ public class MainController {
     public static void displayMainMenu() throws IOException {
         int chon = 0;
         do {
-            System.out.println("-------------Menu-----------------\n1.Add New Services\n2.Show Services\n3.Add New Customer\n4.Show Information of Customer\n5.Add New Booking\n6.Show Information of Employee\n7.Exit\n-----------------------------------");
+            System.out.println("-------------Menu-----------------\n1.Add New Services\n2.Show Services\n3.Add New Customer\n4.Show Information of Customer\n5.Add New Booking\n6.Show Information of Employee\n7.Buy Movie Ticket\n8.Find Information Employeee\n9.Exit\n-----------------------------------");
             System.out.print("Chọn: ");
             String chonMenu = input.nextLine();
             if (kiemTraSoNguyen(chonMenu)) {
@@ -45,9 +44,15 @@ public class MainController {
                         addNewBooking();
                         break;
                     case 6:
-                        //showInfoEmployee();
+                        showInfoEmployee();
                         break;
                     case 7:
+                        buyMovieTicket();
+                        break;
+                    case 8:
+                        findInfoEmployee();
+                        break;
+                    case 9:
                         System.exit(0);
                         break;
                     default:
@@ -170,13 +175,16 @@ public class MainController {
                         showAllRoom();
                         break;
                     case 4:
-                        //showAllNameVillaNotDuplicate();
+                        showAllNameVillaNotDuplicate();
+                        displayMainMenu();
                         break;
                     case 5:
-                        //showAllNameHouseNotDuplicate();
+                        showAllNameHouseNotDuplicate();
+                        displayMainMenu();
                         break;
                     case 6:
-                        //showAllNameRoomNotDuplicate();
+                        showAllNameRoomNotDuplicate();
+                        displayMainMenu();
                         break;
                     case 7:
                         displayMainMenu();
@@ -191,31 +199,34 @@ public class MainController {
         } while (true);
     }
 
-    public static void showAllVilla() throws IOException {
+    public static List<Villa> showAllVilla() throws IOException {
         List<Villa> villaList = DocGhiFileCSV.docFileVilla();
         if (!villaList.isEmpty()) {
             for (Villa element : villaList) {
                 System.out.println(element);
             }
         } else System.out.println("Hiện chưa có thông tin của Villa nào");
+        return villaList;
     }
 
-    public static void showAllHouse() throws IOException {
+    public static List<House> showAllHouse() throws IOException {
         List<House> houseList = DocGhiFileCSV.docFileHouse();
         if (!houseList.isEmpty()) {
             for (House element : houseList) {
                 System.out.println(element);
             }
         } else System.out.println("Hiện chưa có thông tin của House nào");
+        return houseList;
     }
 
-    public static void showAllRoom() throws IOException {
+    public static List<Room> showAllRoom() throws IOException {
         List<Room> roomList = DocGhiFileCSV.docFileRoom();
         if (!roomList.isEmpty()) {
             for (Room element : roomList) {
                 System.out.println(element);
             }
         } else System.out.println("Hiện chưa có thông tin của Room nào");
+        return roomList;
     }
 
     public static void addNewCustomer() throws IOException {
@@ -239,15 +250,18 @@ public class MainController {
     }
 
     //Đã sắp xếp theo tên (nếu trùng tên sẽ so sánh đến năm sinh)
-    public static void showInfoCustomer() throws IOException {
+    public static List<Customer> showInfoCustomer() throws IOException {
         List<Customer> customerList = DocGhiFileCSV.docFileCustomer();
         if (!customerList.isEmpty()) {
             SapXepHoTenKhach sapXep = new SapXepHoTenKhach();
             customerList.sort(sapXep);
+            int bienDem = 1;
             for (Customer element : customerList) {
-                System.out.println(element.showInfo());
+                System.out.println(bienDem + ". " + element.showInfo());
+                bienDem++;
             }
         } else System.out.println("Hiện chưa có thông tin nào");
+        return customerList;
     }
 
     public static void addNewBooking() throws IOException {
@@ -364,6 +378,129 @@ public class MainController {
         } else System.out.println("Hiện chưa có thông tin của Room nào");
     }
 
+    public static void showAllNameVillaNotDuplicate() throws IOException {
+        List<Villa> villaList = DocGhiFileCSV.docFileVilla();
+        TreeSet<String> treeSet = new TreeSet<>();
+        int bienDem = 1;
+        if (!villaList.isEmpty()) {
+            for (Villa element : villaList) {
+                treeSet.add(element.getTenDichVu());
+            }
+
+            System.out.println("Danh sách các Villa không trùng tên: ");
+            for (String element : treeSet) {
+                System.out.println(bienDem + ". " + element);
+                bienDem++;
+            }
+        } else System.out.println("Hiện chưa có thông tin Villa nào");
+    }
+
+    public static void showAllNameHouseNotDuplicate() throws IOException {
+        List<House> houseList = DocGhiFileCSV.docFileHouse();
+        TreeSet<String> treeSet = new TreeSet<>();
+        int bienDem = 1;
+        if (!houseList.isEmpty()) {
+            for (House element : houseList) {
+                treeSet.add(element.getTenDichVu());
+            }
+
+            System.out.println("Danh sách các House không trùng tên: ");
+            for (String element : treeSet) {
+                System.out.println(bienDem + ". " + element);
+                bienDem++;
+            }
+        } else System.out.println("Hiện chưa có thông tin House nào");
+    }
+
+    public static void showAllNameRoomNotDuplicate() throws IOException {
+        List<Room> roomList = DocGhiFileCSV.docFileRoom();
+        TreeSet<String> treeSet = new TreeSet<>();
+        int bienDem = 1;
+        if (!roomList.isEmpty()) {
+            for (Room element : roomList) {
+                treeSet.add(element.getTenDichVu());
+            }
+
+            System.out.println("Danh sách các Room không trùng tên: ");
+            for (String element : treeSet) {
+                System.out.println(bienDem + ". " + element);
+                bienDem++;
+            }
+        } else System.out.println("Hiện chưa có thông tin Room nào");
+    }
+
+    public static void showInfoEmployee() throws IOException {
+        List<Employee> employeeList = DocGhiFileCSV.docFileEmployee();
+        Map<String, Employee> map = new TreeMap<>();
+        int bienDem = 1;
+        if (!employeeList.isEmpty()) {
+            for (Employee element : employeeList) {
+               map.put(element.getMaSoNV(),element);
+            }
+
+            System.out.println("Danh sách nhân viên Furuma Resort: ");
+                for (Map.Entry<String, Employee> entry : map.entrySet()) {
+                    System.out.println("NV " + bienDem + ". " + entry.getValue());
+                    bienDem++;
+                }
+        } else System.out.println("Hiện chưa có thông tin của nhân viên nào");
+    }
+
+    public static int bienDemVe = 0;
+    public static Queue<Customer> queue = new LinkedList<>();
+    public static void buyMovieTicket() throws IOException {
+        if(bienDemVe < 3){
+            List<Customer> customerList =  showInfoCustomer();
+            if(!customerList.isEmpty()){
+                int soThuTu;
+                do{
+                    System.out.println("Chọn số thứ tự Customer muốn đặt vé: ");
+                    String nhap = input.nextLine();
+                    if(kiemTraSoNguyen(nhap)){
+                        soThuTu = Integer.parseInt(nhap);
+                        if(soThuTu > 0 && soThuTu <= customerList.size()){
+                            break;
+                        }
+                    }
+                    System.out.println("Sự lựa chọn của bạn không hợp lệ");
+                } while (true);
+                Customer customer = customerList.get(soThuTu - 1);
+                queue.add(customer);
+                bienDemVe++;
+                System.out.println("Đặt vé thành công");
+            } else System.out.println("Hiện không có Customer nào");
+        }
+        if(bienDemVe == 3){
+            System.out.println("Vé xem phim đã được bán hết.\nDanh sách các Customer đã mua vé là:");
+            int bienDem = 1;
+            while (!queue.isEmpty()){
+                System.out.println("Customer " + bienDem + ". " + queue.remove().showInfo());
+                bienDem++;
+            }
+            bienDemVe = 0;
+        }
+    }
+
+    public static void findInfoEmployee() throws IOException {
+        TuHoSo tuHoSo = new TuHoSo();
+        if(!tuHoSo.stack.empty()){
+            boolean xacNhan = true;
+            System.out.println("Nhập mã số nhân viên bạn muốn tìm hồ sơ: ");
+            String maSo = input.nextLine();
+            while (!tuHoSo.stack.empty()){
+                Employee employee = tuHoSo.stack.pop();
+                if(maSo.equals(employee.getMaSoNV())){
+                    xacNhan = false;
+                    System.out.println("Hồ sơ nhân viên cần tìm là: \n" + employee);
+                    break;
+                }
+            }
+            if(xacNhan){
+                System.out.println("Nhân viên bạn tìm không có trong hệ thống");
+            }
+        } else System.out.println("Tủ Hồ Sơ đang trống");
+    }
+
     public static String kiemTraID(String tenDichVu) {
         final String ID_REGEX = "^SV" + tenDichVu + "[-]\\d{4}$";
         String id;
@@ -384,16 +521,16 @@ public class MainController {
         do {
             System.out.print("Nhập tên dịch vụ: ");
             tenDV = input.nextLine();
-            if (tenDV.equals("Villa")) {
+            if (tenDichVu.equals("Villa")) {
                 if (tenDV.matches("^(Villa)(\\s(\\w)+)+$")) break;
             }
-            if (tenDV.equals("House")) {
+            if (tenDichVu.equals("House")) {
                 if (tenDV.matches("^(House)(\\s(\\w)+)+$")) break;
             }
-            if (tenDV.equals("Room")) {
+            if (tenDichVu.equals("Room")) {
                 if (tenDV.matches("^(Room)(\\s(\\w)+)+$")) break;
             } else
-                System.out.println("========================================\nNhập sai tên dịch vụ\n(Villa - House - Room)\n========================================");
+                System.out.println("========================================\nNhập sai tên dịch vụ\nVilla tên - House tên  - Room tên\nVí dụ: Villa Vip || House 1 || Room normal1\n========================================");
         } while (true);
         return tenDV;
     }
@@ -558,7 +695,7 @@ public class MainController {
         do {
             System.out.print("Nhập số điện thoại: ");
             soDT = input.nextLine();
-            if (soDT.matches("^0\\d{9}(\\s)?$")) break;
+            if (soDT.matches("^0\\d{9}$")) break;
             else
                 System.out.println("========================================\nSố điện phải có 10 số và bắt đầu bằng số 0\n========================================");
         } while (true);

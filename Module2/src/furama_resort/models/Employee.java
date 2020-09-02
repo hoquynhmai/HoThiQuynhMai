@@ -1,6 +1,9 @@
 package furama_resort.models;
 
+import java.util.Comparator;
+
 public class Employee {
+    private String maSoNV;
     private String hoTenNV;
     private String tuoiNV;
     private String diaChiNV;
@@ -8,10 +11,19 @@ public class Employee {
     public Employee() {
     }
 
-    public Employee(String hoTenNV, String tuoiNV, String diaChiNV) {
+    public Employee(String maSoNV,String hoTenNV, String tuoiNV, String diaChiNV) {
+        this.maSoNV = maSoNV;
         this.hoTenNV = hoTenNV;
         this.tuoiNV = tuoiNV;
         this.diaChiNV = diaChiNV;
+    }
+
+    public String getMaSoNV() {
+        return maSoNV;
+    }
+
+    public void setMaSoNV(String maSoNV) {
+        this.maSoNV = maSoNV;
     }
 
     public String getHoTenNV() {
@@ -40,7 +52,8 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Họ và Tên Nhân Viên: " + hoTenNV
+        return "Mã số NV: " + maSoNV
+                + " _ Họ và Tên Nhân Viên: " + hoTenNV
                 + " _ Tuổi Nhân Viên: " + tuoiNV
                 + " _ Địa Chỉ: " + diaChiNV;
     }

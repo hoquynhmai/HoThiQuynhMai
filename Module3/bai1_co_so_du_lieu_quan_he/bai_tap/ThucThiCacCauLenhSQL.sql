@@ -16,3 +16,4 @@ values
 SELECT * FROM customer;
 SELECT customerName, phone, city, country FROM customer;
 SELECT * FROM customer WHERE city IN ('Hồ',090,'Đà Nẵng','Việt Nam') ;
+drop database classsicmodels;

@@ -1,7 +1,7 @@
 use ho_thi_quynh_mai_c0620g1;
 
 CREATE TABLE contacts
-( contact_id INT(11) NOT NULL AUTO_INCREMENT,
+( contact_id INT NOT NULL AUTO_INCREMENT,
   last_name VARCHAR(30) NOT NULL,
   first_name VARCHAR(25),
   birthday DATE,
@@ -10,7 +10,7 @@ CREATE TABLE contacts
 
 -- Sử dụng từ khóa DEFAULT để gán giá trị cho 1 cột
 CREATE TABLE suppliers
-( supplier_id INT(11) NOT NULL AUTO_INCREMENT,
+( supplier_id INT NOT NULL AUTO_INCREMENT,
   supplier_name VARCHAR(50) NOT NULL,
   account_rep VARCHAR(30) NOT NULL DEFAULT 'TBD',
   CONSTRAINT suppliers_pk PRIMARY KEY (supplier_id)

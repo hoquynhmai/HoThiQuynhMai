@@ -45,13 +45,13 @@ CREATE TABLE offices (
 DROP TABLE IF EXISTS employees;
 
 CREATE TABLE employees (
-  employeeNumber int(11) NOT NULL,
+  employeeNumber int NOT NULL,
   lastName varchar(50) NOT NULL,
   firstName varchar(50) NOT NULL,
   extension varchar(10) NOT NULL,
   email varchar(100) NOT NULL,
   officeCode varchar(10) NOT NULL,
-  reportsTo int(11) DEFAULT NULL,
+  reportsTo int DEFAULT NULL,
   jobTitle varchar(50) NOT NULL,
   PRIMARY KEY (employeeNumber),
   KEY reportsTo (reportsTo),
@@ -61,7 +61,7 @@ CREATE TABLE employees (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 CREATE TABLE customers (
-  customerNumber int(11) NOT NULL,
+  customerNumber int NOT NULL,
   customerName varchar(50) NOT NULL,
   contactLastName varchar(50) NOT NULL,
   contactFirstName varchar(50) NOT NULL,
@@ -72,7 +72,7 @@ CREATE TABLE customers (
   state varchar(50) DEFAULT NULL,
   postalCode varchar(15) DEFAULT NULL,
   country varchar(50) NOT NULL,
-  salesRepEmployeeNumber int(11) DEFAULT NULL,
+  salesRepEmployeeNumber int DEFAULT NULL,
   creditLimit decimal(10,2) DEFAULT NULL,
   PRIMARY KEY (customerNumber),
   KEY salesRepEmployeeNumber (salesRepEmployeeNumber),
@@ -82,13 +82,13 @@ CREATE TABLE customers (
 DROP TABLE IF EXISTS orders;
 
 CREATE TABLE orders (
-  orderNumber int(11) NOT NULL,
+  orderNumber int NOT NULL,
   orderDate date NOT NULL,
   requiredDate date NOT NULL,
   shippedDate date DEFAULT NULL,
   status varchar(15) NOT NULL,
   comments text,
-  customerNumber int(11) NOT NULL,
+  customerNumber int NOT NULL,
   PRIMARY KEY (orderNumber),
   KEY customerNumber (customerNumber),
   CONSTRAINT orders_ibfk_1 FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber)
@@ -97,9 +97,9 @@ CREATE TABLE orders (
 DROP TABLE IF EXISTS orderdetails;
 
 CREATE TABLE orderdetails (
-  orderNumber int(11) NOT NULL,
+  orderNumber int NOT NULL,
   productCode varchar(15) NOT NULL,
-  quantityOrdered int(11) NOT NULL,
+  quantityOrdered int NOT NULL,
   priceEach decimal(10,2) NOT NULL,
   orderLineNumber smallint(6) NOT NULL,
   PRIMARY KEY (orderNumber,productCode),
@@ -111,7 +111,7 @@ CREATE TABLE orderdetails (
 DROP TABLE IF EXISTS payments;
 
 CREATE TABLE payments (
-  customerNumber int(11) NOT NULL,
+  customerNumber int NOT NULL,
   checkNumber varchar(50) NOT NULL,
   paymentDate date NOT NULL,
   amount decimal(10,2) NOT NULL,

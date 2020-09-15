@@ -26,4 +26,4 @@ values
 ('H',1),
 ('F',3);
 
-DROP TABLE customers,orders;
+DROP TABLE customers, orders;

@@ -1,7 +1,7 @@
 use ho_thi_quynh_mai_c0620g1;
-DROP TABLE customers, employees,offices,orderdetails,orders,payments,productlines,products;
+DROP TABLE customers, employees, offices, orderdetails, orders, payments, productlines, products;
 CREATE TABLE customers (
-  customerNumber int(11) NOT NULL,
+  customerNumber int NOT NULL,
   customerName varchar(50) NOT NULL,
   contactLastName varchar(50) NOT NULL,
   contactFirstName varchar(50) NOT NULL,
@@ -5570,13 +5570,13 @@ insert  into orderdetails(orderNumber,productCode,quantityOrdered,priceEach,orde
 DROP TABLE IF EXISTS orders;
 
 CREATE TABLE orders (
-  orderNumber int(11) NOT NULL,
+  orderNumber int NOT NULL,
   orderDate date NOT NULL,
   requiredDate date NOT NULL,
   shippedDate date DEFAULT NULL,
-  status varchar(15) NOT NULL,
+  `status` varchar(255) NOT NULL,
   comments text,
-  customerNumber int(11) NOT NULL,
+  customerNumber int NOT NULL,
   PRIMARY KEY (orderNumber),
   KEY customerNumber (customerNumber),
   CONSTRAINT orders_ibfk_1 FOREIGN KEY (customerNumber) REFERENCES customers (customerNumber)

@@ -1,36 +1,14 @@
 use furuma;
-select * 
-from furuma.contract;
-select * 
-from furuma.ontract_detail;
-select * 
-from furuma.customer;
-select * 
-from furuma.department_employee;
-select *
-from furuma.employee;
-select *
-from furuma.level_employee;
-select *
-from furuma.positive_employee;
-select *
-from furuma.service;
-select *
-from furuma.service_accompanied;
-select *
-from furuma.type_customer;
-select *
-from furuma.type_rent;
-select *
-from furuma.type_service;
 
 /* Task 1: Thêm mới thông tin cho tất cả các bảng có trong CSDL để có thể thõa mãn các yêu cầu bên dưới */
 -- Thông tin kiểu thuê
 insert into type_rent (name_type_rent, price_rent)
 values
-('3 days', 300000),
-('a week',700000),
-('a month', 3100000);
+('3 days', 3000),
+('a week', 7000),
+('a day', 1000),
+('5 days', 5000),
+('a month', 31000);
 
 -- Thông tin loại dịch vụ
 insert into type_service (name_type_service)
@@ -44,11 +22,11 @@ values
 -- Thông tin về dịch vụ
 insert into service (name_service, area, number_floor, maximum_customer, cost_rent, `status`)
 values
-('Villa',30, 3, '20', '3000000', 'Booked'),
+('Villa 1',30, 3, '20', '3000000', 'Booked'),
 ('House',40, 4, '30', '4000000', 'Empty'),
 ('Room',50, 2, '35', '5000000', 'Empty'),
 ('House',60, 5, '40', '6000000', 'Booked'),
-('Villa',55, 4, '45', '7000000', 'Empty');
+('Villa 2',55, 4, '45', '7000000', 'Empty');
 
 -- Thông tin loại khách hàng
 insert into type_customer (name_type_customer)
@@ -60,13 +38,13 @@ values
 ('Member');
 
 -- Thông tin khách hàng
-insert into customer (name_customer, day_of_birth_customer, identity_card, phone_customer, email_customer, address_customer)
+insert into customer (name_customer, id_type_customer, day_of_birth_customer, identity_card, phone_customer, email_customer, address_customer)
 values
-('Ho Quynh Mai', '1995-05-15', '123456789', '0905002003', 'hoquynhmai@gmail.com', 'Da Nang'),
-('Nguyen Kieu Tien', '1998-08-18', '111222333', '0901789456', 'nguyenkieutien@gmail.com', 'Quang Nam'),
-('Tran Van Hoang', '1993-03-13', '999222000', '0789456512', 'tranvanhoang@gmail.com', 'Hue'),
-('Trinh Khanh', '2000-02-20', '555666789', '0258147369', 'trinhkhanh@gmail.com','Hai Phong'),
-('Ho Truc Mai', '1997-07-17', '561234789', '0123654789', 'hotrucmai@gmail.com','Binh Dinh');
+('Ho Quynh Mai', 1, '1995-05-15', '123456789', '0905002003', 'hoquynhmai@gmail.com', 'Da Nang'),
+('Nguyen Kieu Tien', 2,  '1998-08-18', '111222333', '0901789456', 'nguyenkieutien@gmail.com', 'Quang Nam'),
+('Tran Van Hoang', 3, '1993-03-13', '999222000', '0789456512', 'tranvanhoang@gmail.com', 'Hue'),
+('Trinh Khanh', 4, '2000-02-20', '555666789', '0258147369', 'trinhkhanh@gmail.com','Hai Phong'),
+('Ho Truc Mai', 1, '1997-07-17', '561234789', '0123654789', 'hotrucmai@gmail.com','Binh Dinh');
 
 -- Thông tin vị trí nhân viên
 insert into positive_employee (name_positive_employee)
@@ -104,13 +82,13 @@ values
 ('Phung Viet Hai', 4, 3, 1, '1991-08-28', '654987123', '4500000', '0852741963', 'phungviet.hai', 'Lao Cai');
 
 -- Thông tin bảng hợp đồng
-insert into contract (contract_date, contract_end_date, deposit_money, total_money)
+insert into contract (id_employee, id_customer, id_service, contract_date, contract_end_date, deposit_money, total_money)
 values
-('2020-09-10', '2020-09-15', 1000000,5000000),
-('2020-09-01', '2020-09-20', 500000, 8000000),
-('2020-09-11', '2020-09-24', 2000000, 7000000),
-('2020-09-15', '2020-09-30', 1000000, 9000000),
-('2020-09-16', '2020-09-20', 1000000, 5000000);
+(2,3,1,'2020-09-10', '2020-09-15', 1000000,5000000),
+(2,2,1,'2020-09-01', '2020-09-20', 500000, 8000000),
+(1,2,3,'2020-09-11', '2020-09-24', 2000000, 7000000),
+(4,3,2,'2020-09-15', '2020-09-30', 1000000, 9000000),
+(3,3,3,'2020-09-16', '2020-09-20', 1000000, 5000000);
 
 -- Thông tin dịch vụ đi kèm
 insert into service_accompanied (name_service_accompanied, price, unit, status_service_accompanied)
@@ -122,31 +100,10 @@ values
 ('Car Rental', 700000, 100000, 'Free');
 
 -- Thông tin hợp đồng chi tiết
-insert into contract_detail ()
+insert into contract_detail (id_contract, id_service_accompanied, amount_contract_detail)
 values
-(),
-(),
-(),
-(),
-();
-
-/*Task 2: Hiển thị thông tin của tất cả nhân viên có trong hệ thống có tên bắt đầu là một trong các ký tự “H”, “T” hoặc “K” và có tối đa 15 ký tự */
-select *
-from furuma.employee
-where name_employee like 'H%' or name_employee like 'T%'or name_employee like 'K%';
-
-
-/*Task3: Hiển thị thông tin của tất cả khách hàng có độ tuổi từ 18 đến 50 tuổi và có địa chỉ ở “Đà Nẵng” hoặc “Quảng Trị”.*/
-select * 
-from furuma.customer
-where year(day_of_birth_customer) between 1970 and 2002
-having address_customer = 'Da Nang' or address_customer = 'Quang Tri';
-
-/*Task 4: Đếm xem tương ứng với mỗi khách hàng đã từng đặt phòng bao nhiêu lần. Kết quả hiển thị được sắp xếp tăng dần theo số lần đặt phòng của khách hàng. Chỉ đếm những khách hàng nào có Tên loại khách hàng là “Diamond” */
-select name_customer, count(*) as count
-from furuma.customer
-	join contract on contract.id_contract = customer.id_customer
-	join type_customer on type_customer.id_type_customer = customer.id_contract
-where type_customer = 'Diamond'
-group by name_customer
-order by count;
+(1,2,3),
+(2,3,1),
+(4,3,1),
+(2,3,5),
+(4,5,1);

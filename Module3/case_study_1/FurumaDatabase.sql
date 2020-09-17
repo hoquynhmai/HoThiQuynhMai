@@ -89,16 +89,12 @@ drop table if exists employee;
 create table employee ( 
 id_employee int auto_increment,
 name_employee varchar(45),
-
 id_positive_employee int, 
 foreign key (id_positive_employee) references positive_employee(id_positive_employee),
-
 id_level_employee int,
 foreign key (id_level_employee) references level_employee (id_level_employee),
-
 id_department_employee int,
 foreign key (id_department_employee) references department_employee (id_department_employee),
-
 day_of_birth_employee date,
 identity_card_employee varchar(45),
 salary_employee varchar(45),
@@ -147,8 +143,3 @@ foreign key (id_service_accompanied) references service_accompanied (id_service_
 amount_contract_detail int,
 primary key (id_contract_detail)
 ); 
-
-/*Task 2: Hiển thị thông tin của tất cả nhân viên có trong hệ thống có tên bắt đầu là một trong các ký tự “H”, “T” hoặc “K” và có tối đa 15 ký tự */
-select name_employee `name`
-from employee
-where (`name`= 'H%' or `name`= 'T%' or `name`= '%K') and length(`name`) <= 15; 

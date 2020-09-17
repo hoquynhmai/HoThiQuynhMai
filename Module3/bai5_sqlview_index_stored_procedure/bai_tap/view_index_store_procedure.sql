@@ -66,19 +66,17 @@ DELIMITER //
 CREATE PROCEDURE findAllProduct()
 BEGIN
 SELECT * FROM products ;
-END //
+END; //
 DELIMITER ; 
 
 call findAllProduct();
 
 /*Tạo store procedure thêm một sản phẩm mới */
--- DELIMITER //
--- CREATE PROCEDURE findAllProduct() 
--- BEGIN
--- insert into products (productCode, productName, productPrice, productAmount, productDescription, productStatus) 
--- values ('006', 'Iphone X', '10000000', 5, 'Iphone', 'Stocking')
--- END;
--- DELIMITER ;
+insert into products (productCode, productName, productPrice, productAmount, productDescription, productStatus) 
+values ('006', 'Iphone X', '10000000', 5, 'Iphone', 'Stocking')
+
+SELECT * 
+FROM products
 
 /* Tạo store procedure sửa thông tin sản phẩm theo id */
 DELIMITER //
@@ -86,12 +84,19 @@ DROP PROCEDURE IF EXISTS `findAllProduct`//
 CREATE PROCEDURE findAllProduct()
 BEGIN
    SELECT *  FROM products where id = 3;
-END //
+END; //
 DELIMITER ;
 
 call findAllProduct();
 
 /* Tạo store procedure xoá sản phẩm theo id */
+DELIMITER //
+CREATE PROCEDURE delete_id()
+BEGIN
+  DELETE FROM products
+  WHERE id = 2;
+  select * from products;
+END; //
+DELIMITER ;   
 
-
-
+call delete_id();

@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    letter-spacing: 2px;
+    line-height: 20px;
+    text-indent:50px;
+    font-size: larger;
+
+}
+
+a{
+    margin-left: 570px;
+    text-decoration: none;
+}

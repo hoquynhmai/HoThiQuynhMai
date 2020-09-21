@@ -94,7 +94,7 @@ DELIMITER //
 CREATE PROCEDURE delete_id()
 BEGIN
   DELETE FROM products
-  WHERE id = 2;
+  WHERE id = 3;
   select * from products;
 END; //
 DELIMITER ;   

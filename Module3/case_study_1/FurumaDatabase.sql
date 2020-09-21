@@ -30,9 +30,9 @@ number_floor int,
 maximum_customer varchar(45),
 cost_rent varchar(45),
 id_type_service int,
-foreign key (id_type_service) references type_service(id_type_service),
+foreign key (id_type_service) references type_service(id_type_service) on delete cascade on update cascade,
 id_type_rent int,
-foreign key (id_type_rent) references type_rent(id_type_rent),
+foreign key (id_type_rent) references type_rent(id_type_rent) on delete cascade on update cascade,
 `status` varchar(45),
 primary key(id_service)
 );
@@ -50,7 +50,7 @@ drop table if exists customer;
 create table customer (
 id_customer int auto_increment,
 id_type_customer int,
-foreign key (id_type_customer) references type_customer(id_type_customer),
+foreign key (id_type_customer) references type_customer(id_type_customer) on delete cascade on update cascade,
 name_customer varchar(45),
 day_of_birth_customer date,
 identity_card varchar(45),
@@ -90,11 +90,11 @@ create table employee (
 id_employee int auto_increment,
 name_employee varchar(45),
 id_positive_employee int, 
-foreign key (id_positive_employee) references positive_employee(id_positive_employee),
+foreign key (id_positive_employee) references positive_employee(id_positive_employee) on delete cascade on update cascade,
 id_level_employee int,
-foreign key (id_level_employee) references level_employee (id_level_employee),
+foreign key (id_level_employee) references level_employee (id_level_employee) on delete cascade on update cascade,
 id_department_employee int,
-foreign key (id_department_employee) references department_employee (id_department_employee),
+foreign key (id_department_employee) references department_employee (id_department_employee) on delete cascade on update cascade,
 day_of_birth_employee date,
 identity_card_employee varchar(45),
 salary_employee varchar(45),
@@ -109,11 +109,11 @@ primary key (id_employee)
 create table contract (
 id_contract int auto_increment,
 id_employee int,
-foreign key (id_employee) references employee(id_employee),
+foreign key (id_employee) references employee(id_employee) on delete cascade on update cascade,
 id_customer int,
-foreign key (id_customer) references customer (id_customer),
+foreign key (id_customer) references customer (id_customer) on delete cascade on update cascade,
 id_service int,
-foreign key (id_service) references service (id_service),
+foreign key (id_service) references service (id_service) on delete cascade on update cascade,
 contract_date date,
 contract_end_date date,
 deposit_money int, -- Tiền đặt cọc 
@@ -137,9 +137,9 @@ drop table if exists contract_detail;
 create table contract_detail (
 id_contract_detail int auto_increment,
 id_contract int,
-foreign key (id_contract) references contract (id_contract),
+foreign key (id_contract) references contract (id_contract) on delete cascade on update cascade,
 id_service_accompanied int,
-foreign key (id_service_accompanied) references service_accompanied (id_service_accompanied),
+foreign key (id_service_accompanied) references service_accompanied (id_service_accompanied) on delete cascade on update cascade,
 amount_contract_detail int,
 primary key (id_contract_detail)
 ); 

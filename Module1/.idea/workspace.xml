@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f74a699a-62ed-445c-bc08-e23dd1c240ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/data/Customer.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/BirthdayException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/EmailException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/GenderException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/IdCardException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/exception/NameException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/models/Customer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/bai19_string_and_regex/thuc_hanh/validate_email/EmailExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/bai19_string_and_regex/thuc_hanh/validate_email/EmailExample.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/bai19_string_and_regex/thuc_hanh/validate_email/EmailExampleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/bai19_string_and_regex/thuc_hanh/validate_email/EmailExampleTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/commons/DocGhiFileCSV.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/commons/DocGhiFileCSV.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/controllers/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/controllers/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/out/production/Module2/furama_resort/data/Villa.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/src/bai19_string_and_regex/thuc_hanh/validate_email/EmailExampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/bai19_string_and_regex/thuc_hanh/validate_email/EmailExampleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/src/furama_resort/controllers/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/controllers/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Module2/src/furama_resort/data/Villa.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../Module2/src/furama_resort/data/Villa.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/bai5_sqlview_index_stored_procedure/bai_tap/view_index_store_procedure.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/bai5_sqlview_index_stored_procedure/bai_tap/view_index_store_procedure.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/case_study_1/Checklist Database modul3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/case_study_1/Checklist Database modul3.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/case_study_1/FuramaInformation.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/case_study_1/FuramaInformation.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Module3/case_study_1/request.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../Module3/case_study_1/request.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +34,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Module3" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -150,6 +139,8 @@
       <workItem from="1597561961840" duration="4000" />
       <workItem from="1597563347181" duration="12000" />
       <workItem from="1598855322500" duration="1221000" />
+      <workItem from="1600659429129" duration="23000" />
+      <workItem from="1600659535221" duration="68000" />
     </task>
     <servers />
   </component>
@@ -165,10 +156,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="324" y="132" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1366.728@0.0.1366.728" timestamp="1593679760824" />
-    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1597563357262">
+    <state x="462" y="107" key="FileChooserDialogImpl" timestamp="1600659600498">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1597563357262" />
+    <state x="462" y="107" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1600659600498" />
     <state width="1345" height="179" key="GridCell.Tab.0.bottom" timestamp="1594809506443">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

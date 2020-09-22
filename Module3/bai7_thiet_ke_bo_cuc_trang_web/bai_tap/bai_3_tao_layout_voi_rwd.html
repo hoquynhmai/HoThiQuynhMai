@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tạo Layout Với RWD</title>
+    <link rel="stylesheet" href="grid_view.css">
+    <link rel="stylesheet" href="responsive.css">
+    <style>
+        ul {
+            list-style-type: none;
+            background: black;
+        }
+
+        ul li {
+            float: left;
+            padding: 15px;
+            margin: 0px;
+        }
+
+        a {
+            color: deepskyblue;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        #body::after {
+            clear: both;
+        }
+
+        #header {
+            background: black;
+        }
+
+        #header-1 {
+            float: right;
+            padding: 15px;
+        }
+
+        #left, #right {
+            background: lightgoldenrodyellow;
+            min-height: 1195px;
+        }
+
+        h2 {
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        p {
+            margin-left: 20px;
+            line-height: 20px;
+        }
+
+        #footer {
+            background: #CDCDCD;
+        }
+    </style>
+</head>
+<body>
+<div id="menu">
+    <div id="header" class="col-12">
+        <ul>
+            <li><a href="#">Logo</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Project</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div id="header-1"><a href="#">Login</a></div>
+    </div>
+
+    <div id="body">
+        <div id="left" class="col-2">
+            <ul>
+                <li><a href="https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh">Tiểu sử Hồ Chí Minh</a></li>
+                <li>
+                    <a href="https://www.google.com/search?q=h%E1%BB%93+ch%C3%AD+minh&stick=H4sIAAAAAAAAAONgVuLQz9U3yChMK3rEaMwt8PLHPWEprUlrTl5jVOHiCs7IL3fNK8ksqRQS42KDsnikuLjgmngWsfJlPNw9WSE54_BahdzMvAwAfhuvo1MAAAA&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjai73o-_zrAhVkIqYKHWBUCKsQ_AUoAXoECB0QAw&biw=1366&bih=657">Hình
+                        ảnh Hồ Chí Minh</a></li>
+            </ul>
+        </div>
+        <div id="content" class="col-8">
+            <h2>Hồ Chí Minh</h2>
+            <p>
+                Hồ Chí Minh(19 tháng 5 năm 1890 – 2 tháng 9 năm 1969), tên khai sinh là Nguyễn Sinh Cung, là nhà cách
+                mạng, người sáng lập Đảng Cộng sản Việt Nam, một trong những người đặt nền móng và lãnh đạo công cuộc
+                đấu tranh giành độc lập, toàn vẹn lãnh thổ cho Việt Nam trong thế kỷ XX, một chiến sĩ cộng sản quốc tế.
+                Ông là người viết và đọc bản Tuyên ngôn Độc lập khai sinh nước Việt Nam Dân chủ Cộng hòa ngày 2 tháng 9
+                năm 1945 tại Quảng trường Ba Đình, Hà Nội, Chủ tịch nước Việt Nam Dân chủ Cộng hòa trong thời gian
+                1945–1969, Chủ tịch Ban Chấp hành Trung ương Đảng Lao động Việt Nam trong thời gian 1951–1969.
+            </p>
+            <p>
+                Là lãnh tụ được nhiều người ngưỡng mộ và tôn sùng, lăng của ông được xây ở Hà Nội, nhiều tượng đài của
+                Hồ Chí Minh được đặt ở khắp mọi miền Việt Nam, hình ảnh của ông được nhiều người dân treo trong nhà, đặt
+                trên bàn thờ, và được in ở hầu hết mệnh giá đồng tiền Việt Nam. Hồ Chí Minh được thờ cúng ở một số đền
+                thờ và chùa ở Việt Nam. Ông đồng thời cũng là nhà văn, nhà thơ và nhà báo với nhiều tác phẩm viết bằng
+                tiếng Việt, tiếng Hán và tiếng Pháp. Hồ Chí Minh đã được tạp chí Time bình chọn là 1 trong 100 người có
+                ảnh hưởng nhất của thế kỷ XX.
+            </p>
+            <hr>
+            <h2>Hình ảnh Hồ Chí Minh</h2><img src="HCM.jpg" height="768" width="550"/>
+        </div>
+        <div id="right" class="col-2"></div>
+    </div>
+    <div id="footer" class="col-12"></div>
+</div>
+</body>
+</html>

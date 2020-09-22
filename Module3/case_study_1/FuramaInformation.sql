@@ -75,7 +75,7 @@ insert into employee (name_employee, id_positive_employee, id_level_employee, id
 values
 ('Nguyen Truong An', 1, 1, 1,'1980-10-10', '123456789', '5000', '0123456789', 'nguyentruong.an', 'Da Nang'),
 ('Doan Thi To Uyen', 2, 2, 2, '1990-02-01', '123123123', '6000', '0369258147', 'donthito.uyen', 'Hai Phong'),
-('Bui Van Thanh', 3, 3, 3, '1993-05-09', '369258147', '7000', '0789456123', 'buivan.thanh', 'Bac Giang'),
+('Bui Van Thanh', 3, 3, 3, '1993-05-09', '369258147', '7000', '0789456123', 'buivan.thanh', 'Hai Chau'),
 ('Ho Thuy Hoang Tram Uyen', 4, 4, 4, '1995-03-30', '789412563', '4500', '0951357147', 'hothuyhoangtram.uyen', 'Quy Nhon'),
 ('Nguyen Khuong Binh', 5, 1, 1, '1991-08-28', '654987123', '4500', '0852741963', 'nguyenkhuong.binh', 'Lao Cai');
 

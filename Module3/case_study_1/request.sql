@@ -180,12 +180,24 @@ having total_contract < 4;
 
 /* Task 16:	Xóa những Nhân viên chưa từng lập được hợp đồng nào từ năm 2017 đến năm 2019 */
 
--- ****
 
 /* Task 17:	Cập nhật thông tin những khách hàng có TenLoaiKhachHang từ  Platinium lên Diamond, 
 		    chỉ cập nhật những khách hàng đã từng đặt phòng với tổng Tiền thanh toán trong năm 2019 là lớn hơn 10.000.000 VNĐ */
-
-
+ update type_customer
+ set name_type_customer ='Diamond'
+ where name_type_customer ='Platinium' and id_type_customer in (
+ select total_payment.id_type_customer
+ from (
+ select type_customer.id_type_customer, sum(co.total_money*23000) as total_money
+ from type_customer t
+ inner join customer c on c.id_type_customer = t.id_type_customer
+ inner join contract co on co.id_customer = c.id_customer
+ where year(co.contract_date) = '2019'
+ group by t.id_type_customer
+ ) as total_payment
+ where total_payment.total_money > 10000000
+ );
+-- ***
 
 /* Task 18:	Xóa những khách hàng có hợp đồng trước năm 2016 (chú ý ràng buộc giữa các bảng) */
 delete from customer 
@@ -216,3 +228,36 @@ from customer c
 	inner join contract co on co.id_customer = c.id_customer
     inner join employee e on e.id_employee = co.id_employee;
 -- group by c.id_customer;
+
+/*Task 21: Tạo khung nhìn có tên là V_NHANVIEN để lấy được thông tin của tất cả các nhân viên có địa chỉ là “Hải Châu” 
+		   và đã từng lập hợp đồng cho 1 hoặc nhiều Khách hàng bất kỳ  với ngày lập hợp đồng là “12/12/2019” */
+create view v_nhan_vien as
+select e.*
+from employee e
+inner join contract co using(id_employee)
+where e.address_employee = 'Hải Châu' and co.contract_date = '2019-12-12';     
+
+--  Xem thông tin từ view
+select *
+from  v_nhan_vien ;  
+
+
+/* Task 22: Thông qua khung nhìn V_NHANVIEN thực hiện cập nhật địa chỉ thành “Liên Chiểu” 
+			đối với tất cả các Nhân viên được nhìn thấy bởi khung nhìn này */
+update v_nhan_vien
+set address_employee='Liên Chiều'
+where id_employee ='Hải Châu';
+-- ***
+
+/*Task 23: Tạo Store procedure Sp_1 Dùng để xóa thông tin của một Khách hàng nào đó với Id Khách hàng được truyền vào như là 1 tham số của Sp_1 */
+delimiter //
+drop procedure if exists Sp_1//
+create procedure Sp_1(id int)
+begin
+delete from customer
+where id_customer = id;
+end;//
+delimiter ;
+
+/* Task 24: Tạo Store procedure Sp_2 Dùng để thêm mới vào bảng HopDong với yêu cầu Sp_2 phải thực hiện kiểm tra tính hợp lệ của dữ liệu bổ sung, 
+		    với nguyên tắc không được trùng khó chính và đảm bảo toàn vẹn tham chiếu đến các bảng liên quan */

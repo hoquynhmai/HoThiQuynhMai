@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Tạo Layout Với RWD</title>
     <link rel="stylesheet" href="grid_view.css">
-    <link rel="stylesheet" href="responsive.css">
     <style>
         ul {
             list-style-type: none;
@@ -52,12 +51,30 @@
         }
 
         #footer {
-            background: #CDCDCD;
+            background: gray;
+            text-align: center;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        @media only screen and (max-width: 768px) {
+            [class *= 'col-'] {
+                width: 100%;
+            }
+        }
+
+        .row::after {
+            clear: both;
+        }
+
+        #left ul li a:hover {
+            color: red;
         }
     </style>
 </head>
 <body>
-<div id="menu">
+<div class="row">
     <div id="header" class="col-12">
         <ul>
             <li><a href="#">Logo</a></li>
@@ -69,7 +86,7 @@
         <div id="header-1"><a href="#">Login</a></div>
     </div>
 
-    <div id="body">
+    <div id="body" class="row">
         <div id="left" class="col-2">
             <ul>
                 <li><a href="https://vi.wikipedia.org/wiki/H%E1%BB%93_Ch%C3%AD_Minh">Tiểu sử Hồ Chí Minh</a></li>
@@ -78,7 +95,7 @@
                         ảnh Hồ Chí Minh</a></li>
             </ul>
         </div>
-        <div id="content" class="col-8">
+        <div id="content" class="col-8" class="row">
             <h2>Hồ Chí Minh</h2>
             <p>
                 Hồ Chí Minh(19 tháng 5 năm 1890 – 2 tháng 9 năm 1969), tên khai sinh là Nguyễn Sinh Cung, là nhà cách
@@ -99,9 +116,11 @@
             <hr>
             <h2>Hình ảnh Hồ Chí Minh</h2><img src="HCM.jpg" height="768" width="550"/>
         </div>
-        <div id="right" class="col-2"></div>
+        <div id="right" class="col-2" class="row"></div>
     </div>
-    <div id="footer" class="col-12"></div>
+    <div id="footer" class="col-12" class="row">
+        <p>CodeGym HQM &copy; 2020</p>
+    </div>
 </div>
 </body>
 </html>

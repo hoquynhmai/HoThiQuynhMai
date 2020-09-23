@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <title>Tạo Bootstraps cơ bản</title>
+    <style>
+        header {
+            position: relative;
+        }
+
+        .shopping-mall {
+            margin-top: auto;
+            font-variant: small-caps;
+        }
+
+        .shopping-mall > h1 {
+            font-family: Impact;
+            font-size: 50px;
+            color: white;
+            letter-spacing: 0.3px;
+            text-shadow: 0 0 2px black;
+            padding-bottom: 0px;
+            border-bottom: 1px dotted gray;
+            margin: 0px;
+            width: 49%;
+        }
+
+        .shopping-mall > h5 {
+            margin-top: 5px;
+            letter-spacing: 0.5px;
+            font-size: small;
+        }
+
+        .poly-cart {
+            margin-top: 5px;
+        }
+
+        .poly-cart ul {
+            padding: 0px;
+            margin: 0px;
+            list-style: none;
+            font-variant: small-caps;
+        }
+
+        .poly-cart .panel-heading strong {
+            font-variant: small-caps;
+            font-size: larger;
+            text-shadow: 0 0 2px darkgray;
+        }
+
+        .poly-prod {
+            text-align: center;
+            padding: 5px;
+        }
+
+        .poly-prod .panel-body img {
+            height: 150px;
+            max-width: 95%;
+        }
+
+        .card-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 16px;
+            color: inherit;
+        }
+
+        a.list-group-item, button.list-group-item {
+            color: #555;
+        }
+
+        span {
+            padding: 15px;
+        }
+
+        nav {
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="container" style="height: auto">
+    <header class="row">
+        <div class="col-sm-8 shopping-mall">
+            <h1>Online shopping mall</h1>
+            <h5>The center point of the professional programming</h5>
+        </div>
+        <img class="col-sm-4" src="online_shop.gif" style="height: 90px"/>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <span class="glyphicon glyphicon-home"></span> Trang chủ
+        <span class="glyphicon glyphicon-list-alt"></span> Giới thiệu
+        <span class="glyphicon glyphicon-earphone"></span> Liên hệ
+        <span class="glyphicon glyphicon-envelope"></span> Góp ý
+        <span class="glyphicon glyphicon-question-sign"></span> Hỏi đáp
+        <span class="glyphicon glyphicon-user"></span> Tài khoản
+    </nav>
+    <div class="row">
+        <article class="col-sm-9">
+            <div class="col-sm-4 poly-prod" style="float: left">
+                <div class="card card-default">
+                    <div class="card-header"><h4 class="card-title">Nokia</h4></div>
+                    <div class="card-body"><img src="nokia.jpg" height="180" width="150"/></div>
+                    <div class="card-footer">$ 100.25</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 poly-prod" style="float: left">
+                <div class="card card-default">
+                    <div class="card-header"><h4 class="card-title">Nokia</h4></div>
+                    <div class="card-body"><img src="nokia.jpg" height="180" width="150"/></div>
+                    <div class="card-footer">$ 100.25</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 poly-prod" style="float: left">
+                <div class="card card-default">
+                    <div class="card-header"><h4 class="card-title">Nokia</h4></div>
+                    <div class="card-body"><img src="nokia.jpg" height="180" width="150"/></div>
+                    <div class="card-footer">$ 100.25</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 poly-prod" style="float: left">
+                <div class="card card-default">
+                    <div class="card-header"><h4 class="card-title">Nokia</h4></div>
+                    <div class="card-body"><img src="nokia.jpg" height="180" width="150"/></div>
+                    <div class="card-footer">$ 100.25</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 poly-prod" style="float: left">
+                <div class="card card-default">
+                    <div class="card-header"><h4 class="card-title">Nokia</h4></div>
+                    <div class="card-body"><img src="nokia.jpg" height="180" width="150"/></div>
+                    <div class="card-footer">$ 100.25</div>
+                </div>
+            </div>
+
+            <div class="col-sm-4 poly-prod" style="float: left">
+                <div class="card card-default">
+                    <div class="card-header"><h4 class="card-title">Nokia</h4></div>
+                    <div class="card-body"><img src="nokia.jpg" height="180" width="150"/></div>
+                    <div class="card-footer">$ 100.25</div>
+                </div>
+            </div>
+        </article>
+
+        <aside class="col-sm-3">
+            <div class="poly-cart">
+                <div class="card">
+                    <div class="card-body">
+                        <img class="col-sm-5" src="gio_hang.gif"/>
+                        <ul class="col-sm-7">
+                            <li>100 items</li>
+                            <li>$56.8</li>
+                            <li><a href="#">Xem giỏ hàng</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card card-default">
+                    <div class="card-body">
+                        <form>
+                            <input placeholder="Keywords" class="form-control"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="card-header">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    <strong>Chủng Loại</strong>
+                </div>
+                <div class="list-group">
+                    <a href="#" class="list-group-item">Điện thoại di động</a>
+                    <a href="#" class="list-group-item">Máy tính xách tay</a>
+                    <a href="#" class="list-group-item">Máy tính để bàn</a>
+                    <a href="#" class="list-group-item">Quạt máy</a>
+                    <a href="#" class="list-group-item">Tivi</a>
+                    <a href="#" class="list-group-item">Tủ lạnh</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer class="card card-default" style="background: black">
+        <div class="card-heading text-center">
+            <p style="color: #f2f2f2">CodeGym &copy; 2020</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

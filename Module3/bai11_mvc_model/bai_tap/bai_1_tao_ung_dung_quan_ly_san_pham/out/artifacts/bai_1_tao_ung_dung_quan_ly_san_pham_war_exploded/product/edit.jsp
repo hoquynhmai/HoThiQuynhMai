@@ -26,20 +26,20 @@
         <table>
             <tr>
                 <td>Name:</td>
-                <td><input type="text" name="name" id="name" value="${requestScope["product"].getName()}"></td>
+                <td><input type="text" name="name" id="name" value="${requestScope["listProduct"].getName()}"></td>
             </tr>
             <tr>
                 <td>Cost:</td>
-                <td><input type="text" name="cost" id="cost" value="${requestScope["product"].getCost()}"></td>
+                <td><input type="text" name="cost" id="cost" value="${requestScope["listProduct"].getCost()}"></td>
             </tr>
             <tr>
                 <td>Describe:</td>
-                <td><input type="text" name="describe" id="describe" value="${requestScope["product"].getDescribe()}">
+                <td><input type="text" name="describe" id="describe" value="${requestScope["listProduct"].getDescribe()}">
                 </td>
             </tr>
             <tr>
                 <td>Producer:</td>
-                <td><input type="text" name="producer" id="producer" value="${requestScope["product"].getProducer()}">
+                <td><input type="text" name="producer" id="producer" value="${requestScope["listProduct"].getProducer()}">
                 </td>
             </tr>
             <tr>

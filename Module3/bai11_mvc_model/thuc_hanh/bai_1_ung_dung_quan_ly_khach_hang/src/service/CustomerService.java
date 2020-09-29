@@ -15,7 +15,7 @@ public interface CustomerService {
     Customer findById(int id);
 
     //     update(): Cập nhật thông tin của một khách hàng
-    void updatet(int id, Customer customer);
+    void update(int id, Customer customer);
 
     //     remove(): Xoá một khách hàng khỏi danh sách
     void remove(int id);

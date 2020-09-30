@@ -1,11 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: laptop88
-  Date: 9/29/2020
-  Time: 9:48 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+         pageEncoding="UTF-8" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
@@ -15,7 +10,7 @@
 <center>
     <h1>User Management</h1>
     <h2>
-        <a href="users?action=users">List All Users</a>
+        <a href="/users?action=create">Add New User</a>
     </h2>
 </center>
 <div align="center">

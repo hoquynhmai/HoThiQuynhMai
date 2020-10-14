@@ -13,7 +13,7 @@
           integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
           crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information Student</title>
+    <title>Information Land</title>
 
     <style>
         h1 {
@@ -34,55 +34,66 @@
 
 <body>
 <div class="container">
-    <h1>Information Student</h1>
+    <h1>Information Land</h1>
 
     <form>
         <div class="form-group has-success">
             <label for="id">ID :</label>
-            <input type="text" class="form-control" name="id" id="id" value="${student.id}" readonly/>
+            <input type="text" class="form-control" name="id" id="id" value="${land.id}" readonly/>
+            <p>${messageID}</p>
         </div>
 
         <div class="form-group has-success">
-            <label for="name">Name :</label>
-            <input type="text" class="form-control" name="name" id="name" value="${student.name}" readonly/>
+            <label for="area">Area :</label>
+            <input type="text" class="form-control" name="area" id="area" value="${land.area}" readonly/>
         </div>
 
         <div class="form-group has-warning">
-            <label for="age">Age :</label>
-            <input type="text" class="form-control" name="age" id="age" value="${student.age}" readonly/>
-            <p>${messageAge}</p>
+            <label for="floor">Age :</label>
+            <input type="text" class="form-control" name="floor" id="floor" value="${land.floor}" readonly/>
+            <%--            <p>${messageAge}</p>--%>
         </div>
 
         <div class="form-group has-error">
-            <label for="email">Email :</label>
-            <input type="text" class="form-control" name="email" id="email" value="${student.email}" readonly/>
-            <p>${messageEmail}</p>
+            <label for="price">Price :</label>
+            <input type="text" class="form-control" name="price" id="price" value="${land.price}" readonly/>
+            <%--            <p>${messageEmail}</p>--%>
         </div>
 
         <div class="form-group has-error">
-            <label for="phone">Phone Number :</label>
-            <input type="text" class="form-control" name="phone" id="phone" value="${student.phone}" readonly/>
-            <p>${messagePhone}</p>
+            <label for="startDate">Start Date :</label>
+            <input type="date" class="form-control" name="startDate" id="startDate" value="${land.startDate}" readonly/>
+            <%--            <p>${messagePhone}</p>--%>
         </div>
 
-        <div class="form-group has-success">
-            <label for="address">Address :</label>
-            <input type="text" class="form-control" name="address" id="address" value="${student.address}" readonly/>
+        <div class="form-group has-error">
+            <label for="endDate">End Date :</label>
+            <input type="date" class="form-control" name="endDate" id="endDate" value="${land.endDate}" readonly/>
+            <%--            <p>${messagePhone}</p>--%>
         </div>
 
         <div class="form-group">
-            <label>Class Name : </label>
-            <span style="color: blue; font-weight: bold">
-            <c:forEach var="classCodeGym" items="${classList}">
+            <label>Land Type : </label>
+            <c:forEach var="landType" items="${landTypeList}">
                 <c:choose>
-                    <c:when test="${classCodeGym.id.equals(student.idClass)}">
-                        <c:out value="${classCodeGym.name}"></c:out>
+                    <c:when test="${landType.id.equals(land.idLandType)}">
+                        <c:out value="${landType.name}"></c:out>
                     </c:when>
                 </c:choose>
             </c:forEach>
-            </span>
         </div>
-        <a href="/student" class="btn btn-info back">Back</a>
+
+        <div class="form-group">
+            <label>Land Status : </label>
+            <c:forEach var="landStatus" items="${landStatusList}">
+                <c:choose>
+                    <c:when test="${landStatus.id.equals(land.idLandStatus)}">
+                        <c:out value="${landStatus.name}"></c:out>
+                    </c:when>
+                </c:choose>
+            </c:forEach>
+        </div>
+        <a href="/land" class="btn btn-info back">Back</a>
     </form>
 
 </div>

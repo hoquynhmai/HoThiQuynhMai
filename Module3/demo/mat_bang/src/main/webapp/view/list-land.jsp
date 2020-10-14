@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ADMIN
-  Date: 10/6/2020
-  Time: 8:02 PM
-  To change this template use File | Settings | File Templates.
---%>
+
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
@@ -194,7 +188,7 @@
                     <div class="col-sm-8">
                         <h1 style="color: red">Land List</h1>
                         <p>
-                            <a href="/student?actionLand=showCreateNewLand"><h3>Create New Land</h3></a>
+                            <a href="/land?actionLand=showCreateNewLand"><h3>Create New Land</h3></a>
                         </p>
                     </div>
                     <div class="col-sm-4">
@@ -209,7 +203,7 @@
                 </div>
             </div>
 
-            <table id="tableStudent" class="table table-striped table-hover table-bordered" style="width: 100%">
+            <table id="tableLand" class="table table-striped table-hover table-bordered" style="width: 100%">
                 <thead>
                 <tr>
                     <th>ID</th>
@@ -251,17 +245,17 @@
                             </c:forEach>
                         </td>
                         <td>
-                            <a href="/student?actionLand=showDetailLand&id=${land.id}" class="detail"
+                            <a href="/land?actionLand=showDetailLand&id=${land.id}" class="detail"
                                title="Detail"
                                data-toggle="tooltip"><i class="fa fa-eye" style="color: blue"></i></a>
 
-                            <a href="/student?actionLand=showEditLand&id=${land.id}" class="edit"
+                            <a href="/land?actionLand=showEditLand&id=${land.id}" class="edit"
                                title="Edit"
                                data-toggle="tooltip"><i
                                     class="material-icons">&#xE254;</i></a>
 
                             <a data-toggle="modal" data-target="#deleteLandModal" href="#"
-                               onclick="setLandtId('${land.id}')" class="delete" title="Delete"
+                               onclick="setLandId('${land.id}')" class="delete" title="Delete"
                                data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
@@ -269,7 +263,7 @@
                 </tbody>
             </table>
 
-            <%--            <a href="/student" class="btn btn-info back">Back</a>--%>
+            <%--            <a href="/land" class="btn btn-info back">Back</a>--%>
 
             <div id="deleteLandModal" class="modal fade">
                 <div class="modal-dialog">
@@ -302,7 +296,7 @@
 
 <form method="post" action="/land" id="formSearchLand">
     <input type="hidden" name="actionLand" value="searchLand">
-    <input type="hidden" name="nameLand" id="keywordLandHidden"/>
+    <input type="hidden" name="floorLand" id="keywordLandHidden"/>
     <input hidden type="submit" value="Search"/>
 </form>
 
@@ -313,8 +307,8 @@
 <script src="datatables/js/dataTables.bootstrap4.min.js"></script>
 
 <script>
-    function setStudentId(id) {
-        document.getElementById("idStudent").value = id;
+    function setLandId(id) {
+        document.getElementById("idLand").value = id;
         document.getElementById("warning").value = "Are you sure you want to delete Land have id is " + id + " ?";
     }
 

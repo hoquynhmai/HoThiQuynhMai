@@ -1,31 +1,31 @@
 package dao;
 
-import model.Land;
-import model.LandStatus;
-import model.LandType;
+import model.Category;
+import model.Color;
+import model.Product;
 
 import java.util.List;
 
-public interface LandDAO {
-    List<Land> findAllLand();
+public interface ProductDAO {
+    List<Product> findAllProduct();
 
-    Land findByID(String id);
+    Product findByID(String id);
 
-    List<Land> findByFloor(String floor);
+    List<Product> findByName(String name);
 
-    List<Land> findByArea(String area);
+    List<Product> findByPrice(String price);
 
-    List<Land> findByFloorAndArea(String floor, String area);
+    List<Product> findByNameAndPrice(String name, String price);
 
-    String save(Land land);
+    String save(Product product);
 
-    String update(Land land);
+    String update(Product product);
 
     void delete(String id);
 
-    List<LandType> findAllLandType();
+    List<Category> findAllCategory();
 
-    List<LandStatus> findAllLandStatus();
+    List<Color> findAllColor();
 
-    List<String> findAllIDLand();
+    List<String> findAllIDProduct();
 }

@@ -1,8 +1,8 @@
 package dao;
 
-import model.Land;
-import model.LandStatus;
-import model.LandType;
+import model.Category;
+import model.Color;
+import model.Product;
 
 import java.sql.CallableStatement;
 import java.sql.PreparedStatement;
@@ -11,38 +11,37 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class LandDAOImpl implements LandDAO {
-    private static final String SELECT_ALL_LAND = "select * from land";
-    private static final String SELECT_LAND_BY_FLOOR = "select * from land where floor like ?";
-    private static final String SELECT_LAND_BY_AREA = "select * from land where area like ?";
-    private static final String SELECT_LAND_BY_FLOOR_AND_AREA = "select * from land where floor like ? and area like ?";
-    private static final String SELECT_LAND_BY_ID = "select * from land where land_id = ?";
-    private static final String SELECT_ALL_LAND_TYPE = "select * from land_type";
-    private static final String SELECT_ALL_LAND_STATUS = "select * from land_status";
-    private static final String CREATE_NEW_LAND = "insert into land values (?, ?, ?, ?, ?, ?, ?,?)";
-    private static final String SELECT_ALL_ID_LAND = "select land_id from land";
+public class ProductDAOImpl implements ProductDAO {
+    private static final String SELECT_ALL_PRODUCT = "select * from product";
+    private static final String SELECT_PRODUCT_BY_NAME = "select * from product where product_name like ?";
+    private static final String SELECT_PRODUCT_BY_PRICE = "select * from product where price like ?";
+    private static final String SELECT_PRODUCT_BY_NAME_AND_PRICE = "select * from product where product_name like ? and price like ?";
+    private static final String SELECT_PRODUCT_BY_ID = "select * from product where product_id = ?";
+    private static final String SELECT_ALL_CATEGORY = "select * from category";
+    private static final String SELECT_ALL_COLOR = "select * from color";
+    private static final String CREATE_NEW_PRODUCT = "insert into product values (null, ?, ?, ?, ?, ?,?)";
+    private static final String SELECT_ALL_ID_PRODUCT = "select product_id from product";
 
     @Override
-    public List<Land> findAllLand() {
+    public List<Product> findAllProduct() {
         BaseDAO baseDAO = new BaseDAO();
-        List<Land> landList = new ArrayList<>();
+        List<Product> productList = new ArrayList<>();
 
         try {
-            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_ALL_LAND);
+            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_ALL_PRODUCT);
             ResultSet resultSet = preparedStatement.executeQuery();
-            Land land;
+            Product product;
             while (resultSet.next()) {
-                String id = resultSet.getString("land_id");
-                String area = resultSet.getString("area");
-                String floor = resultSet.getString("floor");
+                String id = resultSet.getString("product_id");
+                String name = resultSet.getString("product_name");
                 String price = resultSet.getString("price");
-                String startDate = resultSet.getString("start_date");
-                String endDate = resultSet.getString("end_date");
-                String idLandType = resultSet.getString("land_type_id");
-                String idLandStatus = resultSet.getString("land_status_id");
+                String quantity = resultSet.getString("quantity");
+                String idColor = resultSet.getString("color_id");
+                String description = resultSet.getString("description");
+                String idCategory = resultSet.getString("category_id");
 
-                land = new Land(id, area, floor, price, startDate, endDate, idLandType, idLandStatus);
-                landList.add(land);
+                product = new Product(id, name, price, quantity, idColor,description, idCategory);
+                productList.add(product);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -53,30 +52,29 @@ public class LandDAOImpl implements LandDAO {
                 e.printStackTrace();
             }
         }
-        return landList;
+        return productList;
     }
 
     @Override
-    public Land findByID(String idNeedFind) {
+    public Product findByID(String idNeedFind) {
         BaseDAO baseDAO = new BaseDAO();
-        Land land = null;
+        Product product = null;
 
         try {
-            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_LAND_BY_ID);
+            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_PRODUCT_BY_ID);
             preparedStatement.setString(1, idNeedFind);
 
             ResultSet resultSet = preparedStatement.executeQuery();
             while (resultSet.next()) {
-                String id = resultSet.getString("land_id");
-                String area = resultSet.getString("area");
-                String floor = resultSet.getString("floor");
+                String id = resultSet.getString("product_id");
+                String name = resultSet.getString("product_name");
                 String price = resultSet.getString("price");
-                String startDate = resultSet.getString("start_date");
-                String endDate = resultSet.getString("end_date");
-                String idLandType = resultSet.getString("land_type_id");
-                String idLandStatus = resultSet.getString("land_status_id");
+                String quantity = resultSet.getString("quantity");
+                String idColor = resultSet.getString("color_id");
+                String description = resultSet.getString("description");
+                String idCategory = resultSet.getString("category_id");
 
-                land = new Land(id, area, floor, price, startDate, endDate, idLandType, idLandStatus);
+                product = new Product(id, name, price, quantity, idColor,description, idCategory);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -87,31 +85,30 @@ public class LandDAOImpl implements LandDAO {
                 e.printStackTrace();
             }
         }
-        return land;
+        return product;
     }
 
     @Override
-    public List<Land> findByFloor(String floorNeedSearch) {
+    public List<Product> findByName(String nameNeedSearch) {
         BaseDAO baseDAO = new BaseDAO();
-        List<Land> landList = new ArrayList<>();
+        List<Product> productList = new ArrayList<>();
 
         try {
-            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_LAND_BY_FLOOR);
-            preparedStatement.setString(1, '%' + floorNeedSearch + '%');
+            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_PRODUCT_BY_NAME);
+            preparedStatement.setString(1, '%' + nameNeedSearch + '%');
             ResultSet resultSet = preparedStatement.executeQuery();
-            Land land;
+            Product product;
             while (resultSet.next()) {
-                String id = resultSet.getString("land_id");
-                String area = resultSet.getString("area");
-                String floor = resultSet.getString("floor");
+                String id = resultSet.getString("product_id");
+                String name = resultSet.getString("product_name");
                 String price = resultSet.getString("price");
-                String startDate = resultSet.getString("start_date");
-                String endDate = resultSet.getString("end_date");
-                String idLandType = resultSet.getString("land_type_id");
-                String idLandStatus = resultSet.getString("land_status_id");
+                String quantity = resultSet.getString("quantity");
+                String idColor = resultSet.getString("color_id");
+                String description = resultSet.getString("description");
+                String idCategory = resultSet.getString("category_id");
 
-                land = new Land(id, area, floor, price, startDate, endDate, idLandType, idLandStatus);
-                landList.add(land);
+                product = new Product(id, name, price, quantity, idColor,description, idCategory);
+                productList.add(product);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -122,31 +119,30 @@ public class LandDAOImpl implements LandDAO {
                 e.printStackTrace();
             }
         }
-        return landList;
+        return productList;
     }
 
     @Override
-    public List<Land> findByArea(String areaNeedSearch) {
+    public List<Product> findByPrice(String priceNeedSearch) {
         BaseDAO baseDAO = new BaseDAO();
-        List<Land> landList = new ArrayList<>();
+        List<Product> productList = new ArrayList<>();
 
         try {
-            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_LAND_BY_AREA);
-            preparedStatement.setString(1, '%' + areaNeedSearch + '%');
+            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_PRODUCT_BY_PRICE);
+            preparedStatement.setString(1, '%' + priceNeedSearch + '%');
             ResultSet resultSet = preparedStatement.executeQuery();
-            Land land;
+            Product product;
             while (resultSet.next()) {
-                String id = resultSet.getString("land_id");
-                String area = resultSet.getString("area");
-                String floor = resultSet.getString("floor");
+                String id = resultSet.getString("product_id");
+                String name = resultSet.getString("product_name");
                 String price = resultSet.getString("price");
-                String startDate = resultSet.getString("start_date");
-                String endDate = resultSet.getString("end_date");
-                String idLandType = resultSet.getString("land_type_id");
-                String idLandStatus = resultSet.getString("land_status_id");
+                String quantity = resultSet.getString("quantity");
+                String idColor = resultSet.getString("color_id");
+                String description = resultSet.getString("description");
+                String idCategory = resultSet.getString("category_id");
 
-                land = new Land(id, area, floor, price, startDate, endDate, idLandType, idLandStatus);
-                landList.add(land);
+                product = new Product(id, name, price, quantity, idColor,description, idCategory);
+                productList.add(product);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -157,32 +153,31 @@ public class LandDAOImpl implements LandDAO {
                 e.printStackTrace();
             }
         }
-        return landList;
+        return productList;
     }
 
     @Override
-    public List<Land> findByFloorAndArea(String floorNeedSearch, String areaNeedSearch) {
+    public List<Product> findByNameAndPrice(String nameNeedSearch, String priceNeedSearch) {
         BaseDAO baseDAO = new BaseDAO();
-        List<Land> landList = new ArrayList<>();
+        List<Product> productList = new ArrayList<>();
 
         try {
-            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_LAND_BY_FLOOR_AND_AREA);
-            preparedStatement.setString(1, '%' + floorNeedSearch + '%');
-            preparedStatement.setString(2, '%' + areaNeedSearch + '%');
+            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_PRODUCT_BY_NAME_AND_PRICE);
+            preparedStatement.setString(1, '%' + nameNeedSearch + '%');
+            preparedStatement.setString(2, '%' + priceNeedSearch + '%');
             ResultSet resultSet = preparedStatement.executeQuery();
-            Land land;
+            Product product;
             while (resultSet.next()) {
-                String id = resultSet.getString("land_id");
-                String area = resultSet.getString("area");
-                String floor = resultSet.getString("floor");
+                String id = resultSet.getString("product_id");
+                String name = resultSet.getString("product_name");
                 String price = resultSet.getString("price");
-                String startDate = resultSet.getString("start_date");
-                String endDate = resultSet.getString("end_date");
-                String idLandType = resultSet.getString("land_type_id");
-                String idLandStatus = resultSet.getString("land_status_id");
+                String quantity = resultSet.getString("quantity");
+                String idColor = resultSet.getString("color_id");
+                String description = resultSet.getString("description");
+                String idCategory = resultSet.getString("category_id");
 
-                land = new Land(id, area, floor, price, startDate, endDate, idLandType, idLandStatus);
-                landList.add(land);
+                product = new Product(id, name, price, quantity, idColor,description, idCategory);
+                productList.add(product);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -193,22 +188,21 @@ public class LandDAOImpl implements LandDAO {
                 e.printStackTrace();
             }
         }
-        return landList;
+        return productList;
     }
 
     @Override
-    public String save(Land land) {
+    public String save(Product product) {
         BaseDAO baseDAO = new BaseDAO();
         try {
-            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(CREATE_NEW_LAND);
-            preparedStatement.setString(1, land.getId());
-            preparedStatement.setString(2, land.getArea());
-            preparedStatement.setString(3, land.getFloor());
-            preparedStatement.setString(4, land.getPrice());
-            preparedStatement.setString(5, land.getStartDate());
-            preparedStatement.setString(6, land.getEndDate());
-            preparedStatement.setString(7, land.getIdLandType());
-            preparedStatement.setString(8, land.getIdLandStatus());
+            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(CREATE_NEW_PRODUCT);
+//            preparedStatement.setString(1, product.getId());
+            preparedStatement.setString(1, product.getName());
+            preparedStatement.setString(2, product.getPrice());
+            preparedStatement.setString(3, product.getQuantity());
+            preparedStatement.setString(4, product.getIdColor());
+            preparedStatement.setString(5, product.getDescription());
+            preparedStatement.setString(6, product.getIdCategory());
 
             preparedStatement.executeUpdate();
 
@@ -225,18 +219,17 @@ public class LandDAOImpl implements LandDAO {
     }
 
     @Override
-    public String update(Land land) {
+    public String update(Product product) {
         BaseDAO baseDAO = new BaseDAO();
         try {
-            CallableStatement callableStatement = baseDAO.getConnection().prepareCall("call update_land(?, ?,?,?,?,?,?,?)");
-            callableStatement.setString(1, land.getId());
-            callableStatement.setString(2, land.getArea());
-            callableStatement.setString(3, land.getFloor());
-            callableStatement.setString(4, land.getPrice());
-            callableStatement.setString(5, land.getStartDate());
-            callableStatement.setString(6, land.getEndDate());
-            callableStatement.setString(7, land.getIdLandType());
-            callableStatement.setString(8, land.getIdLandStatus());
+            CallableStatement callableStatement = baseDAO.getConnection().prepareCall("call update_product(?, ?,?,?,?,?,?)");
+            callableStatement.setString(1, product.getId());
+            callableStatement.setString(2, product.getName());
+            callableStatement.setString(3, product.getPrice());
+            callableStatement.setString(4, product.getQuantity());
+            callableStatement.setString(5, product.getIdColor());
+            callableStatement.setString(6, product.getDescription());
+            callableStatement.setString(7, product.getIdCategory());
 
             callableStatement.executeUpdate();
 
@@ -256,7 +249,7 @@ public class LandDAOImpl implements LandDAO {
     public void delete(String idNeedDelete) {
         BaseDAO baseDAO = new BaseDAO();
         try {
-            CallableStatement callableStatement = baseDAO.getConnection().prepareCall("call delete_land(?)");
+            CallableStatement callableStatement = baseDAO.getConnection().prepareCall("call delete_product(?)");
             callableStatement.setString(1, idNeedDelete);
             callableStatement.executeUpdate();
         } catch (SQLException e) {
@@ -271,20 +264,20 @@ public class LandDAOImpl implements LandDAO {
     }
 
     @Override
-    public List<LandType> findAllLandType() {
+    public List<Category> findAllCategory() {
         BaseDAO baseDAO = new BaseDAO();
-        List<LandType> landTypeList = new ArrayList<>();
+        List<Category> categoryList = new ArrayList<>();
 
         try {
-            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_ALL_LAND_TYPE);
+            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_ALL_CATEGORY);
             ResultSet resultSet = preparedStatement.executeQuery();
-            LandType landType;
+            Category category;
             while (resultSet.next()) {
-                String id = resultSet.getString("land_type_id");
-                String name = resultSet.getString("land_type_name");
+                String id = resultSet.getString("category_id");
+                String name = resultSet.getString("category_name");
 
-                landType = new LandType(id, name);
-                landTypeList.add(landType);
+                category = new Category(id, name);
+                categoryList.add(category);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -295,24 +288,24 @@ public class LandDAOImpl implements LandDAO {
                 e.printStackTrace();
             }
         }
-        return landTypeList;
+        return categoryList;
     }
 
     @Override
-    public List<LandStatus> findAllLandStatus() {
+    public List<Color> findAllColor() {
         BaseDAO baseDAO = new BaseDAO();
-        List<LandStatus> landStatusList = new ArrayList<>();
+        List<Color> colorList = new ArrayList<>();
 
         try {
-            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_ALL_LAND_STATUS);
+            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_ALL_COLOR);
             ResultSet resultSet = preparedStatement.executeQuery();
-            LandStatus landStatus;
+            Color color;
             while (resultSet.next()) {
-                String id = resultSet.getString("land_status_id");
-                String name = resultSet.getString("land_status_name");
+                String id = resultSet.getString("color_id");
+                String name = resultSet.getString("color_name");
 
-                landStatus = new LandStatus(id, name);
-                landStatusList.add(landStatus);
+                color = new Color(id, name);
+                colorList.add(color);
             }
         } catch (SQLException e) {
             e.printStackTrace();
@@ -323,20 +316,20 @@ public class LandDAOImpl implements LandDAO {
                 e.printStackTrace();
             }
         }
-        return landStatusList;
+        return colorList;
     }
 
     @Override
-    public List<String> findAllIDLand() {
+    public List<String> findAllIDProduct() {
         BaseDAO baseDAO = new BaseDAO();
         List<String> listID = new ArrayList<>();
 
         try {
-            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_ALL_ID_LAND);
+            PreparedStatement preparedStatement = baseDAO.getConnection().prepareStatement(SELECT_ALL_ID_PRODUCT);
             ResultSet resultSet = preparedStatement.executeQuery();
             String id;
             while (resultSet.next()) {
-                id = resultSet.getString("land_id");
+                id = resultSet.getString("product_id");
                 listID.add(id);
             }
         } catch (SQLException e) {

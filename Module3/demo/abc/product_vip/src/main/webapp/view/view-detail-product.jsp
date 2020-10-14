@@ -1,3 +1,4 @@
+
 <%--
   Created by IntelliJ IDEA.
   User: ADMIN
@@ -13,7 +14,7 @@
           integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
           crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Information Land</title>
+    <title>Information Product</title>
 
     <style>
         h1 {
@@ -34,66 +35,55 @@
 
 <body>
 <div class="container">
-    <h1>Information Land</h1>
+    <h1>Information Product</h1>
 
     <form>
         <div class="form-group has-success">
             <label for="id">ID :</label>
-            <input type="text" class="form-control" name="id" id="id" value="${land.id}" readonly/>
-            <p>${messageID}</p>
+            <input type="text" class="form-control" name="id" id="id" value="${product.id}" readonly/>
         </div>
 
         <div class="form-group has-success">
-            <label for="area">Area :</label>
-            <input type="text" class="form-control" name="area" id="area" value="${land.area}" readonly/>
+            <label for="name">Name :</label>
+            <input type="text" class="form-control" name="name" id="name" value="${product.name}" readonly/>
         </div>
 
         <div class="form-group has-warning">
-            <label for="floor">Age :</label>
-            <input type="text" class="form-control" name="floor" id="floor" value="${land.floor}" readonly/>
-            <%--            <p>${messageAge}</p>--%>
-        </div>
-
-        <div class="form-group has-error">
             <label for="price">Price :</label>
-            <input type="text" class="form-control" name="price" id="price" value="${land.price}" readonly/>
-            <%--            <p>${messageEmail}</p>--%>
+            <input type="text" class="form-control" name="price" id="price" value="${product.price}" readonly/>
         </div>
 
         <div class="form-group has-error">
-            <label for="startDate">Start Date :</label>
-            <input type="date" class="form-control" name="startDate" id="startDate" value="${land.startDate}" readonly/>
-            <%--            <p>${messagePhone}</p>--%>
-        </div>
-
-        <div class="form-group has-error">
-            <label for="endDate">End Date :</label>
-            <input type="date" class="form-control" name="endDate" id="endDate" value="${land.endDate}" readonly/>
-            <%--            <p>${messagePhone}</p>--%>
+            <label for="quantity">Quantity :</label>
+            <input type="text" class="form-control" name="quantity" id="quantity" value="${product.quantity}" readonly/>
         </div>
 
         <div class="form-group">
-            <label>Land Type : </label>
-            <c:forEach var="landType" items="${landTypeList}">
+            <label>Color : </label>
+            <c:forEach var="color" items="${colorList}">
                 <c:choose>
-                    <c:when test="${landType.id.equals(land.idLandType)}">
-                        <c:out value="${landType.name}"></c:out>
+                    <c:when test="${color.id.equals(product.idColor)}">
+                        <c:out value="${color.name}"></c:out>
                     </c:when>
                 </c:choose>
             </c:forEach>
         </div>
+        <div class="form-group has-error">
+            <label for="description">Description :</label>
+            <input type="text" class="form-control" name="description" id="description" value="${product.description}" readonly/>
+        </div>
 
         <div class="form-group">
-            <label>Land Status : </label>
-            <c:forEach var="landStatus" items="${landStatusList}">
+            <label>Category: </label>
+            <c:forEach var="category" items="${categoryList}">
                 <c:choose>
-                    <c:when test="${landStatus.id.equals(land.idLandStatus)}">
-                        <c:out value="${landStatus.name}"></c:out>
+                    <c:when test="${category.id.equals(product.idCategory)}">
+                        <c:out value="${category.name}"></c:out>
                     </c:when>
                 </c:choose>
             </c:forEach>
         </div>
-        <a href="/land" class="btn btn-info back">Back</a>
+        <a href="/product" class="btn btn-info back">Back</a>
     </form>
 
 </div>

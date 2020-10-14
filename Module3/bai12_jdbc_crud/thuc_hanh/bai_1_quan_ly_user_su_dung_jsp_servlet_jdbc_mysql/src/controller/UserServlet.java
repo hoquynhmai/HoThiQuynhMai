@@ -112,17 +112,11 @@ public class UserServlet extends HttpServlet {
         String email = request.getParameter("email");
         String country = request.getParameter("country");
         User newUser = new User(name, email, country);
-        try {
-            userDAO.insertUser(newUser);
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        userDAO.insertUser(newUser);
         RequestDispatcher dispatcher = request.getRequestDispatcher("user/create.jsp");
         try {
             dispatcher.forward(request, response);
-        } catch (ServletException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        } catch (ServletException | IOException e) {
             e.printStackTrace();
         }
     }
@@ -172,7 +166,7 @@ public class UserServlet extends HttpServlet {
     private void sortNameUser(HttpServletRequest request, HttpServletResponse response) {
         List<User> listUser = userDAO.selectAllUsersSort();
         request.setAttribute("listUser", listUser);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/view.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {
@@ -186,7 +180,7 @@ public class UserServlet extends HttpServlet {
         String country = request.getParameter("country");
         List<User> listUser = userDAO.selectUser(country);
         request.setAttribute("listUser", listUser);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("user/view.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("user/list.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException e) {

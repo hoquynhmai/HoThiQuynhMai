@@ -1,25 +1,29 @@
 package bo;
 
+import model.Category;
+import model.Color;
+import model.Product;
+
 import java.util.List;
 
-public interface LandBO {
-    List<Land> findAllLand();
+public interface ProductBO {
+    List<Product> findAllProduct();
 
-    Land findByID(String id);
+    Product findByID(String id);
 
-    List<Land> findByFloor(String floor);
+    List<Product> findByName(String name);
 
-    List<Land> findByArea(String area);
+    List<Product> findByPrice(String price);
 
-    List<Land> findByFloorAndArea(String floor, String area);
+    List<Product> findByNameAndPrice(String name, String price);
 
-    String save(Land land);
+    String save(Product product);
 
-    String update(Land land);
+    String update(Product product);
 
     void delete(String id);
 
-    List<LandType> findAllLandType();
+    List<Category> findAllCategory();
 
-    List<LandStatus> findAllLandStatus();
+    List<Color> findAllColor();
 }

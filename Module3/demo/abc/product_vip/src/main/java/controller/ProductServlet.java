@@ -1,7 +1,10 @@
 package controller;
 
-import bo.LandBO;
-import bo.LandBOImpl;
+import bo.ProductBO;
+import bo.ProductBOImpl;
+import model.Category;
+import model.Color;
+import model.Product;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -12,59 +15,59 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 
-@WebServlet(name = "LandServlet", urlPatterns = {"","/land"})
-public class LandServlet extends HttpServlet {
-    LandBO landBO = new LandBOImpl();
+@WebServlet(name = "LandServlet", urlPatterns = {"","/product"})
+public class ProductServlet extends HttpServlet {
+    ProductBO productBO = new ProductBOImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) {
-        String actionLand = request.getParameter("actionLand");
-        if (actionLand == null) {
-            actionLand = "";
+        String actionProduct = request.getParameter("actionProduct");
+        if (actionProduct == null) {
+            actionProduct = "";
         }
-        switch (actionLand) {
-            case "createNewLand":
-                createNewLand(request, response);
+        switch (actionProduct) {
+            case "createNewProduct":
+                createNewProduct(request, response);
                 break;
-            case "updateLand":
-                updateLand(request, response);
+            case "updateProduct":
+                updateProduct(request, response);
                 break;
-            case "searchLand":
-                searchLand(request, response);
+            case "searchProduct":
+                searchProduct(request, response);
                 break;
         }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) {
-        String actionLand = request.getParameter("actionLand");
-        if (actionLand == null) {
-            actionLand = "";
+        String actionProduct = request.getParameter("actionProduct");
+        if (actionProduct == null) {
+            actionProduct = "";
         }
-        switch (actionLand) {
-            case "showCreateNewLand":
-                showCreateNewLand(request, response);
+        switch (actionProduct) {
+            case "showCreateNewProduct":
+                showCreateNewProduct(request, response);
                 break;
-            case "showEditLand":
-                showEditLand(request, response);
+            case "showEditProduct":
+                showEditProduct(request, response);
                 break;
-            case "deleteLand":
-                deleteLand(request, response);
+            case "deleteProduct":
+                deleteProduct(request, response);
                 break;
-            case "showDetailLand":
-                showDetailLand(request, response);
+            case "showDetailProduct":
+                showDetailProduct(request, response);
             default:
-                listLand(request, response);
+                listProduct(request, response);
         }
     }
 
-    private void listLand(HttpServletRequest request, HttpServletResponse response) {
-        List<Land> landList = this.landBO.findAllLand();
-        List<LandType> landTypeList = this.landBO.findAllLandType();
-        List<LandStatus> landStatusList = this.landBO.findAllLandStatus();
-        request.setAttribute("landList", landList);
-        request.setAttribute("landTypeList", landTypeList);
-        request.setAttribute("landStatusList", landStatusList);
+    private void listProduct(HttpServletRequest request, HttpServletResponse response) {
+        List<Product> productList = this.productBO.findAllProduct();
+        List<Category> categoryList = this.productBO.findAllCategory();
+        List<Color> colorList = this.productBO.findAllColor();
+        request.setAttribute("productList", productList);
+        request.setAttribute("categoryList", categoryList);
+        request.setAttribute("colorList", colorList);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/list-land.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/list-product.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
@@ -72,14 +75,14 @@ public class LandServlet extends HttpServlet {
         }
     }
 
-    private void showCreateNewLand(HttpServletRequest request, HttpServletResponse response) {
-        List<LandType> landTypeList = this.landBO.findAllLandType();
-        request.setAttribute("landTypeList", landTypeList);
+    private void showCreateNewProduct(HttpServletRequest request, HttpServletResponse response) {
+        List<Category> categoryList = this.productBO.findAllCategory();
+        request.setAttribute("categoryList", categoryList);
 
-        List<LandStatus> landStatusList = this.landBO.findAllLandStatus();
-        request.setAttribute("landStatusList", landStatusList);
+        List<Color> colorList = this.productBO.findAllColor();
+        request.setAttribute("colorList", colorList);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/create-new-land.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/create-new-product.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
@@ -87,31 +90,25 @@ public class LandServlet extends HttpServlet {
         }
     }
 
-    private void createNewLand(HttpServletRequest request, HttpServletResponse response) {
-        Land land = informationLand(request);
+    private void createNewProduct(HttpServletRequest request, HttpServletResponse response) {
+        Product product = informationProduct(request);
 
-        String message = this.landBO.save(land);
+        String message = this.productBO.save(product);
 
         if (!message.equals("Create Complete !")) {
-            request.setAttribute("land", land);
+            request.setAttribute("product", product);
             request.setAttribute("messageComplete", "Wrong Validate Create !");
 
             String[] messages = message.split(",");
             for (String element : messages) {
-                if (element.contains("ID")) {
-                    request.setAttribute("messageID", element);
-                }
-                if (element.contains("area")) {
-                    request.setAttribute("messageArea", element);
-                }
-                if (element.contains("floor")) {
-                    request.setAttribute("messageFloor", element);
+                if (element.contains("name")) {
+                    request.setAttribute("messageName", element);
                 }
                 if (element.contains("price")) {
                     request.setAttribute("messagePrice", element);
                 }
-                if (element.contains("date")) {
-                    request.setAttribute("messageDate", element);
+                if (element.contains("quantity")) {
+                    request.setAttribute("messageQuantity", element);
                 }
             }
 
@@ -119,37 +116,36 @@ public class LandServlet extends HttpServlet {
             request.setAttribute("messageComplete", message);
         }
         //Create chuyển trang
-        showCreateNewLand(request, response);
+        //showCreateNewProduct(request, response);
 
         // Create Modal
-        //listLand(request, response);
+       listProduct(request, response);
     }
 
-    private Land informationLand(HttpServletRequest request) {
-        String id = request.getParameter("id");
-        String area = request.getParameter("area");
-        String floor = request.getParameter("floor");
+    private Product informationProduct(HttpServletRequest request) {
+//        String id = request.getParameter("id");
+        String name = request.getParameter("name");
         String price = request.getParameter("price");
-        String startDate = request.getParameter("startDate");
-        String endDate = request.getParameter("endDate");
-        String idLandType = request.getParameter("idLandType");
-        String idLandStatus = request.getParameter("idLandStatus");
+        String quantity = request.getParameter("quantity");
+        String idColor = request.getParameter("idColor");
+        String description = request.getParameter("description");
+        String idCategory = request.getParameter("idCategory");
 
-        return new Land(id, area, floor, price, startDate, endDate, idLandType, idLandStatus);
+        return new Product(name, price, quantity, idColor, description, idCategory);
     }
 
-    private void showEditLand(HttpServletRequest request, HttpServletResponse response) {
+    private void showEditProduct(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("id");
-        Land land = this.landBO.findByID(id);
-        request.setAttribute("land", land);
+        Product product = this.productBO.findByID(id);
+        request.setAttribute("product", product);
 
-        List<LandType> landTypeList = this.landBO.findAllLandType();
-        request.setAttribute("landTypeList", landTypeList);
+        List<Category> categoryList = this.productBO.findAllCategory();
+        request.setAttribute("categoryList", categoryList);
 
-        List<LandStatus> landStatusList = this.landBO.findAllLandStatus();
-        request.setAttribute("landStatusList", landStatusList);
+        List<Color> colorList = this.productBO.findAllColor();
+        request.setAttribute("colorList", colorList);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/edit-land.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/edit-product.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
@@ -157,76 +153,64 @@ public class LandServlet extends HttpServlet {
         }
     }
 
-    private void updateLand(HttpServletRequest request, HttpServletResponse response) {
-        Land land = informationLand(request);
+    private void updateProduct(HttpServletRequest request, HttpServletResponse response) {
+        Product product = informationProduct(request);
 
-        String message = this.landBO.update(land);
+        String id = request.getParameter("id");
+        product.setId(id);
+
+        String message = this.productBO.update(product);
 
         if (!message.equals("Update Complete !")) {
             String[] messages = message.split(",");
             for (String element : messages) {
-                if (element.contains("area")) {
-                    request.setAttribute("messageArea", element);
-                }
-                if (element.contains("floor")) {
-                    request.setAttribute("messageFloor", element);
+                if (element.contains("name")) {
+                    request.setAttribute("messageName", element);
                 }
                 if (element.contains("price")) {
                     request.setAttribute("messagePrice", element);
                 }
-                if (element.contains("date")) {
-                    request.setAttribute("messageDate", element);
+                if (element.contains("quantity")) {
+                    request.setAttribute("messageQuantity", element);
                 }
             }
 
-//            List<LandType> landTypeList = this.landBO.findAllLandType();
-//            request.setAttribute("landTypeList", landTypeList);
-//
-//            List<LandStatus> landStatusList = this.landBO.findAllLandStatus();
-//            request.setAttribute("landStatusList", landStatusList);
-
-            request.setAttribute("land", land);
+            request.setAttribute("product", product);
             request.setAttribute("messageComplete", "Wrong Validate Edit !");
-//            RequestDispatcher dispatcher = request.getRequestDispatcher("view/edit-land.jsp");
-//            try {
-//                dispatcher.forward(request, response);
-//            } catch (ServletException | IOException e) {
-//                e.printStackTrace();
-//            }
         } else {
             request.setAttribute("messageComplete", message);
         }
-        listLand(request, response);
+        listProduct(request, response);
     }
 
-    private void deleteLand(HttpServletRequest request, HttpServletResponse response) {
+    private void deleteProduct(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("id");
-        this.landBO.delete(id);
-        listLand(request, response);
+        this.productBO.delete(id);
+        listProduct(request, response);
     }
 
-    private void searchLand(HttpServletRequest request, HttpServletResponse response) {
-        String floor = request.getParameter("floorLand");
-        String area = request.getParameter("areaLand");
+    private void searchProduct(HttpServletRequest request, HttpServletResponse response) {
+        String name = request.getParameter("nameProduct");
+        String price = request.getParameter("priceProduct");
 
-        if (area.equals("")) {
-            List<Land> landList = this.landBO.findByFloor(floor);
-            request.setAttribute("landList", landList);
-        } else if (floor.equals("")){
-            List<Land> landList = this.landBO.findByArea(area);
-            request.setAttribute("landList", landList);
+        if (name.equals("")) {
+            List<Product> productList = this.productBO.findByPrice(price);
+            request.setAttribute("productList", productList);
+        } else if (price.equals("")){
+            List<Product> productList = this.productBO.findByName(name);
+            request.setAttribute("productList", productList);
         } else {
-            List<Land> landList = this.landBO.findByFloorAndArea(floor, area);
-            request.setAttribute("landList", landList);
+            List<Product> productList = this.productBO.findByNameAndPrice(name, price);
+            request.setAttribute("productList", productList);
         }
 
-        List<LandType> landTypeList = this.landBO.findAllLandType();
-        request.setAttribute("landTypeList", landTypeList);
+        List<Category> categoryList = this.productBO.findAllCategory();
+        request.setAttribute("categoryList", categoryList);
 
-        List<LandStatus> landStatusList = this.landBO.findAllLandStatus();
-        request.setAttribute("landStatusList", landStatusList);
+        List<Color> colorList = this.productBO.findAllColor();
+        request.setAttribute("colorList", colorList);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/list-land.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/list-product.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {
@@ -234,18 +218,18 @@ public class LandServlet extends HttpServlet {
         }
     }
 
-    private void showDetailLand(HttpServletRequest request, HttpServletResponse response) {
+    private void showDetailProduct(HttpServletRequest request, HttpServletResponse response) {
         String id = request.getParameter("id");
-        Land land = this.landBO.findByID(id);
-        request.setAttribute("land", land);
+        Product product = this.productBO.findByID(id);
+        request.setAttribute("product", product);
 
-        List<LandType> landTypeList = this.landBO.findAllLandType();
-        request.setAttribute("landTypeList", landTypeList);
+        List<Category> categoryList = this.productBO.findAllCategory();
+        request.setAttribute("categoryList", categoryList);
 
-        List<LandStatus> landStatusList = this.landBO.findAllLandStatus();
-        request.setAttribute("landStatusList", landStatusList);
+        List<Color> colorList = this.productBO.findAllColor();
+        request.setAttribute("colorList", colorList);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("view/view-detail-land.jsp");
+        RequestDispatcher dispatcher = request.getRequestDispatcher("view/view-detail-product.jsp");
         try {
             dispatcher.forward(request, response);
         } catch (ServletException | IOException e) {

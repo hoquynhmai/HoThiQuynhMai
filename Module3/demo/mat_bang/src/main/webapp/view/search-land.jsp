@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>List Student</title>
+    <title>List Land</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -52,7 +52,7 @@
             display: flex;
         }
 
-        .search-box input#keywordStudentDisplay {
+        .search-box input#keywordLandDisplay {
 
             border-radius: 20px;
             padding-left: 35px;
@@ -192,61 +192,76 @@
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-8">
-                        <h1 style="color: red">Student List Searched</h1>
+                        <h1 style="color: red">Land List Searched</h1>
                         <%--                        <p>--%>
                         <%--                            <a href="/student?actionStudent=showCreateNewStudent"><h3>Create New Student</h3></a>--%>
                         <%--                        </p>--%>
                     </div>
                     <div class="col-sm-4">
-<%--                        <div class="search-box">--%>
-<%--                            <i class="material-icons">&#xE8B6;</i>--%>
-<%--                            <input type="text" name="nameStudent" class="form-control" id="keywordStudentDisplay"--%>
-<%--                                   placeholder="Search by Name">--%>
-<%--                            <input type="button" value="Search" class="btn btn-primary"--%>
-<%--                                   onclick="submitFormSearchStudent()">--%>
-<%--                        </div>--%>
+                         <div class="search-box">
+                          <i class="material-icons">&#xE8B6;</i>
+                           <input type="text" name="floorLand" class="form-control" id="keywordLandDisplay"
+                                  placeholder="Search by Floor">
+                           <input type="button" value="Search" class="btn btn-primary"
+                                 onclick="submitFormSearchLand()">>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <table id="tableStudent" class="table table-striped table-hover table-bordered" style="width: 100%">
+            <table id="tableLand" class="table table-striped table-hover table-bordered" style="width: 100%">
                 <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
-                    <th>Address</th>
-                    <th>Class</th>
+                    <th>Area</th>
+                    <th>Floor</th>
+                    <th>Price</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Land Type</th>
+                    <th>Land Status</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${studentList}" var="student">
+                <c:forEach items="${landList}" var="land">
                     <tr>
-                        <td><c:out value="${student.id}"/></td>
-                        <td><c:out value="${student.name}"/></td>
-                        <td><c:out value="${student.age}"/></td>
-                        <td><c:out value="${student.email}"/></td>
-                        <td><c:out value="${student.phone}"/></td>
-                        <td><c:out value="${student.address}"/></td>
+                        <td><c:out value="${land.id}"/></td>
+                        <td><c:out value="${land.area}"/></td>
+                        <td><c:out value="${land.floor}"/></td>
+                        <td><c:out value="${land.price}"/></td>
+                        <td><c:out value="${land.startDate}"/></td>
+                        <td><c:out value="${land.endDate}"/></td>
                         <td>
-                            <c:forEach var="classCodeGym" items="${classList}">
+                            <c:forEach var="landType" items="${landTypeList}">
                                 <c:choose>
-                                    <c:when test="${classCodeGym.id.equals(student.idClass)}">
-                                        ${classCodeGym.name}
+                                    <c:when test="${landType.id.equals(land.idLandType)}">
+                                        ${landType.name}
                                     </c:when>
                                 </c:choose>
                             </c:forEach>
                         </td>
                         <td>
-                            <a href="/student?actionStudent=showEditStudent&id=${student.id}" class="edit"
+                            <c:forEach var="landStatus" items="${landStatusList}">
+                                <c:choose>
+                                    <c:when test="${landStatus.id.equals(land.idLandStatus)}">
+                                        ${landStatus.name}
+                                    </c:when>
+                                </c:choose>
+                            </c:forEach>
+                        </td>
+                        <td>
+                            <a href="/land?actionLand=showDetailLand&id=${land.id}" class="detail"
+                               title="Detail"
+                               data-toggle="tooltip"><i class="fa fa-eye" style="color: blue"></i></a>
+
+                            <a href="/land?actionLand=showEditLand&id=${land.id}" class="edit"
                                title="Edit"
                                data-toggle="tooltip"><i
                                     class="material-icons">&#xE254;</i></a>
-                            <a data-toggle="modal" data-target="#deleteStudentModal" href="#"
-                               onclick="setStudentId('${student.id}')" class="delete" title="Delete"
+
+                            <a data-toggle="modal" data-target="#deleteLandModal" href="#"
+                               onclick="setLandId('${land.id}')" class="delete" title="Delete"
                                data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
@@ -254,16 +269,16 @@
                 </tbody>
             </table>
 
-            <a href="/student" class="btn btn-info back">Back</a>
+            <a href="/land" class="btn btn-info back">Back</a>
 
-            <div id="deleteStudentModal" class="modal fade">
+            <div id="deleteLandModal" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <form action="/student">
-                            <input type="hidden" name="actionStudent" value="deleteStudent"/>
-                            <input type="hidden" name="id" id="idStudent"/>
+                        <form action="/land">
+                            <input type="hidden" name="actionLand" value="deleteLand"/>
+                            <input type="hidden" name="id" id="idLand"/>
                             <div class="modal-header">
-                                <h4 class="modal-title">Delete Student</h4>
+                                <h4 class="modal-title">Delete Land</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
                                 </button>
                             </div>
@@ -285,11 +300,11 @@
     </div>
 </div>
 
-<%--<form method="post" action="/student" id="formSearchStudent">--%>
-<%--    <input type="hidden" name="actionStudent" value="searchStudent">--%>
-<%--    <input type="hidden" name="nameStudent" id="keywordStudentHidden"/>--%>
-<%--    <input hidden type="submit" value="Search"/>--%>
-<%--</form>--%>
+<form method="post" action="/land" id="formSearchLand">
+    <input type="hidden" name="actionLand" value="searchLand">
+    <input type="hidden" name="floorLand" id="keywordLandHidden"/>
+    <input hidden type="submit" value="Search"/>
+</form>
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
@@ -298,26 +313,27 @@
 <script src="datatables/js/dataTables.bootstrap4.min.js"></script>
 
 <script>
-    function setStudentId(id) {
-        document.getElementById("idStudent").value = id;
-        document.getElementById("warning").value = "Are you sure you want to delete Student have id is " + id + " ?";
+    function setLandId(id) {
+        document.getElementById("idLand").value = id;
+        document.getElementById("warning").value = "Are you sure you want to delete Land have id is " + id + " ?";
     }
 
-    // function submitFormSearchStudent() {
-    //     let keywordHidden = document.getElementById("keywordStudentHidden");
-    //     let keywordDisplay = document.getElementById("keywordStudentDisplay");
-    //     keywordHidden.value = keywordDisplay.value;
-    //     document.getElementById("formSearchStudent").submit();
-    // }
+    function submitFormSearchLand() {
+        let keywordHidden = document.getElementById("keywordLandHidden");
+        let keywordDisplay = document.getElementById("keywordLandDisplay");
+        keywordHidden.value = keywordDisplay.value;
+        document.getElementById("formSearchLand").submit();
+    }
 
     $(document).ready(function () {
-        $('#tableStudent').dataTable({
+        $('#tableLand').dataTable({
             "dom": 'lrtip',
             "lengthChange": false,
             "pageLength": 5
         });
     });
 </script>
+
 
 </body>
 </html>

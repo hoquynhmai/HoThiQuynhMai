@@ -46,73 +46,68 @@
 
 <body>
 <div class="container">
-    <h1>Information Land</h1>
+    <h1>Information Product</h1>
 
     <h3 class="messageComplete">${messageComplete}</h3>
 
-    <form action="/land" method="post">
-        <input type="hidden" name="actionLand" value="createNewLand" />
+    <form action="/product" method="post">
+        <input type="hidden" name="actionLand" value="createNewProduct" />
+
+<%--        <div class="form-group has-success">--%>
+<%--            <label for="id">ID :</label>--%>
+<%--            <input type="text" class="form-control" name="id" id="id" value="${product.id}" required/>--%>
+<%--&lt;%&ndash;            <p>${messageID}</p>&ndash;%&gt;--%>
+<%--        </div>--%>
 
         <div class="form-group has-success">
-            <label for="id">ID :</label>
-            <input type="text" class="form-control" name="id" id="id" value="${land.id}" required/>
-            <p>${messageID}</p>
-        </div>
-
-        <div class="form-group has-success">
-            <label for="area">Area :</label>
-            <input type="text" class="form-control" name="area" id="area" value="${land.area}" required/>
-            <p>${messageArea}</p>
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" name="name" id="name" value="${product.name}" required/>
+            <p>${messageName}</p>
         </div>
 
         <div class="form-group has-warning">
-            <label for="floor">Floor :</label>
-            <input type="text" class="form-control" name="floor" id="floor" value="${land.floor}" required/>
-            <p>${messageFloor}</p>
-        </div>
-
-        <div class="form-group has-error">
             <label for="price">Price :</label>
-            <input type="text" class="form-control" name="price" id="price" value="${land.price}" required/>
+            <input type="text" class="form-control" name="price" id="price" value="${product.price}" required/>
             <p>${messagePrice}</p>
         </div>
 
         <div class="form-group has-error">
-            <label for="startDate">Start Date :</label>
-            <input type="date" class="form-control" name="startDate" id="startDate" value="${land.startDate}" required/>
-        </div>
-
-        <div class="form-group has-error">
-            <label for="endDate">End Date :</label>
-            <input type="date" class="form-control" name="endDate" id="endDate" value="${land.endDate}" required/>
+            <label for="quantity">Quantity :</label>
+            <input type="text" class="form-control" name="quantity" id="quantity" value="${product.quantity}" required/>
+            <p>${messageQuantity}</p>
         </div>
 
         <div class="form-group">
-            <label>Select Land Type : </label>
-            <label for="landType"></label><select name="idLandType" id="landType" required>
-                <c:forEach var="landType" items="${landTypeList}">
+            <label>Select Color : </label>
+            <label for="color"></label><select name="idColor" id="color" required>
+                <c:forEach var="color" items="${colorList}">
                     <c:choose>
-                        <c:when test="${landType.id.equals(land.idLandType)}">
-                            <option value="<c:out value='${landType.id}'/>" selected><c:out value="${landType.name}"></c:out></option>
+                        <c:when test="${color.id.equals(product.idColor)}">
+                            <option value="<c:out value='${color.id}'/>" selected><c:out value="${color.name}"></c:out></option>
                         </c:when>
                         <c:otherwise>
-                            <option value="${landType.id}">${landType.name}</option>
+                            <option value="${color.id}">${color.name}</option>
                         </c:otherwise>
                     </c:choose>
                 </c:forEach>
             </select>
         </div>
 
+        <div class="form-group has-error">
+            <label for="description">Description :</label>
+            <input type="text" class="form-control" name="description" id="description" value="${product.description}" required/>
+        </div>
+
         <div class="form-group">
-            <label>Select Land Status : </label>
-            <label for="landStatus"></label><select name="idLandStatus" id="landStatus" required>
-            <c:forEach var="landStatus" items="${landStatusList}">
+            <label>Select Category : </label>
+            <label for="category"></label><select name="idCategory" id="category" required>
+            <c:forEach var="category" items="${categoryList}">
                 <c:choose>
-                    <c:when test="${landStatus.id.equals(land.idLandStatus)}">
-                        <option value="<c:out value='${landStatus.id}'/>" selected><c:out value="${landStatus.name}"></c:out></option>
+                    <c:when test="${category.id.equals(product.idCategory)}">
+                        <option value="<c:out value='${category.id}'/>" selected><c:out value="${category.name}"></c:out></option>
                     </c:when>
                     <c:otherwise>
-                        <option value="${landStatus.id}">${landStatus.name}</option>
+                        <option value="${category.id}">${category.name}</option>
                     </c:otherwise>
                 </c:choose>
             </c:forEach>
@@ -120,7 +115,7 @@
         </div>
 
         <input type="submit" class="btn btn-info" value="Create New" /><span>
-            <a href="/land" class="btn btn-info back">Back</a></span>
+            <a href="/product" class="btn btn-info back">Back</a></span>
     </form>
 
 </div>

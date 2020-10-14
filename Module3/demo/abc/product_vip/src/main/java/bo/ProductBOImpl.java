@@ -3,87 +3,66 @@ package bo;
 import common.Validation;
 import dao.ProductDAO;
 import dao.ProductDAOImpl;
+import model.Category;
+import model.Color;
+import model.Product;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-public class LandBOImpl implements LandBO {
+public class ProductBOImpl implements ProductBO {
     ProductDAO productDAO = new ProductDAOImpl();
 
     @Override
-    public List<Land> findAllLand() {
-        return this.productDAO.findAllLand();
+    public List<Product> findAllProduct() {
+        return this.productDAO.findAllProduct();
     }
 
     @Override
-    public Land findByID(String id) {
+    public Product findByID(String id) {
         return this.productDAO.findByID(id);
     }
 
     @Override
-    public List<Land> findByFloor(String floor) {
-        return this.productDAO.findByFloor(floor);
+    public List<Product> findByName(String name) {
+        return this.productDAO.findByName(name);
     }
 
     @Override
-    public List<Land> findByArea(String area) {
-        return this.productDAO.findByArea(area);
+    public List<Product> findByPrice(String price) {
+        return this.productDAO.findByPrice(price);
     }
 
     @Override
-    public List<Land> findByFloorAndArea(String floor, String area) {
-        return this.productDAO.findByFloorAndArea(floor, area);
+    public List<Product> findByNameAndPrice(String name, String price) {
+        return this.productDAO.findByNameAndPrice(name, price);
     }
 
     @Override
-    public String save(Land land) {
+    public String save(Product product) {
         boolean check = true;
         String message = "";
-
-        DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-mm-dd");
-        Date dateStart;
-        Date dateEnd;
-        long getDaysDiff = 0;
-        try {
-            String startDate = land.getStartDate();
-            String endDate = land.getEndDate();
-
-            dateStart = simpleDateFormat.parse(startDate);
-            dateEnd = simpleDateFormat.parse(endDate);
-            long getDiff = dateEnd.getTime() - dateStart.getTime();
-            getDaysDiff = getDiff / (24 * 60 * 60 * 1000);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        if (getDaysDiff < 7) {
-            check = false;
-            message += "Invalid date end ! Date End must be greater than Date Start ,";
-        }
-        if (testID(land.getId())) {
+        if (testID(product.getId())) {
             check = false;
             message += "Invalid ID ! ID is exists ! Please input ID other ,";
-        } else if (Validation.regexID(land.getId())) {
+        } else if (Validation.regexPrice(product.getPrice())) {
             check = false;
-            message += "Invalid ID ! Format id is LA-XXX with X is number from 0 to 9 ,";
+            message += "Invalid price ! Price must be greater than 0 ,";
         }
-        if (Validation.regexAreaAndPrice(land.getArea())) {
+        if (product.getName().equals("")) {
             check = false;
-            message += "Invalid area ! Area must be greater than 0 ,";
+            message += "Invalid name ! Name cannot be left blank,";
         }
-        if (Validation.regexPositiveIntegers(land.getFloor())) {
+        if (Validation.regexPositiveIntegers(product.getQuantity())) {
             check = false;
-            message += "Invalid floor ! Floor must be positive integer and greater than 0 ,";
-        }
-        if (Validation.regexAreaAndPrice(land.getPrice())) {
-            check = false;
-            message += "Invalid price ! Price must be greater than 0 !";
+            message += "Invalid quantity ! Quantity must be positive integer and greater than 0, ";
         }
 
+
         if (check) {
-            message = this.productDAO.save(land);
+            message = this.productDAO.save(product);
         }
 
         return message;
@@ -92,47 +71,26 @@ public class LandBOImpl implements LandBO {
     }
 
     @Override
-    public String update(Land land) {
+    public String update(Product product) {
 
         boolean check = true;
         String message = "";
 
-
-        DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-mm-dd");
-        Date dateStart;
-        Date dateEnd;
-        long getDaysDiff = 0;
-        try {
-            String startDate = land.getStartDate();
-            String endDate = land.getEndDate();
-
-            dateStart = simpleDateFormat.parse(startDate);
-            dateEnd = simpleDateFormat.parse(endDate);
-            long getDiff = dateEnd.getTime() - dateStart.getTime();
-            getDaysDiff = getDiff / (24 * 60 * 60 * 1000);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-        if (getDaysDiff < 7) {
+        if (product.getName().equals("")) {
             check = false;
-            message += "Invalid date end ! Date End must be greater than Date Start ,";
+            message += "Invalid name ! Name cannot be left blank,";
         }
-        if (Validation.regexAreaAndPrice(land.getArea())) {
+        if (Validation.regexPrice(product.getPrice())) {
             check = false;
-            message += "Invalid area ! Area must be greater than 0 ,";
+            message += "Invalid price ! Price must be greater than 0 ,";
         }
-        if (Validation.regexPositiveIntegers(land.getFloor())) {
+        if (Validation.regexPositiveIntegers(product.getQuantity())) {
             check = false;
-            message += "Invalid floor ! Floor must be positive integer and greater than 0 ,";
-        }
-        if (Validation.regexAreaAndPrice(land.getPrice())) {
-            check = false;
-            message += "Invalid price ! Price must be greater than 0 !";
+            message += "Invalid quantity ! Quantity must be positive integer and greater than 0 ";
         }
 
         if (check) {
-            message = this.productDAO.update(land);
+            message = this.productDAO.update(product);
         }
         return message;
 
@@ -145,17 +103,17 @@ public class LandBOImpl implements LandBO {
     }
 
     @Override
-    public List<LandType> findAllLandType() {
-        return this.productDAO.findAllLandType();
+    public List<Category> findAllCategory() {
+        return this.productDAO.findAllCategory();
     }
 
     @Override
-    public List<LandStatus> findAllLandStatus() {
-        return this.productDAO.findAllLandStatus();
+    public List<Color> findAllColor() {
+        return this.productDAO.findAllColor();
     }
 
     private boolean testID(String id) {
-        List<String> listID = this.productDAO.findAllIDLand();
+        List<String> listID = this.productDAO.findAllIDProduct();
         for (String idExist : listID) {
             if (idExist.equals(id)) {
                 return true;

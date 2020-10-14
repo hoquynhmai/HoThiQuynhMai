@@ -1,4 +1,4 @@
-package model;
+package model.customer;
 
 public class Customer {
     private String id;
@@ -33,6 +33,11 @@ public class Customer {
         this.gender = gender;
         this.email = email;
         this.address = address;
+    }
+
+    public Customer(String id, String name) {
+        this.id = id;
+        this.name = name;
     }
 
     public String getId() {

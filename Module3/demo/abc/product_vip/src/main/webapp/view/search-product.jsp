@@ -12,7 +12,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>List Land</title>
+    <title>List Product</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -52,7 +52,7 @@
             display: flex;
         }
 
-        .search-box input#keywordLandDisplay {
+        .search-box input#keywordProductDisplay {
 
             border-radius: 20px;
             padding-left: 35px;
@@ -192,7 +192,7 @@
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-8">
-                        <h1 style="color: red">Land List Searched</h1>
+                        <h1 style="color: red">Product List Searched</h1>
                         <%--                        <p>--%>
                         <%--                            <a href="/student?actionStudent=showCreateNewStudent"><h3>Create New Student</h3></a>--%>
                         <%--                        </p>--%>
@@ -209,59 +209,57 @@
                 </div>
             </div>
 
-            <table id="tableLand" class="table table-striped table-hover table-bordered" style="width: 100%">
+            <table id="tableProduct" class="table table-striped table-hover table-bordered" style="width: 100%">
                 <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Area</th>
-                    <th>Floor</th>
+                    <th>Name</th>
                     <th>Price</th>
-                    <th>Start Date</th>
-                    <th>End Date</th>
-                    <th>Land Type</th>
-                    <th>Land Status</th>
+                    <th>Quantity</th>
+                    <th>Color</th>
+                    <th>Description</th>
+                    <th>Category</th>
                     <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${landList}" var="land">
+                <c:forEach items="${productList}" var="product">
                     <tr>
-                        <td><c:out value="${land.id}"/></td>
-                        <td><c:out value="${land.area}"/></td>
-                        <td><c:out value="${land.floor}"/></td>
-                        <td><c:out value="${land.price}"/></td>
-                        <td><c:out value="${land.startDate}"/></td>
-                        <td><c:out value="${land.endDate}"/></td>
+                        <td><c:out value="${product.id}"/></td>
+                        <td><c:out value="${product.name}"/></td>
+                        <td><c:out value="${product.price}"/></td>
+                        <td><c:out value="${product.quantity}"/></td>
                         <td>
-                            <c:forEach var="landType" items="${landTypeList}">
+                            <c:forEach var="color" items="${colorList}">
                                 <c:choose>
-                                    <c:when test="${landType.id.equals(land.idLandType)}">
-                                        ${landType.name}
+                                    <c:when test="${color.id.equals(product.idColor)}">
+                                        ${color.name}
+                                    </c:when>
+                                </c:choose>
+                            </c:forEach>
+                        </td>
+                        <td><c:out value="${product.quantity}"/></td>
+                        <td>
+                            <c:forEach var="category" items="${categoryList}">
+                                <c:choose>
+                                    <c:when test="${category.id.equals(product.idCategory)}">
+                                        ${category.name}
                                     </c:when>
                                 </c:choose>
                             </c:forEach>
                         </td>
                         <td>
-                            <c:forEach var="landStatus" items="${landStatusList}">
-                                <c:choose>
-                                    <c:when test="${landStatus.id.equals(land.idLandStatus)}">
-                                        ${landStatus.name}
-                                    </c:when>
-                                </c:choose>
-                            </c:forEach>
-                        </td>
-                        <td>
-                            <a href="/land?actionLand=showDetailLand&id=${land.id}" class="detail"
+                            <a href="/product?actionProduct=showDetailProduct&id=${product.id}" class="detail"
                                title="Detail"
                                data-toggle="tooltip"><i class="fa fa-eye" style="color: blue"></i></a>
 
-                            <a href="/land?actionLand=showEditLand&id=${land.id}" class="edit"
+                            <a href="/product?actionProduct=showEditProduct&id=${product.id}" class="edit"
                                title="Edit"
                                data-toggle="tooltip"><i
                                     class="material-icons">&#xE254;</i></a>
 
-                            <a data-toggle="modal" data-target="#deleteLandModal" href="#"
-                               onclick="setLandId('${land.id}')" class="delete" title="Delete"
+                            <a data-toggle="modal" data-target="#deleteProductModal" href="#"
+                               onclick="setProductId('${product.id}')" class="delete" title="Delete"
                                data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
                         </td>
                     </tr>
@@ -269,16 +267,16 @@
                 </tbody>
             </table>
 
-            <a href="/land" class="btn btn-info back">Back</a>
+            <a href="/product" class="btn btn-info back">Back</a>
 
-            <div id="deleteLandModal" class="modal fade">
+            <div id="deleteProductModal" class="modal fade">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <form action="/land">
-                            <input type="hidden" name="actionLand" value="deleteLand"/>
-                            <input type="hidden" name="id" id="idLand"/>
+                        <form action="/product">
+                            <input type="hidden" name="actionProduct" value="deleteProduct"/>
+                            <input type="hidden" name="id" id="idProduct"/>
                             <div class="modal-header">
-                                <h4 class="modal-title">Delete Land</h4>
+                                <h4 class="modal-title">Delete Product</h4>
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;
                                 </button>
                             </div>
@@ -300,9 +298,9 @@
     </div>
 </div>
 
-<form method="post" action="/land" id="formSearchLand">
-    <input type="hidden" name="actionLand" value="searchLand">
-    <input type="hidden" name="floorLand" id="keywordLandHidden"/>
+<form method="post" action="/product" id="formSearchProduct">
+    <input type="hidden" name="actionProduct" value="searchProduct">
+    <input type="hidden" name="nameProduct" id="keywordProductHidden"/>
     <input hidden type="submit" value="Search"/>
 </form>
 
@@ -313,20 +311,20 @@
 <script src="datatables/js/dataTables.bootstrap4.min.js"></script>
 
 <script>
-    function setLandId(id) {
-        document.getElementById("idLand").value = id;
-        document.getElementById("warning").value = "Are you sure you want to delete Land have id is " + id + " ?";
+    function setProductId(id) {
+        document.getElementById("idProduct").value = id;
+        document.getElementById("warning").value = "Are you sure you want to delete Product have id is " + id + " ?";
     }
 
-    function submitFormSearchLand() {
-        let keywordHidden = document.getElementById("keywordLandHidden");
-        let keywordDisplay = document.getElementById("keywordLandDisplay");
+    function submitFormSearchProduct() {
+        let keywordHidden = document.getElementById("keywordProductHidden");
+        let keywordDisplay = document.getElementById("keywordProductDisplay");
         keywordHidden.value = keywordDisplay.value;
-        document.getElementById("formSearchLand").submit();
+        document.getElementById("formSearchProduct").submit();
     }
 
     $(document).ready(function () {
-        $('#tableLand').dataTable({
+        $('#tableProduct').dataTable({
             "dom": 'lrtip',
             "lengthChange": false,
             "pageLength": 5

@@ -13,7 +13,7 @@
           integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
           crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update Student</title>
+    <title>Update Land</title>
 
     <style>
         .messageComplete {
@@ -47,57 +47,77 @@
 
 <body>
 <div class="container">
-    <h1>Information Student</h1>
+    <h1>Information Land</h1>
 
     <h3 class="messageComplete">${messageComplete}</h3>
 
-    <form action="/student" method="post">
-        <input type="hidden" name="actionStudent" value="updateStudent"/>
+    <form action="/land" method="post">
+        <input type="hidden" name="actionLand" value="updateLand"/>
 
         <div class="form-group has-success">
             <label for="id">ID :</label>
-            <input type="text" class="form-control" name="id" id="id" value="${student.id}" readonly/>
+            <input type="text" class="form-control" name="id" id="id" value="${land.id}" readonly/>
+            <p>${messageID}</p>
         </div>
 
         <div class="form-group has-success">
-            <label for="name">Name :</label>
-            <input type="text" class="form-control" name="name" id="name" value="${student.name}" required/>
+            <label for="area">Area :</label>
+            <input type="text" class="form-control" name="area" id="area" value="${land.area}" required/>
+            <p>${messageArea}</p>
         </div>
 
         <div class="form-group has-warning">
-            <label for="age">Age :</label>
-            <input type="text" class="form-control" name="age" id="age" value="${student.age}" required/>
-            <p>${messageAge}</p>
+            <label for="floor">Floor :</label>
+            <input type="text" class="form-control" name="floor" id="floor" value="${land.floor}" required/>
+            <p>${messageFloor}</p>
         </div>
 
         <div class="form-group has-error">
-            <label for="email">Email :</label>
-            <input type="text" class="form-control" name="email" id="email" value="${student.email}" required/>
-            <p>${messageEmail}</p>
+            <label for="price">Price :</label>
+            <input type="text" class="form-control" name="price" id="price" value="${land.price}" required/>
+            <p>${messagePrice}</p>
         </div>
 
         <div class="form-group has-error">
-            <label for="phone">Phone Number :</label>
-            <input type="text" class="form-control" name="phone" id="phone" value="${student.phone}" required/>
-            <p>${messagePhone}</p>
+            <label for="startDate">Start Date :</label>
+            <input type="date" class="form-control" name="startDate" id="startDate" value="${land.startDate}" required/>
+            <%--            <p>${messagePhone}</p>--%>
         </div>
 
-        <div class="form-group has-success">
-            <label for="address">Address :</label>
-            <input type="text" class="form-control" name="address" id="address" value="${student.address}" required/>
+        <div class="form-group has-error">
+            <label for="endDate">End Date :</label>
+            <input type="date" class="form-control" name="endDate" id="endDate" value="${land.endDate}" required/>
+            <%--            <p>${messagePhone}</p>--%>
         </div>
 
         <div class="form-group">
-            <label>Select Class : </label>
-            <label for="classCodeGym"></label><select name="classCodeGym" id="classCodeGym" required>
-            <c:forEach var="classCodeGym" items="${classList}">
+            <label>Select Land Type : </label>
+            <label for="landType"></label><select name="idLandType" id="landType" required>
+            <c:forEach var="landType" items="${landTypeList}">
                 <c:choose>
-                    <c:when test="${classCodeGym.id.equals(student.idClass)}">
-                        <option value="<c:out value='${classCodeGym.id}'/>" selected>
-                            <c:out value="${classCodeGym.name}"></c:out></option>
+                    <c:when test="${landType.id.equals(land.idLandType)}">
+                        <option value="<c:out value='${landType.id}'/>" selected><c:out
+                                value="${landType.name}"></c:out></option>
                     </c:when>
                     <c:otherwise>
-                        <option value="${classCodeGym.id}">${classCodeGym.name}</option>
+                        <option value="${landType.id}">${landType.name}</option>
+                    </c:otherwise>
+                </c:choose>
+            </c:forEach>
+        </select>
+        </div>
+
+        <div class="form-group">
+            <label>Select Land Status : </label>
+            <label for="landStatus"></label><select name="idLandStatus" id="landStatus" required>
+            <c:forEach var="landStatus" items="${landStatusList}">
+                <c:choose>
+                    <c:when test="${landStatus.id.equals(land.idLandStatus)}">
+                        <option value="<c:out value='${landStatus.id}'/>" selected><c:out
+                                value="${landStatus.name}"></c:out></option>
+                    </c:when>
+                    <c:otherwise>
+                        <option value="${landStatus.id}">${landStatus.name}</option>
                     </c:otherwise>
                 </c:choose>
             </c:forEach>
@@ -105,7 +125,7 @@
         </div>
 
         <input type="submit" class="btn btn-info" value="Update"/><span>
-            <a href="/student" class="btn btn-info back">Back</a></span>
+            <a href="/land" class="btn btn-info back">Back</a></span>
     </form>
 
 </div>

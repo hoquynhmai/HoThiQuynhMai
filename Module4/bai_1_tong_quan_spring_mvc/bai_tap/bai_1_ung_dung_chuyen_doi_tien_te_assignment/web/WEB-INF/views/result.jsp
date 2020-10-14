@@ -8,9 +8,11 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>$Title$</title>
+    <title>Result</title>
 </head>
 <body>
-$END$
+<div align="center">
+    <h1 style="background-color: aqua">${usd}$ = ${result} VND</h1>
+</div>
 </body>
 </html>

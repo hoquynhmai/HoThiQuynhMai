@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDAO implements IUserDAO {
-    private BaseDAO baseDAO = new BaseDAO();
     private String jdbcURL = "jdbc:mysql://localhost:3306/quan_ly_user?useSSL=false";
     private String jdbcUsername = "root";
     private String jdbcPassword = "hoquynhmai";
@@ -44,7 +43,7 @@ public class UserDAO implements IUserDAO {
         return connection;
     }
 
-    public void insertUser(User user) throws SQLException {
+    public void insertUser(User user) {
         System.out.println(INSERT_USERS_SQL);
         // try-with-resource statement will auto close the connection.
         try (Connection connection = getConnection(); PreparedStatement preparedStatement = connection.prepareStatement(INSERT_USERS_SQL)) {
@@ -113,16 +112,16 @@ public class UserDAO implements IUserDAO {
 
         // using try-with-resources to avoid closing resources (boiler plate code)
         List<User> users = new ArrayList<>();
-        // Step 1: Establishing a Connection
+        // Step 1: Establishing a Connection -- Thiết lập kết nối
         try (Connection connection = getConnection();
 
-             // Step 2:Create a statement using connection object
+             // Step 2:Create a statement using connection object -- Tạo một câu lệnh bằng đối tượng kết nối
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS);) {
             System.out.println(preparedStatement);
-            // Step 3: Execute the query or update query
+            // Step 3: Execute the query or update query --Thực thi truy vấn hoặc cập nhật truy vấn
             ResultSet rs = preparedStatement.executeQuery();
 
-            // Step 4: Process the ResultSet object.
+            // Step 4: Process the ResultSet object -- Xử lý đối tượng ResultSet.
             while (rs.next()) {
                 int id = rs.getInt("id");
                 String name = rs.getString("name");
@@ -176,26 +175,26 @@ public class UserDAO implements IUserDAO {
 
     public List<User> selectAllUsersSort() {
         List<User> users = new ArrayList<>();
+            // Step 1: Establishing a Connection -- Thiết lập kết nối
+            try (Connection connection = getConnection();
 
-        try {
-            PreparedStatement preparedStatement =
-                    this.baseDAO.getConnection().
-                            prepareStatement(SELECT_ALL_USERS_SORT);
+                 // Step 2:Create a statement using connection object -- Tạo một câu lệnh bằng đối tượng kết nối
+                 PreparedStatement preparedStatement = connection.prepareStatement(SELECT_ALL_USERS_SORT);) {
+                System.out.println(preparedStatement);
+                // Step 3: Execute the query or update query --Thực thi truy vấn hoặc cập nhật truy vấn
+                ResultSet rs = preparedStatement.executeQuery();
 
-            ResultSet resultSet = preparedStatement.executeQuery();
+                while (rs.next()) {
+                    int id = rs.getInt("id");
+                    String name = rs.getString("name");
+                    String email = rs.getString("email");
+                    String country = rs.getString("country");
+                    users.add(new User(id, name, email, country));
+                }
 
-            while (resultSet.next()) {
-                int id = resultSet.getInt("id");
-                String name = resultSet.getString("name");
-                String email = resultSet.getString("email");
-                String country = resultSet.getString("country");
-                users.add(new User(id, name, email, country));
+            } catch (SQLException e) {
+                e.printStackTrace();
             }
-
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-
         return users;
     }
 }

@@ -1,4 +1,15 @@
 package bo.contract_detail;
 
-public class ContractDetailBO {
+import model.contract.Contract;
+import model.contract_detail.AttachService;
+import model.contract_detail.ContractDetail;
+
+import java.util.List;
+
+public interface ContractDetailBO {
+    String saveContractDetail(ContractDetail contractDetail);
+
+    List<Contract> findAllContract();
+
+    List<AttachService> findAllAttachService();
 }

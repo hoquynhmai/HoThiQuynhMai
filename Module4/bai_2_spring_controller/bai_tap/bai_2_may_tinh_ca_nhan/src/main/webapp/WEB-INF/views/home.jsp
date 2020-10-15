@@ -14,20 +14,20 @@
 <form action="/result">
     <div align="center">
         <fieldset>
-            <h1>Caculator</h1>
+            <h1>Calculator</h1>
             <div align="center">
                 <input type="text" name="num1" placeholder="Input number 1">
                 <input type="text" name="num2" placeholder="Input number 2">
             </div>
-            <input type="radio" name="caculate" value="Add" id="add"/>Add (+)
-            <input type="radio" name="caculate" value="Subs" id="subs"/>Subs (-)
-            <input type="radio" name="caculate" value="Multi" id="multi"/>Multi (*)
-            <input type="radio" name="caculate" value="Div" id="div"/>Div (/)
+            <input type="radio" name="calculate" value="add" id="add"/>Add (+)
+            <input type="radio" name="calculate" value="subs" id="subs"/>Subs (-)
+            <input type="radio" name="calculate" value="multi" id="multi"/>Multi (*)
+            <input type="radio" name="calculate" value="div" id="div"/>Div (/)
             <div align="center">
-                <input type="submit" value="Caculate"/>
+                <input type="submit" value="Calculate"/>
             </div>
         </fieldset>
-        <h3 style="background-color: aqua">${caculate}</h3>
+        <h3 style="background-color: aqua">${calculate}</h3>
     </div>
 </form>
 </body>

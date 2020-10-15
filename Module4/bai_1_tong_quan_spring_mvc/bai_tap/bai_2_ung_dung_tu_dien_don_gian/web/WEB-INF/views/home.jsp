@@ -11,8 +11,8 @@
     <title>Transale English To VietNamese</title>
 </head>
 <body>
-<form action="findDic">
-<div align="center">
+<form action="/findDic">
+    <div align="center">
     <fieldset>
         <h1> Transale English To VietNamese</h1>
         <label>English: </label>

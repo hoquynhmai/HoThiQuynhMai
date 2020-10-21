@@ -26,11 +26,8 @@
             <button type="submit" class="btn btn-warning" style="margin-top: -13px; margin-bottom: 3px"><a th:href="@{/product/create}"
                                                              style="text-decoration: none; color: #0c0c0c">Create New Product</a>
             </button>
-    </div>
     <div class="notify" style="color: red">
-        <div th:if="${message}">
-            <span th:text="${message}"></span>
-        </div>
+        <div th:if="${message}"><span th:text="${message}"></span></div>
     </div>
 </div>
 <table class="table table-striped">

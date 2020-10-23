@@ -53,7 +53,7 @@
         </div>
     <div>
         <input type="submit" value="Update">
-        <input type="submit" value="Cancel">
+        <input type="button" value="Cancel">
     </div>
 </form:form>
 </body>

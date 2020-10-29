@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head th:replace="/layout :: head">
+    <meta charset="UTF-8">
+    <title>Product List</title>
+</head>
+<body>
+<p>
+    <a th:href="@{/}">
+        Back to product list
+    </a>
+</p>
+<h3>Hàng đã mua</h3>
+<div id="detail">
+    <table id="products">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Color</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Manufacturer</th>
+            <th>View</th>
+            <th>Change</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="product,rowStat : ${productList}">
+            <td th:text="${product.id}"></td>
+            <td th:text="${product.name}"></td>
+            <td th:text="${product.color}"></td>
+            <td th:text="${product.price}"></td>
+            <td>
+                <select>
+                    <option th:each="quantityProduct : ${quantityProducts}"
+                            th:value="${product.quantity}" th:text="${quantityProduct}"></option>
+                </select>
+            </td>
+            <td th:text="${product.manufacturer}"></td>
+            <td><a th:href="@{/product/{id}/view(id=${product.getId()})}">view</a></td>
+            <td><a th:href="@{/product/{id}/change(id=${product.getId()})}">Change</a></td>
+            <td><a th:href="@{/product/{id}/delete-product-list(id=${product.getId()})}">delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/deleteAll}"><h3>Delete All</h3></a>
+</div>
+<footer th:replace="/layout :: footer"></footer>
+</body>
+</html>

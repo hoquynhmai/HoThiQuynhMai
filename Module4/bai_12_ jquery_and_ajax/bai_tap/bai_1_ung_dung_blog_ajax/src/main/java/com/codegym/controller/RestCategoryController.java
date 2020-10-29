@@ -5,17 +5,18 @@ import com.codegym.entity.Category;
 import com.codegym.service.BlogService;
 import com.codegym.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.util.UriComponentsBuilder;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
+@CrossOrigin
 public class RestCategoryController {
     @Autowired
     private CategoryService categoryService;
@@ -61,5 +62,12 @@ public class RestCategoryController {
     public ResponseEntity<Blog> blogOfBlog(@PathVariable int id) {
         Blog blog = this.blogService.findById(id);
         return new ResponseEntity<Blog>(blog, HttpStatus.OK);
+    }
+
+
+    @GetMapping("/restBlog/{start}/{limit}")
+    public ResponseEntity<List<Blog>> loadBlog(@PathVariable int start, @PathVariable int limit) {
+        List<Blog> blogList = this.blogService.findAllLoad(start, limit);
+        return new ResponseEntity<>(blogList, HttpStatus.OK);
     }
 }

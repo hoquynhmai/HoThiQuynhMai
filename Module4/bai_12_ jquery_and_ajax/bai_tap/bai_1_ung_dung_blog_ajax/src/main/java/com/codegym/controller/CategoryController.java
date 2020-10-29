@@ -2,7 +2,6 @@ package com.codegym.controller;
 
 import com.codegym.entity.Category;
 import com.codegym.service.CategoryService;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

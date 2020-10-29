@@ -4,7 +4,6 @@ package com.codegym.controller;
 import com.codegym.entity.Blog;
 import com.codegym.service.BlogService;
 import com.codegym.service.CategoryService;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.web.PageableDefault;

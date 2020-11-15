@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        fieldset {
+            background-image: linear-gradient(120deg, #FF4081, #81D4FA)
+        }
+
+
+        div {
+            margin-top: 130px;
+        }
+    </style>
+</head>
+<body>
+<div align="center">
+    <h1 th:text="${message}" style="color: aqua"></h1>
+    <form action="/registerNew" method="post" th:object="${newAppUser}">
+        <fieldset style="width: 300px; height: 300px;">
+            <h1>Login Form</h1>
+            <p>Username: </p>
+            <input type="text" th:field="*{userName}"/>
+            <p>Password: </p>
+            <input type="password" th:field="*{encrytedPassword}"/>
+            <br><br>
+            <th:block th:each="appRole:${appRoleList}">
+                <input type="checkbox" name="appRole" th:value="${appRole.roleId}" th:text="${appRole.roleName}">
+            </th:block>
+            <p>
+                <input type="submit" value="Register">
+            </p>
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>

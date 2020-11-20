@@ -1,0 +1,27 @@
+<h1><u>Bài 4. Angular Component & Template</u></h1>
+<h2>Today's article</h2>
+<hr>
+<div *ngFor="let art of articles">
+  <a href="{{art.url}}" target="_blank">{{art.title}}</a>
+  {{likes}} likes. <button (click)="likeThis()">Like</button>
+  <br><br>
+  <textarea [(ngModel)]="art.title" cols="70"></textarea>
+  <textarea [(ngModel)]="art.url" cols="70" style="margin-left: 5px"></textarea>
+  <br><br><br>
+</div>
+<hr>
+
+<!---------------------- Hiển thị một article duy nhất --------------------->
+<!--<div>-->
+<!--  <a href="{{article.url}}" target="_blank">{{article.title}}</a>-->
+<!--</div>-->
+<!------------------------------- Envent Binding ----------------------------->
+<!--<textarea [value]="article.title" cols="70" id="article-title"></textarea><br>-->
+<!--<textarea [value]="article.url" cols="70" id="article-url"></textarea><br>-->
+<!--<input (click)="updateArticle()" type="button" value="Update">-->
+<!----------------------------------------------------------------------------->
+
+<!------------------------ Two Way Binding ---------------------------------->
+<!--<textarea [(ngModel)]="article.title" cols="70"></textarea><br>-->
+<!--<textarea [(ngModel)]="article.url" cols="70"></textarea>-->
+<!-------------------------------------------------------------------------->

@@ -1,0 +1,16 @@
+<h2>Pet profile</h2>
+<label>
+  Pet name:
+  <input type="text" (change)="updateName($event.target.value)">
+</label>
+<br><br>
+<label>
+  Pet image:
+  <input type="url" (change)="updateImage($event.target.value)"><br><br>
+  Example: https://filmdaily.co/wp-content/uploads/2020/05/dog-videos-lede-1300x868.jpg
+</label>
+<br>
+<h3>Pet name: {{petName}}</h3>
+<img [src]="petImage" style="max-width: 100%">
+<hr>
+<!--https://filmdaily.co/wp-content/uploads/2020/05/dog-videos-lede-1300x868.jpg-->

@@ -44,6 +44,7 @@ export class HackernewsComponent implements OnInit {
   ];
 
   likes: number = 0;
+
   likeThis() {
     this.likes++;
   }
@@ -52,5 +53,12 @@ export class HackernewsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+  }
+
+  title: '';
+  url: '';
+
+  addArticle(value) {
+    this.title = value;
   }
 }

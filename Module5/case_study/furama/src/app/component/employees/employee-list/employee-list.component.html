@@ -1,0 +1,69 @@
+<div align="center" class="row">
+  <div class="col-md-6"></div>
+
+  <div class="col-md-4">
+    <form action="/employee">
+      <button class="btn btn-success" type="submit" style="margin-left: -120px; margin-top: -152px" value="Search"
+      >Search</button>
+      <input class="form-control mr-sm-2" type="text" placeholder="Search By Name" aria-label="Search"
+             style="width: 250px; margin-top: -105px; margin-left: 200px" name="nameSearch"
+             value="${keywordOld}">
+    </form>
+  </div>
+
+  <div class="col-md-2"></div>
+</div>
+
+<div align="center">
+  <h1 style="margin-top: -20px; margin-bottom: 12px">Employee List</h1>
+    <button type="submit" class="btn btn-warning" style="margin-top: -13px; margin-bottom: 3px"><a
+      href="@{/employee/create}"
+      style="text-decoration: none; color: #0c0c0c"><i class="fas fa-plus" style="color: #6c757d"></i> Add New Employee</a>
+    </button>
+</div>
+
+<div class="notify" style="color: red" align="center" if="${message}"><span text="${message}"></span></div>
+
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">ID</th>
+    <th scope="col">Name</th>
+    <th scope="col">Birthday</th>
+    <th scope="col">Email</th>
+    <th scope="col">Address</th>
+    <th scope="col">Division</th>
+    <th scope="col">Education Degree</th>
+    <th scope="col">Position</th>
+    <th scope="col">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr each="employee:${employeeList}">
+    <td text="${employee.id}"></td>
+    <td text="${employee.name}"></td>
+    <td text="${employee.birthDay}"></td>
+    <td text="${employee.email}"></td>
+    <td text="${employee.address}"></td>
+    <td text="${employee.division.name}"></td>
+    <td text="${employee.educationDegree.name}"></td>
+    <td text="${employee.position.name}"></td>
+    <td>
+      <a href="@{/employee/{id}/view(id=${employee.getId()})}"><i class="fa fa-eye"
+                                                                     style="color: blue"></i></a>
+        <a href="@{/employee/{id}/edit(id=${employee.getId()})}"><i class="material-icons"
+                                                                       style="color: hotpink">&#xE254;</i></a>
+        <!--            <a th:href="@{/employee/{id}/delete(id=${employee.getId()})}"><i class="material-icons" style="color: red">&#xE5C9;</i></a>-->
+        <a data-toggle="modal" data-target="#deleteEmployeeModal" href="#" data-id="${employee.id}" class="delete" title="Delete"><i class="material-icons"
+                                                                        style="color: red">&#xE5C9;</i></a>
+    </td>
+  </tr>
+  </tbody>
+</table>
+<div style="margin-left: 1230px">
+  <a if="${employeeList.hasPrevious()}"
+     href="@{/employee(page = ${employeeList.number - 1}, nameSearch = ${keywordOld})}">Previous</a>
+  <span text="${employeeList.number + 1}"></span>/<span   text="${employeeList.totalPages}"></span>
+  <a if="${employeeList.hasNext()}"
+     href="@{/employee(page = ${employeeList.number + 1}, nameSearch = ${keywordOld})}">Next</a>
+</div>

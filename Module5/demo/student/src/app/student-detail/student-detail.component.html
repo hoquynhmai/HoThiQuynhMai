@@ -1,0 +1,42 @@
+<div>
+  <!--<h3>Detail Student</h3>-->
+  <!--  <p>ID: {{studentChild.id}}</p>-->
+  <!--  <p>Name: {{studentChild.name}}</p>-->
+  <!--  <p>Mark: {{studentChild.mark}}</p>-->
+  <!--  <p><img [src]="studentChild.image"></p>-->
+  <!--  <label>Get Mark: </label>-->
+  <!--  <input type="number" min="0" max="10" (change)="changeMark($event.target.value)">-->
+  <!--</div>-->
+
+  <div class="container">
+    <div class="table-responsive">
+      <div class="table-wrapper">
+        <div class="table-title">
+          <div class="row">
+            <div class="col-sm-8"><h2>Student <b>Detail</b></h2></div>
+            <div class="col-sm-4">
+            </div>
+          </div>
+        </div>
+        <table class="table table-striped table-hover table-bordered">
+          <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Mark</th>
+            <th>Image</th>
+            <th>Get Mark</th>
+          </tr>
+          </thead>
+          <tr>
+            <td>{{studentChild.id}}</td>
+            <td>{{studentChild.name}}</td>
+            <td>{{studentChild.mark}}</td>
+            <td><img [src]="studentChild.image"/></td>
+            <td><input class="form-control" type="number" min="0" max="10" (change)="changeMark($event.target.value)"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Trần Công Thành",
-      "birthday": "02/03/1995",
+      "birthday": "03/02/1995",
       "idCard": 201675715,
       "address": "Thanh Khê - Đà Nẵng",
       "email": "trancongthanh@gmail.com",
@@ -16,7 +16,7 @@
     {
       "id": 2,
       "name": "Nguyễn Trương An",
-      "birthday": "18/11/1995",
+      "birthday": "11/18/1995",
       "idCard": 201675717,
       "address": "Thanh Khê - Đà Nẵng",
       "email": "nguyentruongan@gmail.com",
@@ -29,7 +29,7 @@
     {
       "id": 3,
       "name": "Nguyễn Đoàn Tố Uyên",
-      "birthday": "02/10/1995",
+      "birthday": "10/02/1995",
       "idCard": 201675718,
       "address": "Liên Chiểu - Đà Nẵng",
       "email": "touyen@gmail.com",
@@ -42,7 +42,7 @@
     {
       "id": 4,
       "name": "Trịnh Anh Sang",
-      "birthday": "03/01/1995",
+      "birthday": "01/03/1995",
       "idCard": 201675719,
       "address": "Thanh Khê - Đà Nẵng",
       "email": "trinhanhsang@gmail.com",
@@ -55,7 +55,7 @@
     {
       "id": 5,
       "name": "Trịnh Phạm Nhã Uyên",
-      "birthday": "1/11/1995",
+      "birthday": "11/01/1995",
       "idCard": 201675720,
       "address": "Thanh Khê - Đà Nẵng",
       "email": "nhauyen@gmail.com",
@@ -64,6 +64,68 @@
       "division": "Phục Vụ",
       "educationDegree": "Cao Đẳng",
       "position": "Nhân Viên"
+    }
+  ],
+  "position": [
+    {
+      "id": 1,
+      "name": "Receptionist"
+    },
+    {
+      "id": 2,
+      "name": "Waiters"
+    },
+    {
+      "id": 3,
+      "name": "Expert"
+    },
+    {
+      "id": 4,
+      "name": "Monitoring"
+    },
+    {
+      "id": 5,
+      "name": "Manager"
+    },
+    {
+      "id": 6,
+      "name": "Director"
+    }
+  ],
+  "division": [
+    {
+      "id": 1,
+      "name": "Sale – Marketing"
+    },
+    {
+      "id": 2,
+      "name": "Administrative"
+    },
+    {
+      "id": 3,
+      "name": "Waiters"
+    },
+    {
+      "id": 4,
+      "name": "Manager"
+    }
+  ],
+  "educationDegree": [
+    {
+      "id": 1,
+      "name": "Intermediate"
+    },
+    {
+      "id": 2,
+      "name": "Colleges"
+    },
+    {
+      "id": 3,
+      "name": "University"
+    },
+    {
+      "id": 4,
+      "name": "After university"
     }
   ],
   "customer": [
@@ -122,7 +184,6 @@
       "address": "Điện Phương - Quảng Nam",
       "phoneNumber": "0905123987"
     }
-
   ],
   "service": {
     "name": "typicode"

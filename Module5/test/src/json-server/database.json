@@ -1,0 +1,81 @@
+{
+  "products": [
+    {
+      "idFormat": "SP-0527",
+      "name": "Sony XZ Premium",
+      "price": 5000,
+      "status": "Empty",
+      "type": {
+        "id": 3,
+        "name": "Laptop"
+      },
+      "id": 1
+    },
+    {
+      "idFormat": "SP-3698",
+      "name": "Realme C1",
+      "price": 3000,
+      "status": "Empty",
+      "type": {
+        "id": 1,
+        "name": "Phone"
+      },
+      "id": 2
+    },
+    {
+      "id": 4,
+      "idFormat": "SP-9654",
+      "name": "Kawasaki Z1000",
+      "price": 10000,
+      "status": "Available",
+      "type": {
+        "id": 4,
+        "name": "Other"
+      }
+    },
+    {
+      "id": 5,
+      "idFormat": "SP-8541",
+      "name": "Acer Nitro 5",
+      "price": 5500,
+      "status": "Available",
+      "type": {
+        "id": 3,
+        "name": "Laptop"
+      }
+    },
+    {
+      "idFormat": "SP-1266",
+      "name": "1",
+      "price": "1221212",
+      "status": "1",
+      "type": {
+        "id": 1,
+        "name": "Phone"
+      },
+      "id": 6
+    }
+  ],
+  "productType": [
+    {
+      "id": 1,
+      "name": "Phone"
+    },
+    {
+      "id": 2,
+      "name": "Television"
+    },
+    {
+      "id": 3,
+      "name": "Laptop"
+    },
+    {
+      "id": 4,
+      "name": "Other"
+    },
+    {
+      "id": 5,
+      "name": "Air Conditioning"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+<div class="row">
+  <div class="col-sm-1"></div>
+  <div class="col-sm-10">
+    <form [formGroup]="formCreateNew">
+      <div class="text-center">
+        <h3 class="modal-title w-100 dark-grey-text font-weight-bold my-2" style="color: #218b55"
+            id="add">
+          <strong>Create New</strong></h3>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label>ID :</label>
+          <input type="text" class="form-control" formControlName="idFormat"/>
+          <p class="text-danger"
+             *ngIf="formCreateNew.get('idFormat').hasError('pattern')
+             && (formCreateNew.controls.idFormat?.dirty
+            || formCreateNew.controls.idFormat?.touched)">
+            Invalid ID ! Format ID is KH-XXXX-XXX with XXXXX: 0-9 and XXX with X: A-Z - X: a-z!
+          </p>
+
+          <p class="text-danger"
+             *ngIf="formCreateNew.get('idFormat').hasError('required')
+             && (formCreateNew.controls.idFormat?.dirty
+            || formCreateNew.controls.idFormat?.touched)">
+            Invalid ID ! ID must not be left blank !
+          </p>
+
+          <p class="text-danger"
+             *ngIf="formCreateNew.get('idFormat').hasError('idExists')
+                                 && (formCreateNew.controls.idFormat?.dirty
+                                || formCreateNew.controls.idFormat?.touched)">
+            ID is exists ! Please enter ID other !
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label>Name :</label>
+          <input type="text" class="form-control" formControlName="name"/>
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.name?.hasError('required')
+             && (formCreateNew.controls.name?.dirty
+            || formCreateNew.controls.name?.touched)">
+            Invalid name ! Name must not be left blank !
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label>ID Card: </label>
+          <input type="text" class="form-control" formControlName="idCard"/>
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.idCard?.hasError('required')
+             && (formCreateNew.controls.idCard?.dirty
+            || formCreateNew.controls.idCard?.touched)">
+            Invalid idCard ! IdCard must not be left blank !
+          </p>
+
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.idCard?.hasError('pattern')
+             && (formCreateNew.controls.idCard?.dirty
+            || formCreateNew.controls.idCard?.touched)">
+            Invalid IDCard ! Format IDCard is XXX - XXX -XXX with X: 0-9
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label>Email :</label><br>
+          <input type="text" class="form-control" formControlName="email"/>
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.email?.hasError('required')
+             && (formCreateNew.controls.email?.dirty
+            || formCreateNew.controls.email?.touched)">
+            Invalid email ! Email must not be left blank !
+          </p>
+
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.email?.hasError('email')
+             && (formCreateNew.controls.email?.dirty
+            || formCreateNew.controls.email?.touched)">
+            Invalid email ! Example: abc@abc.abc
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label>Birthday :</label>
+          <mat-form-field style="width: 250px; margin-left: 25px">
+            <input [max]="maxBirthday" matInput [matDatepicker]="birthday"
+                   formControlName="birthday" placeholder="Please choose a date"/>
+            <mat-datepicker-toggle matSuffix [for]="birthday"></mat-datepicker-toggle>
+            <mat-datepicker #birthday></mat-datepicker>
+          </mat-form-field>
+
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.birthday?.invalid && (formCreateNew.controls.birthday?.dirty
+            || formCreateNew.controls.birthday?.touched)">
+            Invalid birthday ! Birthday smallest: 18 years old !
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label>Start Date :</label>
+          <mat-form-field style="width: 250px; margin-left: 25px">
+            <input (dateChange)="changeStartDate(startDate)" [min]="startDateMin"
+                   matInput [matDatepicker]="startDate"
+                   formControlName="startDate" placeholder="Please choose a date"/>
+            <mat-datepicker-toggle matSuffix [for]="startDate"></mat-datepicker-toggle>
+            <mat-datepicker #startDate></mat-datepicker>
+          </mat-form-field>
+
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.startDate?.invalid && (formCreateNew.controls.startDate?.dirty
+            || formCreateNew.controls.startDate?.touched)">
+            Invalid start date ! Start date must not be left blank !
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label>End Date :</label>
+          <mat-form-field style="width: 250px; margin-left: 25px">
+            <input [min]="startDateTS" matInput [matDatepicker]="endDate"
+                   formControlName="endDate" placeholder="Please choose a date"/>
+            <mat-datepicker-toggle matSuffix [for]="endDate"></mat-datepicker-toggle>
+            <mat-datepicker #endDate></mat-datepicker>
+          </mat-form-field>
+
+          <p class="text-danger"
+             *ngIf="formCreateNew.get('endDate').hasError('required')
+                       && (formCreateNew.controls.endDate?.dirty
+                      || formCreateNew.controls.endDate?.touched)">
+            End date invalid ! Please enter end date other !
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label>Cost :</label><br>
+          <input type="number" class="form-control" formControlName="cost"/>
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.cost?.hasError('required')
+             && (formCreateNew.controls.cost?.dirty
+            || formCreateNew.controls.cost?.touched)">
+            Invalid cost ! Cost must not be left blank !
+          </p>
+
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.cost?.hasError('min')
+             && (formCreateNew.controls.cost?.dirty
+            || formCreateNew.controls.cost?.touched)">
+            Invalid cost ! Cost : 10.000.000 - 50.000.000
+          </p>
+
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.cost?.hasError('max')
+             && (formCreateNew.controls.cost?.dirty
+            || formCreateNew.controls.cost?.touched)">
+            Invalid cost ! Cost : 10.000.000 - 50.000.000
+          </p>
+        </div>
+
+        <div class="form-group">
+          <label>Type : </label>
+          <select style="margin-left: 15px; width: 200px" formControlName="type">
+            <option value="">Select one in List</option>
+            <option *ngFor="let typeOfList of typeList">{{typeOfList.name}}</option>
+          </select>
+          <p class="text-danger"
+             *ngIf="formCreateNew.controls.type?.invalid && (formCreateNew.controls.type?.dirty
+            || formCreateNew.controls.type?.touched)">
+            Invalid type !
+          </p>
+        </div>
+      </div>
+    </form>
+
+    <div class="row justify-content-center">
+      <h5 class="text-danger" [hidden]="formCreateNew.valid">Please enter all of the above fields correctly !
+      </h5>
+    </div>
+    <div class="row justify-content-center">
+      <!-- ---------------------------------- Change Page -------------------------------->
+      <!--      <button [routerLink]="['/list']" class="btn btn-warning mr-3" style="width: 100px">Cancel</button>-->
+      <!---------------------------------------------------------------------------------->
+
+      <!-- --------------------------------------- Dialog --------------------------------- -->
+      <button mat-dialog-close class="btn btn-warning mr-3" style="width: 100px">Cancel</button>
+      <!------------------------------------------------------------------------------------>
+
+      <button class="btn btn-success" [disabled]="formCreateNew.invalid" (click)="createNew()">
+        Create New
+      </button>
+    </div>
+  </div>
+  <div class="col-sm-1"></div>
+</div>

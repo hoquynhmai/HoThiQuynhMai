@@ -2,240 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64273b70-e606-4a3f-b001-4636ea6dabf7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/java/com/codegym/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/java/com/codegym/config/LogCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/java/com/codegym/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/java/com/codegym/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/java/com/codegym/service/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/java/com/codegym/service/CustomerServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/resources/message/content_web_en.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/resources/message/content_web_vn.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/resources/templates/common.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/resources/templates/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/resources/templates/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/resources/templates/detail_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/resources/templates/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/resources/templates/error_customer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/bai_tap/bai_1_ung_dung_quan_ly_khach_hang_i18n/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/bai_1_ung_dung_blog_quoc_te/src/main/java/com/codegym/config/MessageConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/bai_1_ung_dung_blog_quoc_te/src/main/java/com/codegym/controller/DashBoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/bai_1_ung_dung_blog_quoc_te/src/main/java/com/codegym/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/bai_1_ung_dung_blog_quoc_te/src/main/java/com/codegym/entity/Credential.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/bai_1_ung_dung_blog_quoc_te/src/main/java/com/codegym/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/bai_1_ung_dung_blog_quoc_te/src/main/resources/message.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/bai_1_ung_dung_blog_quoc_te/src/main/resources/message_haw.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/bai_1_ung_dung_blog_quoc_te/src/main/resources/templates/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/bai_1_ung_dung_blog_quoc_te/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/demo/src/main/java/com/codegym/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/demo/src/main/java/com/codegym/controllers/DashBoardController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/demo/src/main/java/com/codegym/controllers/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/demo/src/main/java/com/codegym/entity/Credential.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/demo/src/main/java/com/codegym/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/demo/src/main/resources/messages/message.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/demo/src/main/resources/messages/message_haw.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/demo/src/main/resources/templates/dashboard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_13_i18n/thuc_hanh/demo/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/controller/RestCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/entity/AppRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/entity/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/entity/Blog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/entity/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/entity/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/repository/AppRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/repository/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/repository/BlogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/repository/UserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/service/BlogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/service/impl/BlogServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/service/impl/CategoryServiceImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/java/com/codegym/service/impl/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/blog/blog-of-category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/blog/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/blog/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/blog/detail_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/blog/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/blog/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/blog/sort-blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/category/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/category/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/category/detail_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/category/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/category/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/common/common.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/bai_tap/bai_1_ung_dung_blog_spring_security/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/thuc_hanh/bai_1_su_dung_spring_security/src/main/java/com/codegym/config/SecurityWebApplicationInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/thuc_hanh/bai_1_su_dung_spring_security/src/main/java/com/codegym/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/thuc_hanh/bai_1_su_dung_spring_security/src/main/java/com/codegym/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/thuc_hanh/bai_1_su_dung_spring_security/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/thuc_hanh/bai_1_su_dung_spring_security/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../bai_14_bao_mat_ung_dung_web_trong_spring/thuc_hanh/bai_1_su_dung_spring_security/src/main/resources/templates/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/config/ValidateConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/controller/ContractController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/controller/ContractDetailController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/controller/ServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/contract/Contract.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/contract_detail/AttachService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/contract_detail/ContractDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/customer/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/customer/TypeCustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/employee/Division.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/employee/EducationDegree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/employee/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/employee/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/login/AppRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/login/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/login/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/service/RentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/entity/service/ServiceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/contract/ContractRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/contract_detail/AttachServiceReposity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/contract_detail/ContractDetailRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/customer/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/customer/TypeCustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/employee/DivisionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/employee/EducationDegreeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/employee/EmployeeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/employee/PositionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/login/AppRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/login/AppUserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/login/UserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/service/RentTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/service/ServiceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/repository/service/ServiceTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/contract/ContractService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/contract/impl/ContractServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/contract_detail/ContractDetailService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/contract_detail/impl/ContractDetailServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/customer/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/customer/impl/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/employee/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/employee/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/register/RegisterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/register/impl/RegisterServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/service/ServiceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/java/com/codegym/service/service/impl/ServiceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/message/error_message.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/static/pic/house.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/static/pic/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/static/pic/pic_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/static/pic/pic_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/static/pic/pic_3.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/static/pic/pic_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/static/pic/pic_5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/static/pic/room.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/static/pic/villa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/403.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/common/common.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract/detail_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract/home_contract.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract_detail/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract_detail/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract_detail/detail_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract_detail/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/contract_detail/home_contract_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/customer/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/customer/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/customer/detail_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/customer/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/customer/home_customer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/employee/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/employee/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/employee/detail_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/employee/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/employee/home_employee.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/service/create.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/service/delete.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/service/detail_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/service/edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../case_study/furama_resort_spring_boot/src/main/resources/templates/service/home_service.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/test-full.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/controllers/login/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/controllers/product/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/entity/login/AppUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/entity/login/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/entity/login/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/entity/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/entity/product/ProductType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/repository/login/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/repository/login/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/repository/login/UserRoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/repository/product/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/repository/product/ProductTypeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/service/login/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/service/product/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/java/com/codegym/service/product/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/message/error_message.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/static/js/jquery-3.5.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/templates/create-new-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/templates/edit-product.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/templates/fragment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/templates/product-ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/templates/product-home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../test/test-final/src/main/resources/templates/view-product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bai_12_ jquery_and_ajax/bai_tap/bai_1_ung_dung_blog_ajax/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_12_ jquery_and_ajax/bai_tap/bai_1_ung_dung_blog_ajax/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../bai_3_views_and_thymeleaf/thuc_hanh/bai_1_su_dung_thymeleaf_cho_ung_dung_quan_ly_dl_khach_hang/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../bai_3_views_and_thymeleaf/thuc_hanh/bai_1_su_dung_thymeleaf_cho_ung_dung_quan_ly_dl_khach_hang/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study/CG-DN Case Study for Spring.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study/CG-DN Case Study for Spring.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/material.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module1/11_cau_truc_lap_2/bai_tap/Bai4cLTCauTrucVL2VeTamGiacVuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module1/11_cau_truc_lap_2/bai_tap/Bai4cLTCauTrucVL2VeTamGiacVuong.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module1/11_cau_truc_lap_2/bai_tap/Bai4fLTCauTrucVL2InHinhTraiTim.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module1/11_cau_truc_lap_2/bai_tap/Bai4fLTCauTrucVL2InHinhTraiTim.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module2/src/bai4_lop_va_doi_tuong_trong_java/thuc_hanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/src/bai4_lop_va_doi_tuong_trong_java/thuc_hanh/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/libraries/mysql_connector_java_8_0_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/libraries/mysql_connector_java_8_0_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/libraries/taglibs_standard_impl_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/mat_bang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/mat_bang.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/service/employee.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/service/employee.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/json-server/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/json-server/database.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/styles.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -252,7 +59,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-complete" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -265,10 +78,24 @@
       <option name="presentableId" value="Default" />
       <updated>1605154647040</updated>
       <workItem from="1605154648414" duration="327000" />
+      <workItem from="1607591602510" duration="16000" />
+      <workItem from="1607655843627" duration="908000" />
+      <workItem from="1607676277004" duration="1973000" />
+      <workItem from="1607695909020" duration="76000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1607695982654">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607695982654" />
+    <state x="65" y="67" key="new project wizard" timestamp="1607678587123">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="65" y="67" key="new project wizard/0.0.1366.728@0.0.1366.728" timestamp="1607678587123" />
   </component>
 </project>

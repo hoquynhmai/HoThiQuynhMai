@@ -1,0 +1,236 @@
+{
+  "products": [
+    {
+      "idFormat": "LAD-12-13",
+      "area": 66,
+      "floor": 8,
+      "cost": 5000000,
+      "startDate": "2020-11-15T17:00:00.000Z",
+      "endDate": "2020-11-16T17:00:00.000Z",
+      "type": {
+        "id": 3,
+        "name": "Office full"
+      },
+      "status": {
+        "id": 1,
+        "name": "Empty"
+      },
+      "id": 2
+    },
+    {
+      "idFormat": "LAD-12-14",
+      "area": 22,
+      "floor": 15,
+      "cost": 5000000,
+      "startDate": "2020-11-08T17:00:00.000Z",
+      "endDate": "2020-11-23T17:00:00.000Z",
+      "type": {
+        "id": 3,
+        "name": "Office full"
+      },
+      "status": {
+        "id": 2,
+        "name": "Down Floor"
+      },
+      "id": 3
+    },
+    {
+      "idFormat": "LAD-12-16",
+      "area": 40,
+      "floor": 9,
+      "cost": 5000000,
+      "startDate": "2020-12-07T17:00:00.000Z",
+      "endDate": "2020-12-15T17:00:00.000Z",
+      "type": {
+        "id": 2,
+        "name": "Office Share"
+      },
+      "status": {
+        "id": 3,
+        "name": "Full"
+      },
+      "id": 5
+    },
+    {
+      "idFormat": "ABC-12-12",
+      "area": 22,
+      "floor": 12,
+      "cost": "1200000",
+      "startDate": "2020-11-24T17:00:00.000Z",
+      "endDate": "2020-12-01T17:00:00.000Z",
+      "type": {
+        "id": 2,
+        "name": "Office Share"
+      },
+      "status": {
+        "id": 1,
+        "name": "Empty"
+      },
+      "id": 6
+    },
+    {
+      "idFormat": "123-12-12",
+      "area": 122,
+      "floor": 12,
+      "cost": "1222222",
+      "startDate": "2020-10-31T17:00:00.000Z",
+      "endDate": "2020-11-07T17:00:00.000Z",
+      "type": {
+        "id": 1,
+        "name": "Office"
+      },
+      "status": {
+        "id": 2,
+        "name": "Down Floor"
+      },
+      "id": 7
+    },
+    {
+      "idFormat": "LAD-12-13",
+      "area": 111,
+      "floor": 11,
+      "cost": 1111111,
+      "startDate": "2020-11-16T17:00:00.000Z",
+      "endDate": "2020-11-24T17:00:00.000Z",
+      "type": {
+        "id": 1,
+        "name": "Office"
+      },
+      "status": {
+        "id": 2,
+        "name": "Down Floor"
+      },
+      "id": 8
+    },
+    {
+      "idFormat": "123-AB-12",
+      "area": 21,
+      "floor": 7,
+      "cost": 8000000,
+      "startDate": "2020-10-31T17:00:00.000Z",
+      "endDate": "2020-11-07T17:00:00.000Z",
+      "type": {
+        "id": 2,
+        "name": "Office Share"
+      },
+      "status": {
+        "id": 2,
+        "name": "Down Floor"
+      },
+      "id": 9
+    },
+    {
+      "idFormat": "LAD-12-19",
+      "area": 69,
+      "floor": 5,
+      "cost": 6500000,
+      "startDate": "2020-11-08T17:00:00.000Z",
+      "endDate": "2020-11-15T17:00:00.000Z",
+      "type": {
+        "id": 1,
+        "name": "Office"
+      },
+      "status": {
+        "id": 1,
+        "name": "Empty"
+      },
+      "id": 10
+    },
+    {
+      "idFormat": "ABC-12-55",
+      "area": 65,
+      "floor": 10,
+      "cost": 5000000,
+      "startDate": "2020-10-31T17:00:00.000Z",
+      "endDate": "2020-11-23T17:00:00.000Z",
+      "type": {
+        "id": 3,
+        "name": "Office full"
+      },
+      "status": {
+        "id": 3,
+        "name": "Full"
+      },
+      "id": 11
+    },
+    {
+      "idFormat": "MAI-15-05",
+      "area": 55,
+      "floor": 15,
+      "cost": 5500000,
+      "startDate": "2020-11-09T17:00:00.000Z",
+      "endDate": "2020-11-23T17:00:00.000Z",
+      "type": {
+        "id": 3,
+        "name": "Office full"
+      },
+      "status": {
+        "id": 1,
+        "name": "Empty"
+      },
+      "id": 12
+    },
+    {
+      "idFormat": "SAO-08-10",
+      "area": 66,
+      "floor": 12,
+      "cost": 9000000,
+      "startDate": "2020-11-14T17:00:00.000Z",
+      "endDate": "2020-11-22T17:00:00.000Z",
+      "type": {
+        "id": 1,
+        "name": "Office"
+      },
+      "status": {
+        "id": 2,
+        "name": "Down Floor"
+      },
+      "id": 13
+    },
+    {
+      "idFormat": "SAO-10-08",
+      "area": 66,
+      "floor": 10,
+      "cost": 12334556,
+      "startDate": "2020-11-21T17:00:00.000Z",
+      "endDate": "2020-11-29T17:00:00.000Z",
+      "type": {
+        "id": 2,
+        "name": "Office Share"
+      },
+      "status": {
+        "id": 2,
+        "name": "Down Floor"
+      },
+      "id": 14
+    }
+  ],
+  "landType": [
+    {
+      "id": 1,
+      "name": "Office"
+    },
+    {
+      "id": 2,
+      "name": "Office Share"
+    },
+    {
+      "id": 3,
+      "name": "Office full"
+    }
+  ],
+  "landStatus": [
+    {
+      "id": 1,
+      "name": "Empty"
+    },
+    {
+      "id": 2,
+      "name": "Down Floor"
+    },
+    {
+      "id": 3,
+      "name": "Full"
+    }
+  ]
+}

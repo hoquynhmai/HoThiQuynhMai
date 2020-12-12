@@ -1,0 +1,86 @@
+{
+  "phuongtien": [
+    {
+      "bienSoXe": "2222",
+      "loai": "dđ",
+      "ten": "sdsad",
+      "diaDiemDi": {
+        "id": 1,
+        "ten": "Da Nang"
+      },
+      "diaDiemDen": {
+        "id": 2,
+        "ten": "Nghe An"
+      },
+      "sdt": "0931231231",
+      "email": "abc@abc.com",
+      "gioDi": "5:00",
+      "gioDen": "23:00",
+      "id": 4
+    },
+    {
+      "bienSoXe": "2222",
+      "loai": "sấ",
+      "ten": "sá",
+      "diaDiemDi": {
+        "id": 1,
+        "ten": "Da Nang"
+      },
+      "diaDiemDen": {
+        "id": 2,
+        "ten": "Nghe An"
+      },
+      "sdt": "0931231234",
+      "email": "abc@abc.com",
+      "gioDi": "9:00",
+      "gioDen": "10:00",
+      "id": 5
+    },
+    {
+      "bienSoXe": "1111",
+      "loai": "dsadsd",
+      "ten": "sds",
+      "diaDiemDi": {
+        "id": 1,
+        "ten": "Da Nang"
+      },
+      "diaDiemDen": {
+        "id": 2,
+        "ten": "Nghe An"
+      },
+      "sdt": "0971234564",
+      "email": "abc@abc.com",
+      "gioDi": "12:00",
+      "gioDen": "23:00",
+      "id": 6
+    }
+  ],
+  "diemDi": [
+    {
+      "id": 1,
+      "ten": "Da Nang"
+    },
+    {
+      "id": 2,
+      "ten": "Hue"
+    },
+    {
+      "id": 3,
+      "ten": "Quang Tri"
+    }
+  ],
+  "diemDen": [
+    {
+      "id": 1,
+      "ten": "Nha Trang"
+    },
+    {
+      "id": 2,
+      "ten": "Nghe An"
+    },
+    {
+      "id": 3,
+      "ten": "Sai Gon"
+    }
+  ]
+}

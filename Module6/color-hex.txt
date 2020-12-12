@@ -1,0 +1,15 @@
+Thống nhất màu chỉ để nộp prototype
+Xác nhận/ Lưu/ Kiểm Tra/ Tìm kiếm
+<button type="button" class="btn btn-success">Success</button>
+
+Huỷ:
+<button type="button" class="btn btn-secondary">Secondary</button>
+
+Edit:
+<button type="button" class="btn btn-warning">Warning</button>
+
+Delete:
+<button type="button" class="btn btn-dark">Dark</button>
+
+Các nút khác:
+<button type="button" class="btn btn-primary">Primary</button>

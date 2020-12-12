@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản Lý Nhân Viên</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid mt-4 table-responsive">
+  <h1 class="text-center text-danger">Quản Lý Nhân Viên</h1>
+  <div class="row col-sm-12 col-xl-12 mt-5 d-flex form-inline">
+    <div class="col-sm-3 col-xl-3">
+      <button type="button" class="btn btn-success" [routerLink]="['/create-employee']">
+        <i class="fas fa-plus-circle"></i>
+        Thêm mới nhân viên
+      </button>
+    </div>
+    <div class="col-sm-1 col-xl-1"></div>
+    <form class="row col-sm-8 col-xl-8 d-flex justify-content-end">
+      <div class="form-group row col-sm-5 col-xl-5 p-0">
+        <span class="col-sm-6 col-xl-6 justify-content-start"> Tìm kiếm theo </span>
+        <select class="col-sm-6 col-xl-6 form-control form-control-sm rounded" #attribute>
+          <option value="Chọn Mã Tìm Kiếm">Chọn Mã Tìm Kiếm</option>
+          <option value="Họ Tên">Họ Tên</option>
+          <option value="Tài Khoản">Tài Khoản</option>
+          <option value="Số Điện Thoại">Số Điện Thoại</option>
+        </select>
+      </div>
+      <div class="col-sm-6 col-xl-6 d-flex justify-content-center form-inline mx-2 m-0 p-0">
+        <input type="text" class="form-control form-control-sm rounded mx-2 "
+               placeholder="Nhập từ khóa tìm kiếm">
+        <button type="button" class="search btn btn-success btn-sm mx-2" style="width: 60px">
+          <i class="fas fa-search"></i></button>
+      </div>
+    </form>
+  </div>
+
+  <div class=" col-sm-12 col-xl-12 mt-4">
+    <table class="table table-hover">
+      <thead class="btn-light">
+      <tr>
+        <th>STT</th>
+        <th>Mã NV</th>
+        <th>Họ Tên</th>
+        <th>Ngày Sinh</th>
+        <th>Giới Tính</th>
+        <th>Tài Khoản</th>
+        <th>Số Điện Thoại</th>
+        <th>Phân Quyền</th>
+        <th>Thao Tác</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let employee of list">
+        <td>{{employee.id}}</td>
+        <td>{{employee.employeeCode}}</td>
+        <td>{{employee.fullName}}</td>
+        <td>{{employee.birthDay | date: 'dd/MM/yyyy'}}</td>
+        <td>{{employee.gender.name}}</td>
+        <td>{{employee.email}}</td>
+        <td>{{employee.numberPhone}}</td>
+        <td>{{employee.role}}</td>
+        <td>
+          <i class="fas fa-edit btn btn-warning" [routerLink]="['/edit-employee', employee.id]"></i>
+          <i class="fas fa-trash-alt btn btn-dark ml-1" (click)="openDialogDelete(employee.id)"></i>
+        </td>
+      </tr>
+
+
+      <!--      <tr>-->
+      <!--        <td>1</td>-->
+      <!--        <td>1111</td>-->
+      <!--        <td>Hồ Thị Quỳnh Mai</td>-->
+      <!--        <td>15/05/1995</td>-->
+      <!--        <td>Nữ</td>-->
+      <!--        <td>houqynhmai1505@gmail.com</td>-->
+      <!--        <td>0901171603</td>-->
+      <!--        <td>Admin</td>-->
+      <!--        <td>-->
+      <!--          <i class="fas fa-edit btn btn-warning" ></i>-->
+      <!--          <i class="fas fa-trash-alt btn btn-dark"></i>-->
+      <!--        </td>-->
+      <!--      </tr>-->
+
+      <!--      <tr>-->
+      <!--        <td>2</td>-->
+      <!--        <td>2222</td>-->
+      <!--        <td>Hồ Trúc Mai</td>-->
+      <!--        <td>08/10/1996</td>-->
+      <!--        <td>Nữ</td>-->
+      <!--        <td>trucmai0810@gmail.com</td>-->
+      <!--        <td>0905085170</td>-->
+      <!--        <td>Admin</td>-->
+      <!--        <td>-->
+      <!--          <i class="fas fa-edit btn btn-warning" ></i>-->
+      <!--          <i class="fas fa-trash-alt btn btn-dark"></i>-->
+      <!--        </td>-->
+      <!--      </tr>-->
+
+      <!--      <tr>-->
+      <!--        <td>3</td>-->
+      <!--        <td>3333</td>-->
+      <!--        <td>Hồ Hồng Nhung</td>-->
+      <!--        <td>02/01/1993</td>-->
+      <!--        <td>Nữ</td>-->
+      <!--        <td>c0nl0ck@gmail.com</td>-->
+      <!--        <td>0901171603</td>-->
+      <!--        <td>Admin</td>-->
+      <!--        <td>-->
+      <!--          <i class="fas fa-edit btn btn-warning" ></i>-->
+      <!--          <i class="fas fa-trash-alt btn btn-dark"></i>-->
+      <!--        </td>-->
+      <!--      </tr>-->
+
+      <!--      <tr>-->
+      <!--        <td>4</td>-->
+      <!--        <td>4444</td>-->
+      <!--        <td>Hồ Huy Hoàng</td>-->
+      <!--        <td>01/06/1990</td>-->
+      <!--        <td>Nam</td>-->
+      <!--        <td>h3bam@gmail.com</td>-->
+      <!--        <td>0935161990</td>-->
+      <!--        <td>Member</td>-->
+      <!--        <td>-->
+      <!--          <i class="fas fa-edit btn btn-warning" ></i>-->
+      <!--          <i class="fas fa-trash-alt btn btn-dark"></i>-->
+      <!--        </td>-->
+      <!--      </tr>-->
+
+      <!--      <tr>-->
+      <!--        <td>5</td>-->
+      <!--        <td>5555</td>-->
+      <!--        <td>Trần Hữu Xuân</td>-->
+      <!--        <td>20/10/1964</td>-->
+      <!--        <td>Nam</td>-->
+      <!--        <td>xuantran20@gmail.com</td>-->
+      <!--        <td>0905129774</td>-->
+      <!--        <td>Admin</td>-->
+      <!--        <td>-->
+      <!--          <i class="fas fa-edit btn btn-warning" ></i>-->
+      <!--          <i class="fas fa-trash-alt btn btn-dark"></i>-->
+      <!--        </td>-->
+      <!--      </tr>-->
+      </tbody>
+    </table>
+    <nav class="mt-3" aria-label="Page navigation example ">
+      <ul class="pagination justify-content-center ">
+        <li class="page-item"><a class="page-link" href="#">Trước</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Sau</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<script src="//code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

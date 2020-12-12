@@ -1,0 +1,10 @@
+<h3 style="color: red">Xác Nhận Xóa !</h3>
+<hr>
+<h5 class="my-3">Bạn có chắc muốn xóa biển số xe
+  <span class="text-danger font-weight-bold">{{product.bienSoXe}}</span> ?</h5>
+<p style="color: deeppink">Hành động này không được hoàn lại !</p>
+<div class="row d-flex justify-content-end">
+  <!--  <input type="hidden" [value]="product.id" #id>-->
+  <button mat-dialog-close class="btn btn-warning mr-3" style="width: 100px">Hủy</button>
+  <button class="btn btn-danger mr-3" style="width: 100px" (click)="deleteCustomer()">Xóa</button>
+</div>

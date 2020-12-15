@@ -57,11 +57,13 @@ public class CustomerRestController {
         customer.setPhoneNumber(phoneNumber);
         customer.setEmail(email);
         customer.setAddress(address);
+
         CustomerType customerTypeAdd = new CustomerType();
         customerTypeAdd.setId(1);
         customerTypeAdd.setName(customerType);
         customer.setCustomerType(customerTypeAdd);
         this.customerService.save(customer);
+
         List<Customer> listCustomer = this.customerService.findAll();
         return new ResponseEntity<>(listCustomer, HttpStatus.OK);
     }

@@ -22,9 +22,9 @@ export class DeleteEmployeeComponent implements OnInit {
     this.idDelete = this.data.dataNeed.id;
   }
 
-    deleteEmployee() {
-      this.serviceConnectService.deleteEmployee(this.idDelete).subscribe(data => {
-        this.dialogRef.close();
-      });
-    }
+  deleteEmployee() {
+    this.serviceConnectService.deleteEmployee(this.idDelete).subscribe(data => {
+      this.dialogRef.close();
+    });
+  }
 }

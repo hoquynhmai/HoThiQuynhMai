@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64273b70-e606-4a3f-b001-4636ea6dabf7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/material.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module1/11_cau_truc_lap_2/bai_tap/Bai4cLTCauTrucVL2VeTamGiacVuong.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module1/11_cau_truc_lap_2/bai_tap/Bai4cLTCauTrucVL2VeTamGiacVuong.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module1/11_cau_truc_lap_2/bai_tap/Bai4fLTCauTrucVL2InHinhTraiTim.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module1/11_cau_truc_lap_2/bai_tap/Bai4fLTCauTrucVL2InHinhTraiTim.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module2/src/bai4_lop_va_doi_tuong_trong_java/thuc_hanh/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module2/src/bai4_lop_va_doi_tuong_trong_java/thuc_hanh/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/libraries/mysql_connector_java_8_0_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/libraries/mysql_connector_java_8_0_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/libraries/taglibs_standard_impl_1_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/case_study_1/furama_resort/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/mat_bang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module3/demo/abc/mat_bang/.idea/mat_bang.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/component/employees/employee-list/employee-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/service/employee.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/app/service/employee.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/json-server/database.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/json-server/database.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module5/case_study/furama/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module6/employee/employee/src/app/components/employee/delete-employee/delete-employee.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module6/employee/employee/src/app/components/employee/delete-employee/delete-employee.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module6/sprint1/project/back_end/sprint1-backend" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module6/sprint1/project/back_end/sprint1-backend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../Module6/sprint1/project/font_end/sprint1-frontend" beforeDir="false" afterPath="$PROJECT_DIR$/../../../Module6/sprint1/project/font_end/sprint1-frontend" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +40,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/test-complete" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Module6/sprint1/project/back_end/sprint1-backend" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,6 +63,7 @@
       <workItem from="1607655843627" duration="908000" />
       <workItem from="1607676277004" duration="1973000" />
       <workItem from="1607695909020" duration="76000" />
+      <workItem from="1607837575636" duration="25000" />
     </task>
     <servers />
   </component>
@@ -89,10 +71,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1607695982654">
+    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1607837599448">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607695982654" />
+    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1607837599448" />
     <state x="65" y="67" key="new project wizard" timestamp="1607678587123">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -72,7 +72,7 @@ export class CreateComponent implements OnInit {
         this.formCreateNew.value.type = element;
         break;
       }
-    }
+  }
 
     this.serviceConnectService.createNewService(this.formCreateNew.value).subscribe(data => {
       // --------------------- Change Page --------------------

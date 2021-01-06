@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {ParkingSlotService} from '../../service/parking-slot.service';
-import {convertActionBinding} from '@angular/compiler/src/compiler_util/expression_converter';
 
 @Component({
   selector: 'app-list-parking-slot',

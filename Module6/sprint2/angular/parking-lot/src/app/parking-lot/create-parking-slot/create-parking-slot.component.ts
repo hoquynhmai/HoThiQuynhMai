@@ -28,28 +28,27 @@ export class CreateParkingSlotComponent implements OnInit {
       this.slotTypeList = dataType;
     });
     this.formCreateNew = this.formBuilder.group({
-      floor: ['', [Validators.required, Validators.pattern('^\\d+$'), Validators.max(5)]],
-      id: ['', [Validators.required, Validators.pattern('^\\d+$'), Validators.max(50)],
-        [this.parkingSlotService.validateId()], {updateOn: 'blur'}
-      ],
+      floor: ['', [Validators.required, Validators.pattern('^\\d+$'), Validators.max(6)]],
+      slotNumber: ['', [Validators.required, Validators.pattern('^\\d+$'),
+        Validators.max(50)]],
+      // [this.parkingSlotService.validateId()], {updateOn: 'blur'}
       slotType: [this.slotTypeInput]
     });
-    console.log(this.formCreateNew);
   }
 
   createParkingSlot() {
     this.formCreateNew.markAllAsTouched();
     if (this.formCreateNew.valid && this.slotTypeInput !== 0) {
-      // this.parkingSlotService.searchValidate(this.formCreateNew.value.slotNumber, this.formCreateNew.value.floor)
-      //   .subscribe(dataSearch => {
-      //     if (dataSearch != null) {
-      //       alert('Vị trí đã tồn tại. Vui lòng nhập vị trí khác!');
-      //     } else {
+      this.parkingSlotService.searchValidate(this.formCreateNew.value.slotNumber, this.formCreateNew.value.floor)
+        .subscribe(dataSearch => {
+          if (dataSearch != null) {
+            alert('Vị trí đã tồn tại. Vui lòng nhập vị trí khác!');
+          } else {
             this.parkingSlotService.createParkingLotService(this.formCreateNew.value).subscribe(data => {
               this.router.navigateByUrl('list-parking-slot').then(_ => {
               });
-          //   });
-          // }
+            });
+          }
         }, () => {
           this.router.navigateByUrl('list-parking-slot').then(_ => {
             alert('Thêm mới không thành công');
